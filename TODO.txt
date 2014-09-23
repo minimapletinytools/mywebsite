@@ -1,0 +1,29 @@
+-navigation
+	-about
+	-games
+	-art
+	-follow me on twitter lul
+-games
+	-Perfect Woman
+	-Burn & Turn
+	-kubisch
+	-cave
+	-roulette
+	-pluanbo
+	-robotbear
+	-other
+		-tubemonkey
+		-cosmicat
+		-beat down
+		-etc..
+-software
+	-zahner (when it's ready)
+	-QTE / QTE2 (when it's ready)
+-art
+	-mushrooms
+	-clay
+	-wood
+	-other
+-blog 
+	-latest (list view maybe?)
+	-archive
