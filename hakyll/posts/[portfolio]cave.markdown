@@ -1,5 +1,5 @@
 ---
-title: cave
+title: Cave
 date: September 22, 2014
 projectdate: 2009
 tags: games
