@@ -4,6 +4,8 @@ date: September 22, 2014
 projectdate: 2010?
 tags: games, pluanbo, robotbear
 ---
+<iframe src="http://player.vimeo.com/video/32022226?title=0&amp;byline=0&amp;portrait=0" width="420" height="300" frameborder="0" align="center" webkitAllowFullScreen allowFullScreen></iframe>
+
 An original arcade action game. Created in collaboration with Anton Bobkov (pluanbo).
 
 >Kill! Capture! Loot! Burn & Turn is an arcade styled action game. Capture the princesses, defend your tower, collect and stack powerups for devastating combos.

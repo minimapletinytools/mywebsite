@@ -1,3 +1,7 @@
 nickcharlton.net/*
 hakyll/_site/*
 hakyll/_cache/*
+
+hakyll/site
+hakyll/site.o
+hakyll/site.hi
