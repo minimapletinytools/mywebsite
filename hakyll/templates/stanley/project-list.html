@@ -1,0 +1,49 @@
+<div class="container pt">
+<!--TODO needs to do in rows of three...-->
+
+	<div class="row mt centered">	
+	$for(posts1)$
+		<div class="col-lg-4">
+			$if(thumbnail)$
+			<a class="zoom green" href="$url$">
+				<img class="img-responsive" src="/images/$thumbnail$" alt="" />
+			</a>
+			<p>$title$</p>
+			$else$
+			<a class="zoom green" href="$url$">
+				<p>$title$</p>
+			</a>
+			$endif$
+		</div>
+	$endfor$
+	$for(posts2)$
+		<div class="col-lg-4">
+			$if(thumbnail)$
+			<a class="zoom green" href="$url$">
+				<img class="img-responsive" src="/images/$thumbnail$" alt="" />
+			</a>
+			<p>$title$</p>
+			$else$
+			<a class="zoom green" href="$url$">
+				<p>$title$</p>
+			</a>
+			$endif$
+		</div>
+	$endfor$
+	$for(posts3)$
+		<div class="col-lg-4">
+			$if(thumbnail)$
+			<a class="zoom green" href="$url$">
+				<img class="img-responsive" src="/images/$thumbnail$" alt="" />
+			</a>
+			<p>$title$</p>
+			$else$
+			<a class="zoom green" href="$url$">
+				<p>$title$</p>
+			</a>
+			$endif$
+		</div>
+	$endfor$
+	</div>
+
+</div>
