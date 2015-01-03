@@ -2,11 +2,12 @@
 title: Roulette
 date: September 22, 2014
 projectdate: 2008
+thumbnail: [roulette]thumb.png
 tags: games
 ---
 Play Six-Barelled Russian Roulette against Brandon.
 
-![](../images/[roulette]thumb.png)
+![](/images/[roulette]thumb.png)
 
 [windows](http://users.dma.ucla.edu/~chippermonky/roulette/roulette_fixed.zip),[mac](http://users.dma.ucla.edu/~chippermonky/roulette/roulette_mac.zip),[source](git://gitorious.org/roulette/roulette.git)
 
