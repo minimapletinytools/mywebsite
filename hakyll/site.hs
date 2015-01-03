@@ -6,11 +6,14 @@ import           Hakyll
 import           Text.Pandoc (writerReferenceLinks)
 import           Data.Char (toLower)
 import           System.Locale (defaultTimeLocale)
-import           Data.List (sortBy, intercalate)
+import           Data.List (sortBy, intercalate, length)
 import           Data.Time.Clock (UTCTime)
 import           System.FilePath (takeBaseName, takeFileName)
 import           Data.Time.Format (parseTime)
 import           Data.List (isPrefixOf, tails, findIndex)
+
+
+import Debug.Trace
 
 -- Allow for reference style links in markdown
 pandocWriteOptions = defaultHakyllWriterOptions{ 
@@ -21,6 +24,12 @@ pandocWriteOptions = defaultHakyllWriterOptions{
 main :: IO ()
 main = hakyll $ do
     match "templates/*" $ compile templateCompiler
+    match "templates/stanley/*" $ compile templateCompiler
+
+    match "templates/stanley/assets/**" $ do
+        route   idRoute
+        compile copyFileCompiler
+
 
     match "favicon.ico" $ do
         route   idRoute
@@ -34,47 +43,55 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    tags <- buildTags "posts/*" (fromCapture "label/*")
-
-    match "posts/*" $ do
+    match "posts/portfolio/*" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    noTagsPostCtx
-            >>= loadAndApplyTemplate "templates/default.html" noTagsPostCtx
+            >>= loadAndApplyTemplate "templates/stanley/item-project.html" noTagsPostCtx
+            >>= loadAndApplyTemplate "templates/stanley/default.html" noTagsPostCtx
             >>= relativizeUrls
+
+    forM_ ["posts/blog/*", "posts/*"] $ \p ->
+        match p $ do
+            route $ setExtension "html"
+            compile $ pandocCompiler
+                >>= loadAndApplyTemplate "templates/stanley/item-post.html" noTagsPostCtx
+                >>= loadAndApplyTemplate "templates/stanley/default.html" noTagsPostCtx
+                >>= relativizeUrls
+
 
     create ["archive.html"] $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let archiveCtx =
-                    listField "posts" noTagsPostCtx (return posts) `mappend`
-                    constField "title" "Archives"            `mappend`
-                    noTagsPostCtx
-
+            allPosts <- loadAll "posts/writing/*"
             makeItem ""
-                >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-                >>= loadAndApplyTemplate "templates/default.html" archiveCtx
+                >>= loadAndApplyTemplate "templates/stanley/archive.html" (archiveCtx allPosts)
+                >>= loadAndApplyTemplate "templates/stanley/default.html" (archiveCtx allPosts)
                 >>= relativizeUrls
 
+    
+    create ["work.html","index.html"] $ do
+        route idRoute
+        compile $ do
+            allPosts <- loadAll "posts/portfolio/*"
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/stanley/project-list.html" (archiveCtx allPosts)
+                >>= loadAndApplyTemplate "templates/stanley/default.html" (archiveCtx allPosts)
+                >>= relativizeUrls           
+
     -- Build special pages
-    forM_ ["404.markdown", "search.markdown"] $ \p ->
+    forM_ ["404.markdown","about.markdown"] $ \p ->
         match p $ do
             route   $ setExtension "html"
             compile $ do
-                let allCtx =
-                        field "recent" (\_ -> recentPostList) `mappend`
-                        defaultContext
-
                 pandocCompilerWith defaultHakyllReaderOptions pandocWriteOptions
-                    >>= loadAndApplyTemplate "templates/page.html" (postCtx tags)
-                    >>= loadAndApplyTemplate "templates/default.html" allCtx
+                    >>= loadAndApplyTemplate "templates/stanley/item-post.html" noTagsPostCtx
+                    >>= loadAndApplyTemplate "templates/stanley/default.html" noTagsPostCtx
                     >>= relativizeUrls
 
     match "index.html" $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
+            posts <- recentFirst =<< loadAll "posts/**"
             let indexCtx =
                     listField "posts" noTagsPostCtx (return posts) `mappend`
                     constField "title" "Home"                `mappend`
@@ -82,7 +99,7 @@ main = hakyll $ do
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= loadAndApplyTemplate "templates/stanley/default.html" indexCtx
                 >>= relativizeUrls
 
 
@@ -93,9 +110,6 @@ main = hakyll $ do
             posts <- fmap (take 10) . recentFirst =<<
                 loadAllSnapshots "posts/*" "content"
             renderRss feedConfiguration feedContext posts
-
-
-
 
 
 --------------------------------------------------------------------------------
@@ -111,6 +125,21 @@ postCtx tags = mconcat
     , tagsField "tags" tags
     , defaultContext
     ]
+
+archiveCtx :: [Item String] -> Context String
+archiveCtx posts = 
+    let 
+        size = length posts
+        thirds = [size `quot` 3, size `quot` 3, size `quot` 3 + size `mod` 3]
+        posts1 = take (thirds !! 0) posts
+        posts2 = take (thirds !! 1) (drop (thirds !! 0) posts)
+        posts3 = take (thirds !! 2) (drop (thirds !! 0 + thirds !! 1) posts)
+    in 
+        listField "posts1" noTagsPostCtx (return posts1) `mappend`
+        listField "posts2" noTagsPostCtx (return posts2) `mappend`
+        listField "posts3" noTagsPostCtx (return posts3) `mappend`
+        constField "title" "Archives" `mappend`
+        noTagsPostCtx
 
 --------------------------------------------------------------------------------
 feedContext :: Context String
