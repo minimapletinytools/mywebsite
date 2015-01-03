@@ -1,49 +1,64 @@
 <div class="container pt">
-<!--TODO needs to do in rows of three...-->
+<!--TODO collumns of collumns layout... Why is this even working right now...-->
 
-	<div class="row mt centered">	
-	$for(posts1)$
-		<div class="col-lg-4">
-			$if(thumbnail)$
-			<a class="zoom green" href="$url$">
-				<img class="img-responsive" src="/images/$thumbnail$" alt="" />
-			</a>
-			<p>$title$</p>
-			$else$
-			<a class="zoom green" href="$url$">
+	$if(posts1)$
+		<div class="col-sm-4">
+		$for(posts1)$
+			<div class="row mt centered">	
+			
+				$if(thumbnail)$
+				<a class="zoom green" href="$url$">
+					<img class="img-responsive" src="/images/$thumbnail$" alt="" />
+				</a>
 				<p>$title$</p>
-			</a>
-			$endif$
+				$else$
+				<a class="zoom green" href="$url$">
+					<p>$title$</p>
+				</a>
+				$endif$
+			</div>
+		$endfor$
 		</div>
-	$endfor$
-	$for(posts2)$
-		<div class="col-lg-4">
-			$if(thumbnail)$
-			<a class="zoom green" href="$url$">
-				<img class="img-responsive" src="/images/$thumbnail$" alt="" />
-			</a>
-			<p>$title$</p>
-			$else$
-			<a class="zoom green" href="$url$">
+	$endif$
+
+	$if(posts2)$
+		<div class="col-sm-4">
+		$for(posts2)$
+			<div class="row mt centered">	
+			
+				$if(thumbnail)$
+				<a class="zoom green" href="$url$">
+					<img class="img-responsive" src="/images/$thumbnail$" alt="" />
+				</a>
 				<p>$title$</p>
-			</a>
-			$endif$
+				$else$
+				<a class="zoom green" href="$url$">
+					<p>$title$</p>
+				</a>
+				$endif$
+			</div>
+		$endfor$
 		</div>
-	$endfor$
-	$for(posts3)$
-		<div class="col-lg-4">
-			$if(thumbnail)$
-			<a class="zoom green" href="$url$">
-				<img class="img-responsive" src="/images/$thumbnail$" alt="" />
-			</a>
-			<p>$title$</p>
-			$else$
-			<a class="zoom green" href="$url$">
+	$endif$
+
+	$if(posts3)$
+		<div class="col-sm-4">
+		$for(posts3)$
+			<div class="row mt centered">	
+			
+				$if(thumbnail)$
+				<a class="zoom green" href="$url$">
+					<img class="img-responsive" src="/images/$thumbnail$" alt="" />
+				</a>
 				<p>$title$</p>
-			</a>
-			$endif$
+				$else$
+				<a class="zoom green" href="$url$">
+					<p>$title$</p>
+				</a>
+				$endif$
+			</div>
+		$endfor$
 		</div>
-	$endfor$
-	</div>
+	$endif$
 
 </div>

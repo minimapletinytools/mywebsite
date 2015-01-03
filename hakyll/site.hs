@@ -7,6 +7,7 @@ import           Text.Pandoc (writerReferenceLinks)
 import           Data.Char (toLower)
 import           System.Locale (defaultTimeLocale)
 import           Data.List (sortBy, intercalate, length)
+import           Data.List.Split (chunksOf)
 import           Data.Time.Clock (UTCTime)
 import           System.FilePath (takeBaseName, takeFileName)
 import           Data.Time.Format (parseTime)
@@ -126,20 +127,27 @@ postCtx tags = mconcat
     , defaultContext
     ]
 
+-- variant of map that passes each element's index as a second argument to f
+mapInd :: (a -> Int -> b) -> [a] -> [b]
+mapInd f l = zipWith f l [0..]
+
 archiveCtx :: [Item String] -> Context String
 archiveCtx posts = 
     let 
         size = length posts
-        thirds = [size `quot` 3, size `quot` 3, size `quot` 3 + size `mod` 3]
-        posts1 = take (thirds !! 0) posts
-        posts2 = take (thirds !! 1) (drop (thirds !! 0) posts)
-        posts3 = take (thirds !! 2) (drop (thirds !! 0 + thirds !! 1) posts)
+        splitPosts = chunksOf ((size+2) `quot` 3) posts
+        start = constField "title" "Archives" `mappend` 
+                noTagsPostCtx
+        map1 = map return splitPosts
+        map2fn a x = listField ("posts" ++ (show (x+1))) noTagsPostCtx $ a
+        map2 = mapInd map2fn map1
     in 
-        listField "posts1" noTagsPostCtx (return posts1) `mappend`
-        listField "posts2" noTagsPostCtx (return posts2) `mappend`
-        listField "posts3" noTagsPostCtx (return posts3) `mappend`
-        constField "title" "Archives" `mappend`
-        noTagsPostCtx
+        foldr mappend start map2
+        --he above code is equivalent to the below, except it can do N collumns (hardcoded to 3)
+        --listField "posts1" noTagsPostCtx (return $ splitPosts !! 0) `mappend`
+        --listField "posts2" noTagsPostCtx (return $ splitPosts !! 1) `mappend`
+        --listField "posts3" noTagsPostCtx (return $ splitPosts !! 2) `mappend`
+        
 
 --------------------------------------------------------------------------------
 feedContext :: Context String
