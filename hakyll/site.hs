@@ -44,14 +44,14 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    match "posts/portfolio/*" $ do
+    match "posts/portfolio/**" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/stanley/item-project.html" noTagsPostCtx
             >>= loadAndApplyTemplate "templates/stanley/default.html" noTagsPostCtx
             >>= relativizeUrls
 
-    forM_ ["posts/blog/*", "posts/*"] $ \p ->
+    forM_ ["posts/blog/**","posts/*"] $ \p ->
         match p $ do
             route $ setExtension "html"
             compile $ pandocCompiler
@@ -73,7 +73,7 @@ main = hakyll $ do
     create ["work.html","index.html"] $ do
         route idRoute
         compile $ do
-            allPosts <- loadAll "posts/portfolio/*"
+            allPosts <- loadAll "posts/portfolio/**"
             makeItem ""
                 >>= loadAndApplyTemplate "templates/stanley/project-list.html" (archiveCtx allPosts)
                 >>= loadAndApplyTemplate "templates/stanley/default.html" (archiveCtx allPosts)
@@ -137,7 +137,8 @@ archiveCtx posts =
         size = length posts
         splitPosts = chunksOf ((size+2) `quot` 3) posts
         start = constField "title" "Archives" `mappend` 
-                noTagsPostCtx
+                noTagsPostCtx `mappend`
+                listField "posts" noTagsPostCtx (return posts)
         map1 = map return splitPosts
         map2fn a x = listField ("posts" ++ (show (x+1))) noTagsPostCtx $ a
         map2 = mapInd map2fn map1

@@ -6,6 +6,10 @@ thumbnail: [perfect_woman]thumb.png
 tags: games
 ---
 
+
+<!--<object data="http://www.perfectwomangame.com" width="100%" height="5000px"> <embed src="http://www.perfectwomangame.com" width="100%" height="5000px"> </embed></object>-->
+
+
 <iframe src="//player.vimeo.com/video/75890888?portrait=0&amp;color=fe5607" width="500" height="281" frameborder="0" align="center" webkitallowfullscreen  mozallowfullscreen allowfullscreen></iframe> 
 <br />  
 
