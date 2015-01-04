@@ -261,3 +261,8 @@ img {
 	width: 100%;
 	height: auto;
 }
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
