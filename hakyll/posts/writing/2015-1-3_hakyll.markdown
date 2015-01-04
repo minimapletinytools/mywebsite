@@ -1,0 +1,20 @@
+---
+title: Setting up a Site with Hakyll
+date: January 3, 2015
+tags: blog, haskell, code, lame
+thumbnail: haskell-logo.png
+---
+
+After not having a site for several years and being in a business that pretty much mandates one, I was wanted to go with the simplest fastest solution possible. After wasting countless hours trying out various CMSs including Wordpress, Cargo Collective, and Myriad others, I ended up choosing a really bad choice: [Hakyll](http://jaspervdj.be/hakyll/).  
+
+[Static site generators](https://staticsitegenerators.net/) really suit my file organization idiosynchrasies--all content cleanly stored in a version controlled file tree with custom transformations used to actually generate content. [Jekyll](http://jekyllrb.com/) would have been the obvious choice with it's fantastic GitHub integration but I said F*CK that when I found out there was one written in [Haskell](http://en.wikipedia.org/wiki/Haskell), a language I neither know well nor need to know. But at least it is [awesome](http://www.willamette.edu/~fruehr/haskell/evolution.html) right? Right?  
+
+I did do one project a long time ago in Haskell to parse some text. It took me the better of 3 weeks to go through these [tutorials](http://learnyouahaskell.com/) and write code that would have otherwise taken me 3 hours.
+
+In retrospect, perhaps something like [Square Space](http://www.squarespace.com/) would have been exactly what I wanted. Too bad I didn't hear about until after I put this site live.
+
+tldr; I've finally set up my site with [Hakyll](http://jaspervdj.be/hakyll/). I hope I wont want to throw this one in the trash like I've done with all my previous sites. 
+
+P.S. I wrote this to test out my 'blog' section of my new site. Hopefully I will do no such thing again in the future. There are enough people meta blogging about how hard it was to choose the right website backend. #firstworldproblems
+
+P.S.S if it wasn't clear enough: avoid Haskell like you would avoid grad school.

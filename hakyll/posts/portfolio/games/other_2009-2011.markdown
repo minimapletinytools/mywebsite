@@ -1,5 +1,5 @@
 ---
-title: Games (misc.)
+title: Misc. Games 2009-2012
 date: September 22, 2014
 projectdate: 2009-2012
 thumbnail: [gamesmisc]thumb.png

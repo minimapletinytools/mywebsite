@@ -1,5 +1,5 @@
 ---
-title: Games (misc.)
+title: Misc. Games 2012-2014
 date: September 22, 2014
 projectdate: 2012-2014
 thumbnail: [gamesmisc]thumb.png
@@ -9,3 +9,5 @@ Some of the other games I've made:
 
 * [Cosmicat Crunchies](http://games.ucla.edu/game/cosmicat-crunchies/)
 * [Beat Down](http://games.ucla.edu/game/beat-down/)
+* [TIC TAC TOE (Quick Time Event)](http://games.ucla.edu/resource/quick-time-event/)
+* [Spot the Dot](http://superhappyfuntimes.net/game/spotthedot)
