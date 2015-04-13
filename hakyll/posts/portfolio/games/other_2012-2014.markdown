@@ -2,7 +2,7 @@
 title: Misc. Games 2012-2014
 date: September 22, 2014
 projectdate: 2012-2014
-thumbnail: [gamesmisc]thumb.png
+thumbnail: [misc2014]thumb.jpg
 tags: games
 ---
 Some of the other games I've made:

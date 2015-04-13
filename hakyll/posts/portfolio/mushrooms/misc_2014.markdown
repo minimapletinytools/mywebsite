@@ -3,7 +3,7 @@ title: Misc. Mushrooms 2014
 date: January 3, 2015
 projectdate: 2014
 tags: mushrooms art
-thumbnail: haskell-logo.png
-gallery: aoeu aoeu aoeu aoeu 
+thumbnail: [mushroom]thumbsmall.png
+gallery: gallery WIP
 ---
 
