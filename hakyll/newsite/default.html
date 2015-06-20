@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <title>_kitchen</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/templates/stanley/assets/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="only.css">
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="top">
+      <div class="top-section">
+        <a href="/blog.html" > blog </a>
+        <a href="/about.html" > about </a>
+        <a href="/archive.html" > archive </a>
+      </div>
+      <div class="top-section">
+        work: 
+        $if(work)$
+          $for(work)$
+          <li><a href="$url$">$title$</a></li> 
+          $endfor$
+        $endif$ 
+      </div>
+      <div class="top-section">
+        blog stuff: ????
+      </div>
+    </div>
+
+	$body$
+	
+	<!-- +++++ Footer Section +++++ -->	
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				
+        <div class="col-lg-4">
+					<h4>Contact</h4>
+          <p>
+            chippermonky at<br/>
+            gmail<br />
+            dot com<br />
+          </p>
+          <p>
+            <a href="https://twitter.com/_kitchen">Twitter</a><br/>
+          </p>
+          <p>
+            Built with <a href="http://jaspervdj.be/hakyll/">Hakyll</a>
+          </p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/templates/stanley/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
