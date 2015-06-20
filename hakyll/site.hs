@@ -26,11 +26,12 @@ main :: IO ()
 main = hakyll $ do
 
     --copy template stuff
-    match "templates/*" $ compile templateCompiler
-    match "templates/stanley/*" $ compile templateCompiler
-    match "templates/stanley/assets/**" $ do
+    match "templates/**" $ do
         route   idRoute
-        compile copyFileCompiler
+        compile templateCompiler
+    match "templates/*" $ compile templateCompiler
+    match "templates/newsite/*" $ compile templateCompiler
+    
 
     --copy images
     match "images/*" $ do
@@ -41,18 +42,18 @@ main = hakyll $ do
     match "posts/portfolio/**" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/stanley/item-project.html" postCtx
+            >>= loadAndApplyTemplate "templates/newsite/item-project.html" postCtx
             >>= saveSnapshot "content"
-            >>= loadAndApplyTemplate "templates/stanley/default.html" postCtx
+            >>= loadAndApplyTemplate "templates/newsite/default.html" postCtx
             >>= relativizeUrls
 
     forM_ ["posts/writing/**","posts/*"] $ \p ->
         match p $ do
             route $ setExtension "html"
             compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/stanley/item-post.html" postCtx
+                >>= loadAndApplyTemplate "templates/newsite/item-post.html" postCtx
                 >>= saveSnapshot "content"
-                >>= loadAndApplyTemplate "templates/stanley/default.html" postCtx
+                >>= loadAndApplyTemplate "templates/newsite/default.html" postCtx
                 >>= relativizeUrls
 
     --generate static pages
@@ -61,8 +62,8 @@ main = hakyll $ do
         compile $ do
             allPosts <- loadAll "posts/writing/**"
             makeItem ""
-                >>= loadAndApplyTemplate "templates/stanley/archive.html" (archiveCtx allPosts)
-                >>= loadAndApplyTemplate "templates/stanley/default.html" (archiveCtx allPosts)
+                >>= loadAndApplyTemplate "templates/newsite/archive.html" (archiveCtx allPosts)
+                >>= loadAndApplyTemplate "templates/newsite/default.html" (archiveCtx allPosts)
                 >>= relativizeUrls
 
     create ["work.html","index.html"] $ do
@@ -70,8 +71,8 @@ main = hakyll $ do
         compile $ do
             allPosts <- loadAll "posts/portfolio/**"
             makeItem ""
-                >>= loadAndApplyTemplate "templates/stanley/project-list.html" (archiveCtx allPosts)
-                >>= loadAndApplyTemplate "templates/stanley/default.html" (archiveCtx allPosts)
+                >>= loadAndApplyTemplate "templates/newsite/project-list.html" (archiveCtx allPosts)
+                >>= loadAndApplyTemplate "templates/newsite/default.html" (archiveCtx allPosts)
                 >>= relativizeUrls           
 
     -- Build special pages
@@ -79,8 +80,8 @@ main = hakyll $ do
         match p $ do
             route   $ setExtension "html"
             compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/stanley/item-post.html" postCtx
-                >>= loadAndApplyTemplate "templates/stanley/default.html" postCtx
+                >>= loadAndApplyTemplate "templates/newsite/item-post.html" postCtx
+                >>= loadAndApplyTemplate "templates/newsite/default.html" postCtx
                 >>= relativizeUrls
 
     -- TODO DELETE
@@ -95,7 +96,7 @@ main = hakyll $ do
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/stanley/default.html" indexCtx
+                >>= loadAndApplyTemplate "templates/newsite/default.html" indexCtx
                 >>= relativizeUrls
 
     -- Render RSS feed

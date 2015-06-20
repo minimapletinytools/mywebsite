@@ -2,14 +2,14 @@
 	$if(posts)$
 		$for(posts)$
 			$if(thumbnail)$
-			<a chref="$url$">
-				<img class="projectlistimg" src="/images/$thumbnail$" alt="" />
-			</a>
-			<p>$title$</p>
-			$else$
-			<a class="" href="$url$">
+				<a chref="$url$">
+					<img class="projectlistimg" src="/images/$thumbnail$" alt="" />
+				</a>
 				<p>$title$</p>
-			</a>
+			$else$
+				<a class="" href="$url$">
+					<p>$title$</p>
+				</a>
 			$endif$
 		$endfor$
 	$endif$
