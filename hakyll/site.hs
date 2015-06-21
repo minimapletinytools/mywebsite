@@ -29,9 +29,6 @@ main = hakyll $ do
     match "templates/**" $ do
         route   idRoute
         compile templateCompiler
-    match "templates/*" $ compile templateCompiler
-    match "templates/newsite/*" $ compile templateCompiler
-    
 
     --copy images
     match "images/*" $ do
@@ -66,7 +63,7 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/newsite/default.html" (archiveCtx allPosts)
                 >>= relativizeUrls
 
-    create ["work.html","index.html"] $ do
+    create ["index.html"] $ do
         route idRoute
         compile $ do
             allPosts <- loadAll "posts/portfolio/**"
@@ -84,20 +81,6 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/newsite/default.html" postCtx
                 >>= relativizeUrls
 
-    -- TODO DELETE
-    match "index.html" $ do
-        route idRoute
-        compile $ do
-            posts <- recentFirst =<< loadAll "posts/**"
-            let indexCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
-                    postCtx
-
-            getResourceBody
-                >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/newsite/default.html" indexCtx
-                >>= relativizeUrls
 
     -- Render RSS feed
     create ["rss.xml"] $ do

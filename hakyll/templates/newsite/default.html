@@ -9,9 +9,6 @@
     <link rel="shortcut icon" href="/images/favicon.ico">
 
     <title>_kitchen</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/templates/stanley/assets/css/bootstrap.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
     <link href="only.css">
@@ -21,18 +18,20 @@
 
     <!-- Static navbar -->
     <div class="top">
+      <div style="float:left; padding: 5px;">
+        <img width="70" src="/images/catgame.bmp" />
+      </div>
       <div class="top-section">
-        <a href="/blog.html" > blog </a>
         <a href="/about.html" > about </a>
-        <a href="/archive.html" > archive </a>
+        <a href="/archive.html" > blog </a>
       </div>
       <div class="top-section">
         work: 
         $if(work)$
-          $for(work)$
-          <li><a href="$url$">$title$</a></li> 
-          $endfor$
-        $endif$ 
+        $for(work)$
+         <li><a href="$url$">$title$</a></li> 
+        $endfor$
+        $endif$
       </div>
       <div class="top-section">
         blog stuff: ????
@@ -45,7 +44,7 @@
   
   	<!-- +++++ Footer Section +++++ -->	
   	<div id="footer">
-  			<h4>Contact</h4>
+  			<h4>PETER LU</h4>
         <p>
           chippermonky at<br/>
           gmail<br />
@@ -58,11 +57,5 @@
           Built with <a href="http://jaspervdj.be/hakyll/">Hakyll</a>
         </p>
   	</div>
-	
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/templates/stanley/assets/js/bootstrap.min.js"></script>
   </body>
 </html>
