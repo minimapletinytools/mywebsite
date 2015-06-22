@@ -7,7 +7,7 @@ import           Text.Pandoc (writerReferenceLinks)
 import           Data.Char (toLower)
 import           System.Locale (defaultTimeLocale)
 import           Data.List (sortBy, intercalate, length, isPrefixOf, tails, findIndex)
-import           Data.List.Split (chunksOf)
+import           Data.List.Split (chunksOf, splitOn)
 import           Data.Time.Clock (UTCTime)
 import           Data.Time.Format (parseTime)
 import           Data.Maybe (fromMaybe)
@@ -26,7 +26,7 @@ main :: IO ()
 main = hakyll $ do
 
     --copy template stuff
-    match "templates/**" $ do
+    match "templates/newsite/*" $ do
         route   idRoute
         compile templateCompiler
 
@@ -110,13 +110,15 @@ newPostCtx =
 
 --TODO
 
+
+
 galleryContext :: Context a
 galleryContext = field "gallery" $ \item -> do
     metadata <- getMetadata (itemIdentifier item)
     let 
-        process s =  "<img src=\"images/" ++ s ++ "\" />"
+        process s = if (trim s) == "" then "" else "<img src=\"images/" ++ s ++ "\" />"
         gallery = fromMaybe "" $ Map.lookup "gallery" metadata    
-        splitted = fmap process (lines gallery)
+        splitted = fmap process (words gallery)
     return $ unlines splitted 
 
         

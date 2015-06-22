@@ -22,14 +22,15 @@
         <img width="70" src="/images/catgame.bmp" />
       </div>
       <div class="top-section">
-        <a href="/about.html" > about </a>
+        <a href="/index.html" >home</a>&nbsp&nbsp
+        <a href="/about.html" > about </a>&nbsp&nbsp
         <a href="/archive.html" > blog </a>
       </div>
       <div class="top-section">
         work: 
         $if(work)$
         $for(work)$
-         <li><a href="$url$">$title$</a></li> 
+         <a href="$url$">$title$</a>&nbsp&nbsp
         $endfor$
         $endif$
       </div>
@@ -44,18 +45,8 @@
   
   	<!-- +++++ Footer Section +++++ -->	
   	<div id="footer">
-  			<h4>PETER LU</h4>
-        <p>
-          chippermonky at<br/>
-          gmail<br />
-          dot com<br />
-        </p>
-        <p>
-          <a href="https://twitter.com/_kitchen">Twitter</a><br/>
-        </p>
-        <p>
-          Built with <a href="http://jaspervdj.be/hakyll/">Hakyll</a>
-        </p>
+          &copy; peter lu, 2015 | contact: peter lu &#60; chippermonky at gmail dot com &#62; | follow me on <a href="https://twitter.com/_kitchen">twitter</a> | 
+          this site was build with HTML and <a href="http://jaspervdj.be/hakyll/">hakyll</a>
   	</div>
   </body>
 </html>
