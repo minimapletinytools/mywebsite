@@ -39,18 +39,18 @@ main = hakyll $ do
     match "posts/portfolio/**" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/newsite/item-project.html" postCtx
+            >>= loadAndApplyTemplate "templates/newsite/item-project.html" newPostCtx
             >>= saveSnapshot "content"
-            >>= loadAndApplyTemplate "templates/newsite/default.html" postCtx
+            >>= loadAndApplyTemplate "templates/newsite/default.html" newPostCtx
             >>= relativizeUrls
 
     forM_ ["posts/writing/**","posts/*"] $ \p ->
         match p $ do
             route $ setExtension "html"
             compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/newsite/item-post.html" postCtx
+                >>= loadAndApplyTemplate "templates/newsite/item-post.html" newPostCtx
                 >>= saveSnapshot "content"
-                >>= loadAndApplyTemplate "templates/newsite/default.html" postCtx
+                >>= loadAndApplyTemplate "templates/newsite/default.html" newPostCtx
                 >>= relativizeUrls
 
     --generate static pages
@@ -77,8 +77,8 @@ main = hakyll $ do
         match p $ do
             route   $ setExtension "html"
             compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/newsite/item-post.html" postCtx
-                >>= loadAndApplyTemplate "templates/newsite/default.html" postCtx
+                >>= loadAndApplyTemplate "templates/newsite/item-post.html" newPostCtx
+                >>= loadAndApplyTemplate "templates/newsite/default.html" newPostCtx
                 >>= relativizeUrls
 
 
@@ -100,36 +100,50 @@ postCtx =
     dateField "date" "%B %e, %Y"            `mappend` 
     defaultContext                        
 
+newPostCtx :: Context String
+newPostCtx =
+    listField "work" defaultContext (recentFirst =<< recentWork)  `mappend` 
+    listField "recent" defaultContext (fmap (take 10) . recentFirst =<< recentPosts)   `mappend` 
+    dateField "date" "%B %e, %Y"            `mappend` 
+    galleryContext `mappend`
+    defaultContext  
+
 --TODO
+
 galleryContext :: Context a
 galleryContext = field "gallery" $ \item -> do
     metadata <- getMetadata (itemIdentifier item)
     let 
+        process s =  "<img src=\"images/" ++ s ++ "\" />"
         gallery = fromMaybe "" $ Map.lookup "gallery" metadata    
-    return gallery
+        splitted = fmap process (lines gallery)
+    return $ unlines splitted 
+
         
 
 -- variant of map that passes each element's index as a second argument to f
 mapInd :: (a -> Int -> b) -> [a] -> [b]
 mapInd f l = zipWith f l [0..]
 
+
+--this fancy thing will split posts into 3 groups, not that I use this feature anymore...
 archiveCtx :: [Item String] -> Context String
 archiveCtx posts = 
     let 
         size = length posts
         splitPosts = chunksOf ((size+2) `quot` 3) posts
         start = constField "title" "Archives" `mappend` 
-                postCtx `mappend`
-                listField "posts" postCtx (return posts)
+                newPostCtx `mappend`
+                listField "posts" newPostCtx (return posts)
         map1 = map return splitPosts
-        map2fn a x = listField ("posts" ++ (show (x+1))) postCtx $ a
+        map2fn a x = listField ("posts" ++ (show (x+1))) newPostCtx $ a
         map2 = mapInd map2fn map1
     in 
         foldr mappend start map2
         --the above code is equivalent to the below, except it can do N collumns (hardcoded to 3)
-        --listField "posts1" postCtx (return $ splitPosts !! 0) `mappend`
-        --listField "posts2" postCtx (return $ splitPosts !! 1) `mappend`
-        --listField "posts3" postCtx (return $ splitPosts !! 2) `mappend`
+        --listField "posts1" newPostCtx (return $ splitPosts !! 0) `mappend`
+        --listField "posts2" newPostCtx (return $ splitPosts !! 1) `mappend`
+        --listField "posts3" newPostCtx (return $ splitPosts !! 2) `mappend`
         
 
 --------------------------------------------------------------------------------
@@ -156,6 +170,13 @@ recentPosts = do
     identifiers <- getMatches "posts/*"
     return [Item identifier "" | identifier <- identifiers]
 
+recentWork :: Compiler [Item String]
+recentWork = do
+    identifiers <- getMatches "posts/portfolio/**"
+    return [Item identifier "" | identifier <- identifiers]
+
+
+--THESE THINGS ARE BROKEN FOR SOME REASON...
 recentPostList :: Compiler String
 recentPostList = do
     posts   <- fmap (take 10) . recentFirst =<< recentPosts
@@ -165,8 +186,7 @@ recentPostList = do
 
 workList :: Compiler String
 workList = do
-    identifiers <- getMatches "posts/portfolio/**"
-    posts   <- fmap (take 10) . recentFirst $ [Item identifier "" | identifier <- identifiers] --TODO get rid of the fmap???
+    posts   <- recentFirst =<< recentWork
     itemTpl <- loadBody "templates/indexpostitem.html"
     list    <- applyTemplateList itemTpl defaultContext posts
     return list
