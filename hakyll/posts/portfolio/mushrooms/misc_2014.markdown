@@ -4,6 +4,6 @@ date: January 3, 2015
 projectdate: 2014
 tags: mushrooms art
 thumbnail: [mushroom]thumbsmall.png
-gallery: gallery WIP
+gallery: mushrooms/SHRUNKIMG_7007.jpg mushrooms/SHRUNKIMG_7039.jpg mushrooms/SHRUNKIMG_7044.jpg mushrooms/SHRUNKIMG_7065.jpg mushrooms/SHRUNKIMG_7089.jpg mushrooms/IMG_1726.jpg mushrooms/IMG_1708.jpg mushrooms/IMG_1770.jpg mushrooms/IMG_3053.jpg mushrooms/IMG_2949.jpg mushrooms/IMG_2936.jpg mushrooms/IMG_3023.jpg
 ---
 

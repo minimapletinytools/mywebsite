@@ -31,7 +31,7 @@ main = hakyll $ do
         compile templateCompiler
 
     --copy images
-    match "images/*" $ do
+    match "images/**" $ do
         route   idRoute
         compile copyFileCompiler
 
@@ -116,7 +116,9 @@ galleryContext :: Context a
 galleryContext = field "gallery" $ \item -> do
     metadata <- getMetadata (itemIdentifier item)
     let 
-        process s = if (trim s) == "" then "" else "<img src=\"images/" ++ s ++ "\" />"
+        process s = if (trim s) == "" 
+            then "" 
+            else "<img src=\"" ++ (toUrl "images/" ++ s ++ "\"") ++ " />"
         gallery = fromMaybe "" $ Map.lookup "gallery" metadata    
         splitted = fmap process (words gallery)
     return $ unlines splitted 
