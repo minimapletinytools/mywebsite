@@ -5,7 +5,7 @@ tags: blog, haskell, code, lame
 thumbnail: haskell-logo.png
 ---
 
-After not having a site for several years and being in a business that pretty much mandates one, I was wanted to go with the simplest fastest solution possible. After wasting countless hours trying out various CMSs including Wordpress, Cargo Collective, and Myriad others, I ended up choosing a really bad choice: [Hakyll](http://jaspervdj.be/hakyll/).  
+After not having a site for several years and being in a business that pretty much mandates one, I was wanted to go with the simplest fastest solution possible. After spending countless hours trying out various CMSs including Wordpress, Cargo Collective, and myriad others, I ended up making a really bad choice: [Hakyll](http://jaspervdj.be/hakyll/).  
 
 [Static site generators](https://staticsitegenerators.net/) really suit my file organization idiosynchrasies--all content cleanly stored in a version controlled file tree with custom transformations used to actually generate content. [Jekyll](http://jekyllrb.com/) would have been the obvious choice with it's fantastic GitHub integration but I said F*CK that when I found out there was one written in [Haskell](http://en.wikipedia.org/wiki/Haskell), a language I neither know well nor need to know. But at least it is [awesome](http://www.willamette.edu/~fruehr/haskell/evolution.html) right? Right?  
 
@@ -18,3 +18,5 @@ tldr; I've finally set up my site with [Hakyll](http://jaspervdj.be/hakyll/). I 
 P.S. I wrote this to test out my 'blog' section of my new site. Hopefully I will do no such thing again in the future. There are enough people meta blogging about how hard it was to choose the right website backend. #firstworldproblems
 
 P.S.S if it wasn't clear enough: avoid Haskell like you would avoid grad school.
+
+UPDATE (6-23-2015): The template I was originally using for this site was not at all what I wanted. I was contemplating for a while one of those fancy single page bootstrap portfolio templates that are all the rage these days and also decided against that. Instead, I took a brain trip back to my high school html class and put together the site you see now. I can't say it was "quick" to do as I still had to fadangle with Hakyll quite a bit to get the custom features I wanted implemented but I'm happy to say it's basically working good enough now.
