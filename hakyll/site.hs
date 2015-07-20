@@ -30,6 +30,10 @@ main = hakyll $ do
         route   idRoute
         compile templateCompiler
 
+    match "css/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     --copy images
     match "images/**" $ do
         route   idRoute
