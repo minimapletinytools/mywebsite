@@ -1,3 +1,5 @@
+rsync -r ./ cmspice@ftp.robotbear.org:faucet.5fkitchen.com/website
+
 -navigation
 	-about
 	-games
