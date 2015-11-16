@@ -4,7 +4,7 @@ date: October 15, 2015
 projectdate: 2015
 tags: mushrooms art
 thumbnail: freshman_mushroom_project/thumb.png
-gallery: freshman_mushroom_project/_DSC5881.jpg freshman_mushroom_project/_DSC5928.jpg freshman_mushroom_project/_DSC5933.jpg freshman_mushroom_project/_DSC5941.jpg freshman_mushroom_project/_DSC5954.jpg freshman_mushroom_project/_DSC5891.jpg freshman_mushroom_project/_DSC5929.jpg freshman_mushroom_project/_DSC5937.jpg freshman_mushroom_project/_DSC5944.jpg freshman_mushroom_project/mushroomperformance.png freshman_mushroom_project/_DSC5896.jpg freshman_mushroom_project/_DSC5930.jpg  freshman_mushroom_project/_DSC5938.jpg  freshman_mushroom_project/_DSC5947.jpg freshman_mushroom_project/_DSC5901.jpg freshman_mushroom_project/_DSC5931.jpg freshman_mushroom_project/_DSC5939.jpg freshman_mushroom_project/_DSC5948.jpg freshman_mushroom_project/thumb.png
+gallery: freshman_mushroom_project/_DSC5881.jpg freshman_mushroom_project/_DSC5928.jpg freshman_mushroom_project/_DSC5933.jpg freshman_mushroom_project/_DSC5941.jpg freshman_mushroom_project/_DSC5954.jpg freshman_mushroom_project/_DSC5891.jpg freshman_mushroom_project/_DSC5929.jpg freshman_mushroom_project/_DSC5937.jpg freshman_mushroom_project/_DSC5944.jpg freshman_mushroom_project/thumb.png freshman_mushroom_project/_DSC5896.jpg freshman_mushroom_project/_DSC5930.jpg  freshman_mushroom_project/_DSC5938.jpg  freshman_mushroom_project/_DSC5947.jpg freshman_mushroom_project/_DSC5901.jpg freshman_mushroom_project/_DSC5931.jpg freshman_mushroom_project/_DSC5939.jpg freshman_mushroom_project/_DSC5948.jpg freshman_mushroom_project/warning.png
 ---
 
 Performances by [Goddess LeeAnn](https://twitter.com/goddessleeann), [Michael Q. Schmidt](https://en.wikipedia.org/wiki/Michael_Q._Schmidt) and myself.
