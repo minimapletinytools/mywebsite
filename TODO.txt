@@ -1,4 +1,5 @@
 rsync -r ./ cmspice@ftp.robotbear.org:faucet.5fkitchen.com/website
+rsync -r ./ cmspice@ftp.robotbear.org:pdlla.org/website
 
 -navigation
 	-about
