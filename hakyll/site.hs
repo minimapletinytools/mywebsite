@@ -97,16 +97,21 @@ main = hakyll $ do
 
 
 --------------------------------------------------------------------------------
+
+--CAN DELETE
 postCtx :: Context String
 postCtx =
     field "work" (\_ -> workList)           `mappend` 
     field "recent" (\_ -> recentPostList)   `mappend` 
     dateField "date" "%B %e, %Y"            `mappend` 
-    defaultContext                        
+    defaultContext  
 
+ 
 newPostCtx :: Context String
 newPostCtx =
     listField "work" defaultContext (recentFirst =<< recentWork)  `mappend` 
+    listField "art" defaultContext (recentFirst =<< recentArt)  `mappend` 
+    listField "teaching" defaultContext (recentFirst =<< recentTeaching)  `mappend` 
     listField "recent" defaultContext (fmap (take 10) . recentFirst =<< recentPosts)   `mappend` 
     dateField "date" "%B %e, %Y"            `mappend` 
     galleryContext `mappend`
@@ -135,6 +140,8 @@ mapInd f l = zipWith f l [0..]
 
 
 --this fancy thing will split posts into 3 groups, not that I use this feature anymore...
+--pass in what you want to list
+--TODO DELETE This function and just use recent/posts/writing/work/art/games/teaching from below since we don't need to split into 3 collums anymore.
 archiveCtx :: [Item String] -> Context String
 archiveCtx posts = 
     let 
@@ -178,10 +185,35 @@ recentPosts = do
     identifiers <- getMatches "posts/*"
     return [Item identifier "" | identifier <- identifiers]
 
+recentWriting :: Compiler [Item String]
+recentWriting = do
+    identifiers <- getMatches "posts/writing/**"
+    return [Item identifier "" | identifier <- identifiers]
+
 recentWork :: Compiler [Item String]
 recentWork = do
     identifiers <- getMatches "posts/portfolio/**"
     return [Item identifier "" | identifier <- identifiers]
+
+
+
+
+recentArt :: Compiler [Item String]
+recentArt = do
+    identifiers <- getMatches $ fromList ["posts/portfolio/ceramics/**","posts/portfolio/mushrooms/**","posts/portfolio/other/**"]
+    return [Item identifier "" | identifier <- identifiers]
+
+recentGames :: Compiler [Item String]
+recentGames = do
+    identifiers <- getMatches "posts/portfolio/games/**"
+    return [Item identifier "" | identifier <- identifiers]
+
+recentTeaching :: Compiler [Item String]
+recentTeaching = do
+    identifiers <- getMatches "posts/teaching/**"
+    return [Item identifier "" | identifier <- identifiers]
+
+
 
 
 --THESE THINGS ARE BROKEN FOR SOME REASON...

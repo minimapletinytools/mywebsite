@@ -1,0 +1,151 @@
+---
+title: CTIN 486 Immersive Game Design Workshop FALL 14
+date: December 8, 2015
+projectdate: Fall 2014
+tags: games USC teaching
+thumbnail: mushroom_throne/thumb.jpg
+gallery: mushroom_throne/IMG_1708.jpg mushroom_throne/IMG_4856.JPG mushroom_throne/SHRUNKIMG_7065.jpg mushroom_throne/IMG_1726.jpg mushroom_throne/IMG_4869.JPG mushroom_throne/SHRUNKIMG_7089.jpg mushroom_throne/IMG_4825.JPG mushroom_throne/SHRUNKIMG_7007.jpg	mushroom_throne/IMG_4827.JPG mushroom_throne/SHRUNKIMG_7039.jpg mushroom_throne/IMG_4853.JPG mushroom_throne/SHRUNKIMG_7044.jpg mushroom_throne/danger.png
+---
+
+# SYLLABUS
+
+```
+CTIN 486 Immersive Game Design Workshop FALL 14 SYLLABUS
+
+Lecturer: Peter Lu
+TA: Malika Prisarojn
+
+::INTRODUCTION::
+In this class we will learn to design games for new 'immersive' hardware through experimentation. Class time will be split roughly evenly between discussion, critique, and workshopping (including tutorials and technical QA). The actual structure of the class will be dynamic and depend on student interest. Below is a general outline:
+
+The class will be split into three segments. The first segment, 'body', we will focus on interaction in physical space and bridging this into the digital space.
+
+In the second segment, 'output', we will be developing games to play on VR headsets that you will be making out of cardboard and android phones. 
+
+In the third segment, 'input', we will be developing games for either the leap motion or the kinect.
+
+There is also a class tumblr where many things pertaining to the class will be posted for reference http://ctin486f14.tumblr.com/
+
+::PREREQUESITES::
+In the spirit of experimentation and learning, there are no requirements for this class. Having said that, if you are not familiar with Unity and the basics of programming expect to either A. work very hard to figure this out or B. use your creativity to work around your limitations! There will be several lectures on using Unity but these will be catered to a more general audience. These lectures will outline the important steps but will not go into step-by-step detail. Workshops for specialized hardware and techniques (kinect, leap motion, mobile, networking) will go into more detail. As USC students, you all have access to tutorial videos of exceptional quality on Lynda.com which I strongly advise you all to use as a supplementary source.
+
+We will be using Android phones, Kinects and Leap Motions. Depending on harware availability, I will be assigning you into groups. As an IMGD student though, you should seriously consider investing in an Android phone for development. If you're interested in motion controls, consider investing in a Kinect and/or Leap Motion as well. Since this tech has been available for some time now, they can all be purchased refurbished for very little. If you're really in a pinch, you can also get a free loaner phone from https://www.dvlup.com/loan. We will also be using various (cheap) physial construction materials such as cardboard, foam, wire and paper which you will be expected to obtain yourself (try the dumpster at your local art supply store). Finally, if you have one, you may optionally choose to use an arduino in my class.
+
+A note regarding Android phones. Tablets are ok (if not better for a wider FOV). Apple phones are also OK but the process is much more complicated and we will not cover it in class. For apple phones, an OSX machine is required though you MAY be able to use a lab machine for this. There is also a $99 development account fee but you MAY be able to use an IMGD account together with TestFlight. We're still looking into this so don't count on it! In general, I would suggest sticking to Android phones as (speaking from experience) devloping for Android phones is much more straightforward.
+
+::AGENDA::
+-BODY, wk 1-6
+	-lectures
+		-introductions
+			-what do you want to learn from this class?
+		-discussions about immersive game design
+	-workshops
+		-physical construction techniques
+		-unity basics
+-IO, wk 7-15 (exact schedule subject to change)
+	7 - classroom aquatic talk by Adeline.
+		Brainstorm for assignment 2 ideas.
+		android + unity development pipeline workshop
+	8 - networking workshop 
+	9 - role playing + gameplay discussion
+		leap motion workshop
+	10 - kinect workshop
+	11 - Peter Lu + Malika artist talk
+		work time
+	12 - milestone deadline
+	13 - classroom pechakucha
+		work time
+	14 - first draft of project due (worth 35% of your project grade)
+	15 - final project due
+
+
+	-lectures
+		-'Classroom Aquatic' guest lecture by Adeline Ducker
+		-discussions on VR and its history
+		-discussions on motion controls and its history
+		-Peter + Malika artist lecture
+		-class pechakucha
+	-workshops
+		-unity networking
+		-building VR2GO
+		-development using MxR plugin in Unity
+		-developing for LEAP in Unity
+		-developing for Kinect in Unity
+		-mobile development pipeline overview
+
+::GRADING::
+Attendance is mandatory. Each unexcused absence will deduct 5%. If you can not attend class for whatever reason, you must inform me with at least 24 hours advanced notice otherwise you will be marked as absent. Being more than 10 minutes late will deduct 1.5% from your grade. Being more than 30 minutes late will count as an absence.
+
+Otherwise, the class wil be graded as follows:
+
+%40 - participation
+%60 - assignments (three assignments are equally weighted)
+
+Participation involves coming to class on time and being attentive. A more specific grading rubric for individual assignments will be announced when they are assigned but they will be worth 20% each.
+
+::ASSIGNMENTS::
+There will be two major assignments (one for each segment), with progress milestones due about every other week. Grades will be uploaded on Blackboard as in a timely fashion. The exact details of these assignments are subject to change. Assignment outlines are available below.
+
+:ASSIGNMENT 1:
+design, develop, and build a digital game that has a physical gameplay component. The physical component may be analog (e.g. a pillow fight) or digital (e.g. Johann Sebastian's Joust).
+-requirements
+	-must have involve at least one hand fabricated prop that is either mechanically or thematically essential to the game.
+		-this could be a modification/add-on a pre-existing prop.
+	-while physical gameplay is a requirement, the digital portion of the game need not take user input.
+	-try not to break anything ;).
+-due Sept 23.
+-examples
+	-"B.U.T.T.O.N"
+	-"Johann Sebastian's Joust"
+	-"Hapenning Game" by Increpare/Stephen Lavalle
+	-"Wizard Takes All" by Eddo Stern
+	-"Cockfight" by Eddo Stern
+	-"Tekken Torture Tournament" by Eddo Stern
+	-various UCLA Game Lab projects
+		-http://games.ucla.edu/game/super-tap-saga/
+		-http://games.ucla.edu/game/beat-down/
+		-http://flatland.games.ucla.edu/
+		-http://games.ucla.edu/game/fromage-a-trois/
+		-http://games.ucla.edu/game/talk-therapy/
+		-http://games.ucla.edu/game/tube-monkey/
+		-http://games.ucla.edu/game/cosmic-cardinal-catching/
+		-http://games.ucla.edu/game/rhythm-game/
+
+:PRE-ASSIGNMENT EXERCISES:
+-There will be several graded exercises preceeding assignment 2. They will follow each workshop and be due the following week. They will more or less be built on what I go through in class. The exact prompt will be announced in class the day of the workshop. The exercises will be evaluated in class the following week.
+
+:ASSIGNMENT 2:
+-design, develop, and build a game that is played with a hand made virtual reality head set.
+-there will be one milestone, one deadline, followed by a final submission a week later that incorporates feedback from the first deadline. Please see syllabus for the exact scheduling.
+-requirements:
+	-'interesting' headpiece that holds the viewer and phone to the player's head. It must be more than just something that holds the phone to your head. 
+	-must be multiplayer. Player interaction must be meaningful. Interaction need not be digital.
+	-must use a network connection. The actual messages being transfered between two platforms can however be minimal. For example, it could be as simple as a single win/lose state message.
+	-must use one additional piece of hardware. This could be kinect, leap motion, arduino or your choice of alternative input devices. It could also be a purely mechanical prop that you build yourself. In this case, the prop must be an integral part of the gameplay.
+-examples
+	-games + costumes:
+		-http://eddostern.com/works/waco-resurrection/
+		-http://games.ucla.edu/game/flatland/
+		-http://kotaku.com/5904517/using-strap-on-joysticks-to-fight-with-fake-dicks/
+	-VR
+		-http://en.wikipedia.org/wiki/Virtual_Boy
+		-http://en.wikipedia.org/wiki/Virtuality_(gaming)
+		-https://www.youtube.com/watch?v=KHaTnVtkH3c (oddly enough I couldn't find a wikipedia page for this despite all the VR hype)
+		-google cardboard
+		-http://www.engadget.com/2014/05/07/birdly/
+		-classroom aquatic
+		-http://scottstephan.org/work/anamnesis/
+
+
+::Statement on Academic Conduct and Support Systems::
+ 
+:Academic Conduct:
+Plagiarism – presenting someone else’s ideas as your own, either verbatim or recast in your own words – is a serious academic offense with serious consequences.  Please familiarize yourself with the discussion of plagiarism in SCampus in Section 11, Behavior Violating University Standards https://scampus.usc.edu/1100-behavior-violating-university-standards-and-appropriate-sanctions.  Other forms of academic dishonesty are equally unacceptable.  See additional information in SCampus and university policies on scientific misconduct, http://policy.usc.edu/scientific-misconduct.
+
+Discrimination, sexual assault, and harassment are not tolerated by the university.  You are encouraged to report any incidents to the Office of Equity and Diversity http://equity.usc.edu  or to the Department of Public Safety http://capsnet.usc.edu/department/department-public-safety/online-forms/contact-us.  This is important for the safety of the whole USC community.  Another member of the university community – such as a friend, classmate, advisor, or faculty member – can help initiate the report, or can initiate the report on behalf of another person.  The Center for Women and Men http://www.usc.edu/student-affairs/cwm/ provides 24/7 confidential support, and the sexual assault resource center webpage http://sarc.usc.edu describes reporting options and other resources.
+
+:Support Systems:
+A number of USC’s schools provide support for students who need help with scholarly writing.  Check with your advisor or program staff to find out more.  Students whose primary language is not English should check with the American Language Institute http://dornsife.usc.edu/ali, which sponsors courses and workshops specifically for international graduate students.  The Office of Disability Services and Programs http://sait.usc.edu/academicsupport/centerprograms/dsp/home_index.html provides certification for students with disabilities and helps arrange the relevant accommodations.  If an officially  declared emergency makes travel to campus infeasible, USC Emergency Information http://emergency.usc.edu will provide safety and other updates, including ways in which instruction will be continued by means of blackboard, teleconferencing, and other technology.
+```
+
+# PROJECTS 
