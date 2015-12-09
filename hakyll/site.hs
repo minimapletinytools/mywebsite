@@ -121,6 +121,7 @@ newPostCtx =
 
 
 
+--TODO add code for auto gallery. need to pass in folder name
 galleryContext :: Context a
 galleryContext = field "gallery" $ \item -> do
     metadata <- getMetadata (itemIdentifier item)
@@ -130,7 +131,10 @@ galleryContext = field "gallery" $ \item -> do
             else "<img src=\"" ++ (toUrl "images/" ++ s ++ "\"") ++ " />"
         gallery = fromMaybe "" $ Map.lookup "gallery" metadata    
         splitted = fmap process (words gallery)
-    return $ unlines splitted 
+    if splitted !! 0 == "auto" 
+    then return $ unlines (skip 1 splitted) --TODO auto gallery
+    --else if splitted !! 0 == "default" --TODO folder auto only
+    else return $ unlines splitted 
 
         
 
