@@ -1,13 +1,17 @@
 ---
 title: CTIN 486 Immersive Game Design Workshop FALL 14
 date: December 8, 2015
-projectdate: Fall 2014
 tags: games USC teaching
-gallery: 
+gallery: auto ../../images/usc_imgd_486_f14
 ---
 
-# SYLLABUS
+This class was taught in [Interactive Media and Games](http://interactive.usc.edu/) department at USC Fall semester 2014. The goal of the class was teach critical thinking around alternative interfaces. The first assignment required a physical component to allow students to explore design ideas using tools outside of prototypical game design.
 
+The final assignment was designed to subvert conventional uses of virtual reality headsets and acknowledge the importance of physical space and social context. The assignment was to design a multiplayer game where a player wearing a self-made VR headset needed to interact with another player by non-digital means. Students were required to build their own VR headsets to consider how physical elements influence the concept and function of a game. Similarly, enforcing non-digital interaction with another player created interesting tension between the necessary social interactions and the prototypically solitary exprience of virtual reality.
+
+The class included two guest lectures to expand the scope of ideas. [Adeline Ducker](http://cargocollective.com/adelineducker) spoke about her own work and experience as an independent game developer. [Sam Roberts](https://www.linkedin.com/in/samashtonroberts) spoke about the use of masks in commedia dell'arte connecting this to the idea that virtual reality headsets can be seen as a mask to role play virtual reality fantasies (i.e. that the player is imagining a VR fantasy that is more than the experience itself). 
+
+### SYLLABUS
 ```
 CTIN 486 Immersive Game Design Workshop FALL 14 SYLLABUS
 
@@ -147,4 +151,9 @@ Discrimination, sexual assault, and harassment are not tolerated by the universi
 A number of USC’s schools provide support for students who need help with scholarly writing.  Check with your advisor or program staff to find out more.  Students whose primary language is not English should check with the American Language Institute http://dornsife.usc.edu/ali, which sponsors courses and workshops specifically for international graduate students.  The Office of Disability Services and Programs http://sait.usc.edu/academicsupport/centerprograms/dsp/home_index.html provides certification for students with disabilities and helps arrange the relevant accommodations.  If an officially  declared emergency makes travel to campus infeasible, USC Emergency Information http://emergency.usc.edu will provide safety and other updates, including ways in which instruction will be continued by means of blackboard, teleconferencing, and other technology.
 ```
 
-# PROJECTS 
+## PROJECTS 
+
+
+<div id="gallery"></div>
+
+
