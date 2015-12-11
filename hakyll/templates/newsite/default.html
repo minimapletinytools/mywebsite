@@ -12,6 +12,9 @@
     
     <!-- Custom styles for this template -->
     <link href="/css/only.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/css/cheats.js"></script>
   </head>
 
   <body bgcolor="#FFFFEE">
@@ -28,8 +31,16 @@
       </div>
       <div class="top-section">
         work: 
-        $if(work)$
-        $for(work)$
+        $if(art)$
+        $for(art)$
+         <a href="$url$">$title$</a>&nbsp&nbsp
+        $endfor$
+        $endif$
+      </div>
+      <div class="top-section">
+        games: 
+        $if(games)$
+        $for(games)$
          <a href="$url$">$title$</a>&nbsp&nbsp
         $endfor$
         $endif$

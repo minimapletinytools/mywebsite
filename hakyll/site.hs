@@ -11,6 +11,7 @@ import           Data.List.Split (chunksOf, splitOn)
 import           Data.Time.Clock (UTCTime)
 import           Data.Time.Format (parseTime)
 import           Data.Maybe (fromMaybe)
+import           Debug.Trace (trace)
 import qualified Data.Map as Map
 
 
@@ -40,19 +41,11 @@ main = hakyll $ do
         compile copyFileCompiler
 
     --generate posts
-    match "posts/portfolio/**" $ do
-        route $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/newsite/item-project.html" newPostCtx
-            >>= saveSnapshot "content"
-            >>= loadAndApplyTemplate "templates/newsite/default.html" newPostCtx
-            >>= relativizeUrls
-
-    forM_ ["posts/writing/**","posts/*"] $ \p ->
+    forM_ ["posts/**"] $ \p ->
         match p $ do
             route $ setExtension "html"
             compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/newsite/item-post.html" newPostCtx
+                >>= loadAndApplyTemplate "templates/newsite/item-project.html" newPostCtx
                 >>= saveSnapshot "content"
                 >>= loadAndApplyTemplate "templates/newsite/default.html" newPostCtx
                 >>= relativizeUrls
@@ -111,6 +104,7 @@ newPostCtx :: Context String
 newPostCtx =
     listField "work" defaultContext (recentFirst =<< recentWork)  `mappend` 
     listField "art" defaultContext (recentFirst =<< recentArt)  `mappend` 
+    listField "games" defaultContext (recentFirst =<< recentGames)  `mappend` 
     listField "teaching" defaultContext (recentFirst =<< recentTeaching)  `mappend` 
     listField "recent" defaultContext (fmap (take 10) . recentFirst =<< recentPosts)   `mappend` 
     dateField "date" "%B %e, %Y"            `mappend` 
@@ -130,9 +124,11 @@ galleryContext = field "gallery" $ \item -> do
             then "" 
             else "<img src=\"" ++ (toUrl "images/" ++ s ++ "\"") ++ " />"
         gallery = fromMaybe "" $ Map.lookup "gallery" metadata    
-        splitted = fmap process (words gallery)
-    if splitted !! 0 == "auto" 
-    then return $ unlines (skip 1 splitted) --TODO auto gallery
+        gallerywords = words gallery
+        splitted = fmap process gallerywords
+    if trace (show $ length gallerywords) (((length gallerywords) > 0) && (trace (show (gallerywords !! 0)) (gallerywords !! 0 == "auto")))
+    --then return $ unlines (drop 1 splitted) --TODO auto gallery
+    then return $ "<script type=\"text/javascript\">AutoGallery(\"" ++ (gallerywords !! 1) ++ "\")</script>"
     --else if splitted !! 0 == "default" --TODO folder auto only
     else return $ unlines splitted 
 
@@ -204,7 +200,7 @@ recentWork = do
 
 recentArt :: Compiler [Item String]
 recentArt = do
-    identifiers <- getMatches $ fromList ["posts/portfolio/ceramics/**","posts/portfolio/mushrooms/**","posts/portfolio/other/**"]
+    identifiers <- getMatches $ "posts/portfolio/art/**"
     return [Item identifier "" | identifier <- identifiers]
 
 recentGames :: Compiler [Item String]
@@ -228,6 +224,8 @@ recentPostList = do
     list    <- applyTemplateList itemTpl defaultContext posts
     return list
 
+
+--CAN DELETE
 workList :: Compiler String
 workList = do
     posts   <- recentFirst =<< recentWork
