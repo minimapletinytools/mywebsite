@@ -1,0 +1,8 @@
+---
+title: CTIN 486 Alternative Controller Workshop Spring 16
+date: December 11, 2015
+tags: games USC teaching
+gallery: auto ../../images/usc_imgd_486_s16
+---
+
+-ongoing-
