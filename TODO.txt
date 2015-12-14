@@ -1,5 +1,9 @@
 rsync -r ./_site cmspice@ftp.robotbear.org:pdlla.org/
 
+::TODO::
+-clean up server bc of bad rsync
+-add fabric sim stuff
+
 -navigation
 	-about
 	-games

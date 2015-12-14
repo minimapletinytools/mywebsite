@@ -1,4 +1,4 @@
-var fileextension = [".png", ".jpg",".JPG"];
+var fileextension = [".png", ".jpg",".JPG", ".gif"];
 
 function AutoGallery(dir){
 	$.ajax({
