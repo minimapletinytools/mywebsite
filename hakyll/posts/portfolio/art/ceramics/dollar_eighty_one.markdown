@@ -13,6 +13,12 @@ Various goods and services sold for $1.81. WIP.
 
 ![](/images/dollar_eighty_one/poster2.png)
 
-[comment]: A small porcelain cup filled with change. I imagine one person decided to put their change in the cup and several other people followed. I was very adament about giving everyone exact change and not taking donations telling people "this is not a charity".
+![](/images/dollar_eighty_one/ceramics1.png)
 
-[comment]: ![]()
+![](/images/dollar_eighty_one/ceramics2.png)
+
+![](/images/dollar_eighty_one/changecup.jpg) 
+*A small porcelain cup filled with change. I imagine one person decided to put their change in the cup and several other people followed. I was very adament about giving everyone exact change and not taking donations telling people "this is not a charity".*
+
+
+### MORE TO COME
