@@ -5,7 +5,7 @@ tags: games USC teaching
 gallery: auto ../../images/usc_imgd_486_f14
 ---
 
-This class was taught in [Interactive Media and Games](http://interactive.usc.edu/) department at USC Fall semester 2014. The goal of the class was teach critical thinking around alternative interfaces. The first assignment required a physical component to allow students to explore design ideas using tools outside of prototypical game design.
+This class was taught in [Interactive Media and Games](http://interactive.usc.edu/) department at USC Fall semester 2014. The goal of the class was teach critical thinking around alternative interfaces. 
 
 The final assignment was designed to subvert conventional uses of virtual reality headsets and acknowledge the importance of physical space and social context. The assignment was to design a multiplayer game where a player wearing a self-made VR headset needed to interact with another player by non-digital means. Students were required to build their own VR headsets to consider how physical elements influence the concept and function of a game. Similarly, enforcing non-digital interaction with another player created interesting tension between the necessary social interactions and the prototypically solitary exprience of virtual reality.
 

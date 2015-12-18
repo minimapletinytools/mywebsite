@@ -11,8 +11,6 @@ Undergraduate upper division class offered in Design | Media Arts and taught by 
 
 ### [Winter 2015](http://classes.dma.ucla.edu/Winter15/157/?page_id=5568)
 
-[comment]: ### [Winter 2016](http://classes.dma.ucla.edu/Fall14/157/)
-
 ## Sample Syllabus
 
 ```

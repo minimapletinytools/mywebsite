@@ -14,13 +14,15 @@ To be placed in the gallery's cupholder. For 6UWY425 Car Gallery.
 ![](/images/misc_art_2015/thumb.jpg)
 
 
+
 ### You can have your cake and eat it too: the technocrat's dream, now reality (Mar. 2015)
 A cake with a picture of itself projected on it. Cake, Projection, exotic woods and expensive knives.
 
 ![](/images/misc_art_2015/cake.jpg)
 
 
+
 ### Biased Data, A Panel Discussion on Intersectionality and Internet Ethics (Nov. 2015)
-Presented by the technodiversity team at the voidLAB
+Presented by the technodiversity team at the voidLAB. A video recording of the entire panel can be viewed [here](https://www.youtube.com/watch?v=pciMwEAlH7Y&list=PLeHWLvSsSQpib4ov4x0Fda40vSOXA836j).
 
 ![](/images/misc_art_2015/BiasedDataBanner.jpg)
