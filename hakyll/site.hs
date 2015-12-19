@@ -70,7 +70,7 @@ main = hakyll $ do
                 >>= relativizeUrls           
 
     -- Build special pages
-    forM_ ["404.markdown","about.markdown"] $ \p ->
+    forM_ ["404.markdown","about.markdown","cv.markdown","microblog.markdown"] $ \p ->
         match p $ do
             route   $ setExtension "html"
             compile $ pandocCompiler
