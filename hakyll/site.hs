@@ -126,7 +126,7 @@ galleryContext = field "gallery" $ \item -> do
         gallery = fromMaybe "" $ Map.lookup "gallery" metadata    
         gallerywords = words gallery
         splitted = fmap process gallerywords
-    if trace (show $ length gallerywords) (((length gallerywords) > 0) && (trace (show (gallerywords !! 0)) (gallerywords !! 0 == "auto")))
+    if (length gallerywords > 0) && (gallerywords !! 0 == "auto")
     --then return $ unlines (drop 1 splitted) --TODO auto gallery
     then return $ "<script type=\"text/javascript\">AutoGallery(\"" ++ (gallerywords !! 1) ++ "\")</script>"
     --else if splitted !! 0 == "default" --TODO folder auto only
