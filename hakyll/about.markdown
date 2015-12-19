@@ -11,9 +11,9 @@ MOTD - 12/4/2015:
 
 Here are some marginalized people that have been very influential in my life:
 
-[hsinyu lin](http://hsinyulin.info/)
-[Mistriss Iris](http://www.dominatrixiris.com/)
-[Aliah Magdalena Dark](https://dma.ucla.edu/grad/profiles/?ID=156)
+- [hsinyu lin](http://hsinyulin.info/)
+- [Mistriss Iris](http://www.dominatrixiris.com/)
+- [Aliah Magdalena Dark](https://dma.ucla.edu/grad/profiles/?ID=156)
 
 ---------------------
 
