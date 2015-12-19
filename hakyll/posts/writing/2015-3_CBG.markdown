@@ -1,6 +1,6 @@
 ---
 title: World-Centric Massively Multiplayer Online Game Design
-date: March, 2015
+date: March 15, 2015
 tags: blog, paper, MMOG, Game Design
 ---
 

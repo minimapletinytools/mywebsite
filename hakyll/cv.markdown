@@ -1,8 +1,5 @@
 ## CV
 
-### Website
-[You're already here](http://pdlla.org).
-
 ### Summary
 I am an independent game designer and artist. His practice includes ceramics, game design, carpentry, code, fermentation, math, mycology and feminist social activism. I works towards the deconstruction of white supremacist capitalist patriarchy. To this end, my work tackles the personal and the political. I believe to rightfuly influence the world, I must continuously understand how the world influences me.
 
