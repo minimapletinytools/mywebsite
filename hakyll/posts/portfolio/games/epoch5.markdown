@@ -3,7 +3,7 @@ title: EPOCH 5: Paradigm Shfit
 date: December 18, 2015
 projectdate: 2015, WIP
 tags: games singularity
-thumbnail: epoch5[thumb].png
+thumbnail: [epoch5]thumb.png
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jOOk6y_chSI" frameborder="0" allowfullscreen></iframe>
