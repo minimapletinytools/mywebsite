@@ -141,7 +141,8 @@ mapInd f l = zipWith f l [0..]
 
 --this fancy thing will split posts into 3 groups, not that I use this feature anymore...
 --pass in what you want to list
---TODO DELETE This function and just use recent/posts/writing/work/art/games/teaching from below since we don't need to split into 3 collums anymore.git s
+--TODO DELETE This function and just use recent/posts/writing/work/art/games/teaching from below since we don't need to split into 3 collums anymore.git 
+--old code is still there but I don't use it
 archiveCtx :: [Item String] -> Context String
 archiveCtx posts = 
     let 
@@ -149,17 +150,17 @@ archiveCtx posts =
         splitPosts = chunksOf ((size+2) `quot` 3) posts
         start = constField "title" "Archives" `mappend` 
                 newPostCtx `mappend`
-                listField "posts" newPostCtx (return posts)
+                listField "posts" newPostCtx (recentFirst posts)
         map1 = map return splitPosts
         map2fn a x = listField ("posts" ++ (show (x+1))) newPostCtx $ a
         map2 = mapInd map2fn map1
     in 
-        foldr mappend start map2
+        --foldr mappend start map2
         --the above code is equivalent to the below, except it can do N collumns (hardcoded to 3)
         --listField "posts1" newPostCtx (return $ splitPosts !! 0) `mappend`
         --listField "posts2" newPostCtx (return $ splitPosts !! 1) `mappend`
         --listField "posts3" newPostCtx (return $ splitPosts !! 2) `mappend`
-        
+        start
 
 --------------------------------------------------------------------------------
 feedContext :: Context String
