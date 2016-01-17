@@ -5,8 +5,133 @@ tags: games USC teaching
 gallery: auto ../../images/usc_imgd_486_s16
 ---
 
-This class to be taught Spring 2016. 
+This class is currently being taught in the [Interactive Media and Games](http://interactive.usc.edu/) department. 
 
 ## SYLLABUS
+```
+CTIN 486 Alternative Controller Workshop Spring 16 SYLLABUS
 
-TBA
+Professor: Peter Lu, <chippermonky@gmail.com>, http://pdlla.org/
+TA: Elaine Gomez, <elamgomez@gmail.com>, http://www.emgomez.com/
+Materials fee: ~$60
+
+::COMMITMENT TO DIVERSITY AND SAFER SPACES
+
+In this class, we make a commitment to foster a welcoming and supportive environment where students of all identities and backgrounds can flourish. This means that we will issue content warnings as appropriate, use preferred pronouns, and respect self-identifications. While debate and discussion are welcome, please remain aware of the implications of your words and the images that you include in your work. If the instructor or another student points out that something you have said or shared with the group might be offensive, avoid being defensive; this is a valuable opportunity for us to grow and learn together. If you have a concern about any aspect of the class, you are encouraged to speak with the instructor. If you feel uncomfortable speaking with the instructor, you are also welcome to speak with either the undergraduate or graduate advisor for the division, who can discuss the issue with you directly or point you toward other on- and off-campus resources for addressing your concern.
+
+::COMMITMENT TO DIVERSITY AND SAFER SPACES (this one is not copy pasted from USC IMD Admin)
+We enter this class with an understanding that we are all human beings with our own internalized prejudices.
+
+The sad reality is this class is not a safe space. And while many of have made your environment tolerable by developing survival techniques,
+
+And so I ask ever
+
+Grades in there present form are product of an unforgiving capitalist economy.  
+
+::INTRODUCTION::
+
+Welcome to CTIN 486 Alternative Control Workshop!! The physical interface of a game is an integral part of the experience. The goal of this class is to develop both a practical and theoretical understanding of game controls. We are especially interested in the political, and cultural dimensions of a game's physical interface. Here are some questions we might try to answer in this class:
+
+"What and whose narratives are being told through the development and production of virtual reality technology?" 
+"What are the environmental and economic consequences of an innovation driven games innovationdustry?"
+"How does has physical interface driven accessiblity in video games in the last decade?"
+
+As a workshop class, much of the learning in this class will come through experimentation. We will have 6 days on arduino tutorials and fabrication techniques. This is to give you tools needed to explore the subjects of this class.
+
+There are no prerequisites to this class. The mindset I promote for this class is to come in and forget everything you know about games. I find that games developed with outside perspectives tend to be the most interesting.
+
+::GUEST LECTURERS
+This class will include several guest lectures to expand upon the ideas of this class. Read up on them and their work before they come and talk! 
+
+Behnaz Farahi http://www.behnazfarahi.com/
+hsinyu lin http://hsinyulin.info
+Kate Hollenbach http://www.katehollenbach.com/
+
+::MATERIALS
+
+In this class we will work with Arduino and learn how to use basic sensors and you will use them in your assignments. I will do a group purchase for arduino starter kits (~$55) to make sure we all have them on time. You are free to use your own arduino and sensors. I'm currently working with the departament on providing soldering and electronics equipment and a space to use them.
+
+::ASSIGNMENT 1 - Custom Controller Assignment
+
+For this assignment, you will use a combination of fabrication, arduino, and any other tools of your choice, to build your own custom controller for a game of your choice.
+
+Requirements:
+1. Must use arduino with at least one sensor. 
+2. Developed aesthetic. (i.e. no breadboard + sensor aesthetic)
+3. A 2-page paper on how your controller changes the cultural or political aspect of the game. 
+
+DUE: 3/4
+
+Extra Credit: Build a customized output element. This could be a physical device that affects the way you see/hear/feel the game. This could also be feedback device hooked up to a sensor that reads output from the game (for example, the vibration motor of the controller, or a light sensore that you tape onto the monitor)
+
+::ASSIGNMENT 2 - 
+
+For this assignment you will develop your own game that uses alternative interfaces to express a serious point of view. 
+
+Pitch: You must present your concept to us first and incorporate our feedback. Please prepare a 5-10 minute presentation on your idea.
+
+Requirements: 
+1. Must have a physical element that is integral to the experience of the game.
+2. Must express a critical or personal point of view.
+3. The control must be an integral part of this expression! 
+4. Software component is OPTIONAL!
+
+DUE: 4/22
+
+::GRADING 
+
+%50 - participation
+%50 - assignments 
+
+::TENTATIVE SCHEDULE
+
+1 - 1/15: introductions, Controller Lecture, ORDER YOUR ARDUINOS
+	-Handout: syllabus, questionaire
+2 - 1/22: Arduino Workshop 
+	-Arduino introduction 
+	-Arduino Software
+	-Setting up Arduino
+	-Blinky LED
+	-Serial IN/OUT
+	-digital sensors (buttons, switches, etc)
+3 - 1/29: Arduino Workshop
+	-Elecrtronics theory 101
+	-Analog sensors (potentiometers, photoresistors, etc)
+4 - 2/5: Arduino Workshop
+	-capactiative sensors
+	-servos, motors
+	-hooking up arduino with unity
+5 - 2/12: Arduino Workshop
+	-soldering demo
+	-Handout: Takehome quiz
+6 - 2/19: Fabrication Workshop 
+	-Due: quiz due
+	-sewing demo
+	-other construction techniques
+7 - 2/26: Fabrication Workshop
+	-everyone bring some junk and lets party
+8 - 3/4: Guest Lecture + Playtest/Critique
+9 - 3/11: Serious Games Lecture + Discussion
+10 - 3/18: Guest Lecture + PITCH DAY 
+11 - 3/25: VR history lecture
+12 - 4/1: Work Day
+13 - 4/8: Guest Lecture
+14 - 4/15: Perfect Woman Demo + diversity in games lecture
+15 - 4/22: Final Project Playtest/Critique
+
+::STATEMENT ON ACADEMIC CONDUCT AND SUPPORT SYSTEMS
+ 
+:Academic Conduct:
+Plagiarism – presenting someone else’s ideas as your own, either verbatim or recast in your own words – is a serious academic offense with serious consequences.  Please familiarize yourself with the discussion of plagiarism in SCampus in Section 11, Behavior Violating University Standards https://scampus.usc.edu/1100-behavior-violating-university-standards-and-appropriate-sanctions.  Other forms of academic dishonesty are equally unacceptable.  See additional information in SCampus and university policies on scientific misconduct, http://policy.usc.edu/scientific-misconduct.
+
+Discrimination, sexual assault, and harassment are not tolerated by the university.  You are encouraged to report any incidents to the Office of Equity and Diversity http://equity.usc.edu  or to the Department of Public Safety http://capsnet.usc.edu/department/department-public-safety/online-forms/contact-us.  This is important for the safety of the whole USC community.  Another member of the university community – such as a friend, classmate, advisor, or faculty member – can help initiate the report, or can initiate the report on behalf of another person.  The Center for Women and Men http://www.usc.edu/student-affairs/cwm/ provides 24/7 confidential support, and the sexual assault resource center webpage http://sarc.usc.edu describes reporting options and other resources.
+
+:Support Systems:
+A number of USC’s schools provide support for students who need help with scholarly writing.  Check with your advisor or program staff to find out more.  Students whose primary language is not English should check with the American Language Institute http://dornsife.usc.edu/ali, which sponsors courses and workshops specifically for international graduate students.  The Office of Disability Services and Programs http://sait.usc.edu/academicsupport/centerprograms/dsp/home_index.html provides certification for students with disabilities and helps arrange the relevant accommodations.  If an officially  declared emergency makes travel to campus infeasible, USC Emergency Information http://emergency.usc.edu will provide safety and other updates, including ways in which instruction will be continued by means of blackboard, teleconferencing, and other technology.
+```
+
+## PROJECTS 
+
+coming soon
+
+<div id="gallery"></div>

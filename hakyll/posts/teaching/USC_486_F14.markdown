@@ -5,7 +5,7 @@ tags: games USC teaching
 gallery: auto ../../images/usc_imgd_486_f14
 ---
 
-This class was taught in [Interactive Media and Games](http://interactive.usc.edu/) department at USC Fall semester 2014. The goal of the class was teach critical thinking around alternative interfaces. 
+This class was taught in the [Interactive Media and Games](http://interactive.usc.edu/) department at USC Fall semester 2014. The goal of the class was teach critical thinking around alternative interfaces. 
 
 The final assignment was designed to subvert conventional uses of virtual reality headsets and acknowledge the importance of physical space and social context. The assignment was to design a multiplayer game where a player wearing a self-made VR headset needed to interact with another player by non-digital means. Students were required to build their own VR headsets to consider how physical elements influence the concept and function of a game. Similarly, enforcing non-digital interaction with another player created interesting tension between the necessary social interactions and the prototypically solitary exprience of virtual reality.
 
@@ -151,7 +151,8 @@ Discrimination, sexual assault, and harassment are not tolerated by the universi
 A number of USC’s schools provide support for students who need help with scholarly writing.  Check with your advisor or program staff to find out more.  Students whose primary language is not English should check with the American Language Institute http://dornsife.usc.edu/ali, which sponsors courses and workshops specifically for international graduate students.  The Office of Disability Services and Programs http://sait.usc.edu/academicsupport/centerprograms/dsp/home_index.html provides certification for students with disabilities and helps arrange the relevant accommodations.  If an officially  declared emergency makes travel to campus infeasible, USC Emergency Information http://emergency.usc.edu will provide safety and other updates, including ways in which instruction will be continued by means of blackboard, teleconferencing, and other technology.
 ```
 
-## STUDENTS 
+## SELECTED STUDENTS 
+selected on the criterion of those people whom I was able to find websites for
 - [Brendan Lobuglio](http://www.brendanlobuglio.com/#/immersiveexperiments/)
 - [Neilson Koerner-Safrata](http://www.neilsonks.com/)
 - [Zach Suite](http://zachsuite.com/373769/5437331/digital-games/adapt)
