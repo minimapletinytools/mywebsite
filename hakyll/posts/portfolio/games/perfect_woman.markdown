@@ -2,7 +2,7 @@
 title: Perfect Woman
 date: September 22, 2014
 projectdate: 2012-2015
-thumbnail: [perfect_woman]thumb.png
+thumbnail: perfect_woman/thumb.png
 tags: games
 ---
 
@@ -27,11 +27,15 @@ The core mechanic involves performing characters by matching poses to the best o
 
 There are no right or wrong choices though, and there is no right or wrong way to play the game. Your choices may differ, and if you perform poorly, you may even die young. But this is just another fact in your Perfect Woman life story.
 
-![](/images/[perfect_woman]thumb.png)
+![](/images/perfect_woman/thumb.png)
 
 Lea and Peter first met and started collaborating on Perfect Woman at the UCLA Game Lab in 2012. With a mutual interest in examining social issues through interactivity, and finding new and interesting ways to tell narratives in games, they started collaborating on Perfect Woman. The game is currently complete and has been received with critical acclaim including an IGF nomination. The two developers are in the process of publishing the game on a Xbox One to make the game available to a wider audience.
 
 Lea Schoenfelder is an artist and animator from Germany. She has made several critically acclaimed games addressing social issues in her iconic style. Her games include the IGF award winning [Ulitisa Dmitrova](https://www.youtube.com/watch?v=6kikDI7E6EY) exploring youth poverity in St. Petersburg and the gorgeously illustrated and poignant [Ute](http://www.rockpapershotgun.com/2014/01/17/s-exe-ute-by-lea-schonfelder-nsfw/).
+
+[Some more writing on Perfect Woman](posts/writing/2016-13-3_perfect_woman.html)
+
+[Lea's thesis paper on Perfect Woman](/images/perfect_woman/PerfectWomanBooklet.pdf)
 
 
 
