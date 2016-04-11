@@ -63,24 +63,25 @@ Requirements:
 1. Must use arduino with at least one sensor. 
 2. The controller must change BOTH the way you play and interpret the game (refer to examples given in class)
 3. Must have a unique and developed look and feel. The controllers do not need to look "good", but they do need to look interesting! Controllers that are just sensors on a breadboard will NOT be accepted. 
-4. Must have a total of at least 6 components including 3 components from the following list:
+4. Must have a total of at least 6 components including 3 advanced components.
 
 DUE: 3/11
 
 Extra Credit: Make your controller responsive to game state. This can be accomplished by using a photoresistor taped to the screen to read output from the game. You could also use a vibration sensor taped to controller with rumble.
 
 ::ASSIGNMENT 2
-For this assignment you will develop your own game that uses a custom physical interface to express a serious point of view. 
+For this assignment you will develop your own "critical" game that uses a custom physical interface.
 
-Pitch: You must present your concept to us first and incorporate our feedback. Please prepare a 5-10 minute presentation on your idea.
+Proposal (due 3/25): You must present your concept to us first and incorporate our feedback. Please prepare a 3-5 minute presentation on your idea. Please email me (chippermonky@gmail.com) your presentation as a PDF for zip archive of images.
 
 Requirements: 
-1. Must have a physical element that is integral to the experience of the game.
-2. Must express a critical or personal point of view.
-3. The control must be an integral part of this expression! 
-4. Software component is OPTIONAL!
+1. A physical/electronic component that is integral to the experience/expression of the game.
+2. The game must have a critical point of view.
+3. A one paragraph description of your game and why it is interesting.
 
-DUE: 4/22
+A software component to this project is NOT required. This is a very open ended project and I would encourage you to go outside your comfort zone. I included some examples of what a game without a software could be.
+
+DUE: 4/29 (last day of class)
 
 ::GRADING 
 
