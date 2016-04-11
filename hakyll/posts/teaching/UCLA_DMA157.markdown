@@ -11,6 +11,8 @@ Undergraduate upper division class offered in Design | Media Arts and taught by 
 
 ### [Winter 2015](http://classes.dma.ucla.edu/Winter15/157/?page_id=5568)
 
+### [Winter 2016](http://classes.dma.ucla.edu/Winter16/157/)
+
 ## Sample Syllabus
 
 ```
@@ -38,6 +40,16 @@ Rouse, Richard, “Game Design: Theory and Practice”, Wordware Publishing, 200
 Crawford, Chris, “Chris Crawford on Game Design”, New Riders Games, 2003 ( ISBN: 9780131460997)
 ```
 
-## Sample Projects
+## Selected Projects
+
+[Hormonal-28](http://classes.dma.ucla.edu/Fall14/157/?p=6218) by [Casey Bradford](http://cargocollective.com/ceb/Casey-Bradford)
+[Will I Get Measles at Disney Land?](http://classes.dma.ucla.edu/Winter15/157/?p=7465) by [Bowan Hesslegrave](http://cargocollective.com/bowanhesslegrave/Bowan-Hesslegrave)
+[Ring by Spring](http://classes.dma.ucla.edu/Winter16/157/?p=7759) by [Lizzie Zweng](http://cargocollective.com/lizziezweng)
+[Ascension](http://classes.dma.ucla.edu/Winter16/157/?p=7344) by [Qiqi Zuo](http://classes.dma.ucla.edu/Fall15/161/projects/qiqi/)
+[Trend Soup](http://classes.dma.ucla.edu/Winter16/157/?p=7671) by [Vita Newstetter](http://cargocollective.com/vitan)
+[Flow](http://classes.dma.ucla.edu/Winter16/157/?p=7892) by [Kain Suwannaphin](http://classes.dma.ucla.edu/~tsuwannaphin/)
+
+
+## Images
 
 <div id="gallery"></div>
