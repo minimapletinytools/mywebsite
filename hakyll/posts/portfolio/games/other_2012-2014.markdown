@@ -7,7 +7,10 @@ tags: games
 ---
 Some of the other games I've made:
 
-* [Absurd Elevator Simulator](https://annamariandrea.itch.io/absur-delevator-simulator) 
+<iframe src="https://itch.io/embed/60076?dark=true" width="552" height="167" frameborder="0"></iframe>
+
+<iframe src="https://itch.io/embed/52950" width="552" height="167" frameborder="0"></iframe>
+
 * [Cosmicat Crunchies](http://games.ucla.edu/game/cosmicat-crunchies/)
 * [Beat Down](http://games.ucla.edu/game/beat-down/)
 * [TIC TAC TOE (Quick Time Event)](http://games.ucla.edu/resource/quick-time-event/)

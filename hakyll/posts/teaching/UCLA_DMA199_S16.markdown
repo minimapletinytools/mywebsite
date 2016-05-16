@@ -1,11 +1,10 @@
 ---
 title: UCLA DMA 199 Directed Research, Board Game Finish and Production
 date: April 9, 2016
-tags: games UCLA teaching
-gallery:
+tags: games UCLA teaching 
 ---
 
-##(ONGOING)
+## -- class in progress --
 
 A study group focused on finalizing designs for board games and putting them into production. We created the study group to allow students to continue their final projects from [DMA 157 Game Design](http://pdlla.org/posts/teaching/UCLA_DMA157.html). 
 
@@ -31,10 +30,10 @@ wk 11: 5x final copies due. Game Lab open playtest!
 
 ## Members
 
-[Vita Newstetter](http://cargocollective.com/vitan)
-[Qiqi Zuo]
-[peter lu](http://pdlla.org)
-[Lander *]
+- [Vita Newstetter](http://cargocollective.com/vitan)
+- Qiqi Zuo
+- [peter lu](http://pdlla.org)
+- Lander *
 
 ## Images
 

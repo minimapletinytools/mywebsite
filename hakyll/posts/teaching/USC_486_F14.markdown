@@ -152,7 +152,8 @@ A number of USC’s schools provide support for students who need help with scho
 ```
 
 ## SELECTED STUDENTS 
-selected on the criterion of those people whom I was able to find websites for
+selected on the criterion of those people whom I was able to find websites for:
+
 - [Brendan Lobuglio](http://www.brendanlobuglio.com/#/immersiveexperiments/)
 - [Neilson Koerner-Safrata](http://www.neilsonks.com/)
 - [Zach Suite](http://zachsuite.com/373769/5437331/digital-games/adapt)
