@@ -4,7 +4,7 @@ date: May 15, 2016
 projectdate: May 12th, 2016
 tags: art
 thumbnail: 201/poster.gif
-gallery: auto ../../images/201
+gallery: auto ../../../../images/201
 ---
 
 Instead of making art for my Design | Media Arts MFA thesis, I started an art service. We will come up with a concept for you and take it to execution. We're current closed to new business.
@@ -24,7 +24,8 @@ Best wishes,
 -peter
 ```
 
-![](/images/201/inline/greatart.jpg)
+
+![](/images/201/inline/greatart.png)
 
 -------------------------
 
@@ -43,6 +44,8 @@ Until then, the works in this exhibition will dance and cry together in joy and 
 
 -Echo Theohar
 ```
+
+
 
 ![](/images/201/inline/show.jpg)
 
