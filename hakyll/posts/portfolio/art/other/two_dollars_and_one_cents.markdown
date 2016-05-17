@@ -4,7 +4,7 @@ date: May 15, 2016
 projectdate: May 12th, 2016
 tags: art
 thumbnail: 201/poster.gif
-gallery: 
+gallery: auto ../../images/201
 ---
 
 Instead of making art for my Design | Media Arts MFA thesis, I started an art service. We will come up with a concept for you and take it to execution. We're current closed to new business.
@@ -24,10 +24,30 @@ Best wishes,
 -peter
 ```
 
-![](/images/201/greatart.jpg)
+![](/images/201/inline/greatart.jpg)
 
 -------------------------
 
-When our business first opened, as a promotional offer, we put our cient's work in an exhibition in the New Wight Gallery on May 12th, 2016. The exhibition was curated by one of our many talented clients, [Echo Theohar](http://cargocollective.com/SkyeTheohar), because we believe curation is also a form of art. This exhibition contained works from 15 artists. Please see photographs below from the show as examples of our satisfied customers.
+When our business first opened, as a promotional offer, we put our cient's work in an exhibition in the New Wight Gallery on May 12th, 2016. The exhibition was curated by one of our many talented clients, [Echo Theohar](http://cargocollective.com/SkyeTheohar), because we believe curation is also a form of art. This exhibition contained works from 15 artists. 
 
-Show Catalog
+### Curator's Statement
+
+```
+I started off looking for new media art exhibits to playfully activate the exhibition space generously provided for by the UCLA School of Arts and Architecture. When assembling this show, I noticed all works negotiated themselves against a shared anxiety of our precarious relationship with our technology driven future. 
+
+The layout of the space draws connections between the numerous voices echoing this sentiment. As we struggle with/against the forces that define a collective identity for ourselves, so too is this struggle recreated at a perceivable scale within the confines of these walls.
+
+The stage is now set for the climax of the anthropocene. Like two particles accelerating towards each other in a trans-national multi-billion dollar underground proton synchrotron, approaching 99.999999% the speed of light, the elements of our existential reality are also about to crash spectacularly. Upon collision, new secrets of the fabric of our existence, never before seen, will become apparent (or not!). 
+
+Until then, the works in this exhibition will dance and cry together in joy and sadness.
+
+-Echo Theohar
+```
+
+![](/images/201/inline/show.jpg)
+
+-------------------------
+
+## WORKS FROM OUR SATISFIED CUSTOMERS 
+
+<div id="gallery"></div>

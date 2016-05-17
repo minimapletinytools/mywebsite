@@ -7,6 +7,8 @@ gallery: auto ../../images/usc_imgd_486_s16
 
 This class is currently being taught in the [Interactive Media and Games](http://interactive.usc.edu/) department. The goal of the class is to build a critical framework around game controls and their cultural and political meanings. The class also aims to give everyone a working knowledge of [Arduino](https://www.arduino.cc/) and electronics.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IbDd3dgw9BI" frameborder="0" allowfullscreen></iframe>
+
 ## SYLLABUS
 ```
 CTIN 486 Alternative Controller Workshop Spring 16 SYLLABUS
@@ -143,7 +145,5 @@ Funkster
 Miranda Moyer
 
 ## PROJECTS 
-
-coming soon
 
 <div id="gallery"></div>
