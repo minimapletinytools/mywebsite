@@ -5,7 +5,7 @@ projectdate: 2009-present
 thumbnail: [misc2014]thumb.jpg
 tags: games
 ---
-Some of the other games I've made:
+Some of the other games I've made or partly made:
 
 <iframe src="https://itch.io/embed/60076?dark=true" width="552" height="167" frameborder="0"></iframe>
 
@@ -17,7 +17,7 @@ Some of the other games I've made:
 * [Spot the Dot](http://superhappyfuntimes.net/game/spotthedot)
 * [Tube Monkey](http://games.ucla.edu/game/tube-monkey/)
 * [Catstroke](http://robotbear.org/)
-* [Robotbear (site)](http://robotbear.org/)
+* [Robotbear (site)](http://robotbear.pdlla.org/)
 
 Games I made with Anton Bobkov as pluanbo/anboplu. Please visit our [website](http://anboplu.robotbear.org/).
 

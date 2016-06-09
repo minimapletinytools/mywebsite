@@ -40,3 +40,5 @@ This is a laptop I tried to swindle from the [now deceased startup](https://www.
 ![](/images/misc_art_2015/laptop1.jpg)
 ![](/images/misc_art_2015/laptop2.jpg)
 ![](/images/misc_art_2015/laptop3.jpg)
+
+UPDATE (March, 2016): parents just informed my the lappy died again :(.
