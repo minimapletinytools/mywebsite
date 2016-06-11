@@ -13,6 +13,8 @@ gallery:
 
 Beamtimes and Lifetimes ♠♥♦♣ The Card Game (BTLT) is a card game based on Sharon Traweek’s book of the same name. In BTLT, you play as a research group and compete with other groups over physicists, grants, hardware, and beamtime to solve the mysteries of our making.
 
+*BTLT was commissioned by Sharon Traweek for [$2.01](/posts/portfolio/art/other/two_dollars_and_one_cents.html) and freely available.*
+
 
 ### REQUIREMENTS:
 - 2-4 players
@@ -81,5 +83,6 @@ The game ends when all problems have been solved. The research group(s) with the
 ### FAQ:
 
 What happens to the physicists whose value matches a particle that surely does not exist?
-	Some physicists are just not destined to be great. These physicists may either work hard to narrow in on a solution or move on and become biophysicists instead.
+   Some physicists are just not destined to be great. These physicists may either work hard to narrow in on a solution or move on and become biophysicists instead.
+
 

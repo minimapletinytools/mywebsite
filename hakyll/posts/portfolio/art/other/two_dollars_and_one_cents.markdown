@@ -45,11 +45,30 @@ Until then, the works in this exhibition will dance and cry together in joy and 
 -Echo Theohar
 ```
 
-
+#### [Gallery Catalog](/images/201/catalog.pdf)
 
 ![](/images/201/inline/show.jpg)
 
 -------------------------
+
+## OUR CLIENTS
+
+- [Anton Bobkov](http://www.math.ucla.edu/~bobkov/)
+- [Breelyn Burns](https://www.facebook.com/treelyn.ferns)
+- [Symrin Chawla](http://www.symru.net/)
+- [Aliah Magdalena Darke](https://prettydarke.wordpress.com/)
+- [Adam Ferriss](https://www.adamferriss.com/)
+- [Jesse Flemming](http://jessefleming.com/JRF2015/home.html)
+- [Sanglim Han](http://sanglimhan.work/)
+- [Kate Hollenbach](http://www.katehollenbach.com/)
+- [Peter Lu](http://pdlla.org)
+- [Chandler McWilliams](http://chandlermcwilliams.com/)
+- [Neil Mendoza](http://www.neilmendoza.com/)
+- [mia0](http://hsinyulin.info/)
+- [Ayame Newman](http://www.dominatrixiris.com/)
+- [Jennifer Steinkamp](http://jsteinkamp.com/)
+- [Sharon Traweek](http://www.genderstudies.ucla.edu/faculty/sharon-traweek)
+- [Theo Triantafyllidis](http://theotrian.tumblr.com/)
 
 ## WORKS FROM OUR SATISFIED CUSTOMERS 
 
