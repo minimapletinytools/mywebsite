@@ -3,7 +3,7 @@ title: $2.01
 date: May 15, 2016
 projectdate: May 12th, 2016
 tags: art
-thumbnail: 201/greatart.png
+thumbnail: thumbnails/201.png
 gallery: auto ../../../../images/201
 ---
 

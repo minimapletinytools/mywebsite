@@ -2,7 +2,7 @@
 title: Burn & Turn
 date: September 22, 2014
 projectdate: 2010?
-thumbnail: [dragongame]thumb.png
+thumbnail: thumbnails/dragongame.png
 tags: games, pluanbo, robotbear
 ---
 <iframe src="http://player.vimeo.com/video/32022226?title=0&amp;byline=0&amp;portrait=0" width="420" height="300" frameborder="0" align="center" webkitAllowFullScreen allowFullScreen></iframe>

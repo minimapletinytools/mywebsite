@@ -3,7 +3,7 @@ title: Misc. Art 1
 date: October 28, 2015
 projectdate: 2015
 tags: art
-thumbnail: misc_art_2015/BiasedDataBanner.jpg
+thumbnail: thumbnails/miscart2015.jpg
 gallery: 
 ---
 

@@ -1,9 +1,9 @@
-<div>
+<div class = "thumbnails">
 	$if(posts)$
 		$for(posts)$
 			$if(thumbnail)$
 				<a href="$url$">
-					<img class="projectlistimg" width = "200" src="/images/$thumbnail$" alt="" />
+					<img class="projectlistimg" width = "" src="/images/$thumbnail$" alt="" />
 				</a>
 				<!--<p>$title$</p>-->
 			$else$
@@ -13,4 +13,8 @@
 			$endif$
 		$endfor$
 	$endif$
+
+	<script>
+		jQuery("div.thumbnails").randomize("a");
+	</script>
 </div>

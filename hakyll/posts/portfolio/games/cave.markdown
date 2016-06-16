@@ -3,7 +3,7 @@ title: Cave
 date: September 22, 2014
 projectdate: 2009
 tags: games
-thumbnail: cave/thumb.png
+thumbnail: thumbnails/cave.png
 gallery: cave/1.jpg cave/2.jpg cave/3.jpg cave/4.jpg
 ---
 

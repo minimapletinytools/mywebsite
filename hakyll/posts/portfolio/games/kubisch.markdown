@@ -2,7 +2,7 @@
 title: Kubisch
 date: September 22, 2014
 projectdate: 2010?
-thumbnail: [kubisch]thumb.png
+thumbnail: thumbnails/kubisch.png
 tags: games
 ---
 <iframe src="//player.vimeo.com/video/29509008" width="500" height="283" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="center"></iframe>

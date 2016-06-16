@@ -3,7 +3,7 @@ title: Road Story
 date: December 9, 2015
 projectdate: Fall 2015
 tags: games
-thumbnail: road_story/img1.gif
+thumbnail: thumbnails/roadstory.gif
 gallery: auto ../../../images/road_story
 ---
 

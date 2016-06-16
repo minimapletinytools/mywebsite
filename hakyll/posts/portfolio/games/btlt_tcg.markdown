@@ -3,11 +3,11 @@ title: Beamtimes and Lifetimes ♠♥♦♣ The Card Game
 date: June 6, 2016
 projectdate: 2016
 tags: games
-thumbnail: btlt.png
+thumbnail: thumbnails/btlt.png
 gallery: 
 ---
 
-![](/images/btlt.png)
+![](/images/thumbnails/btlt.png)
 
 ```The unique breed of particle physicists constitutes a community of sophisticated mythmakers--explicators of the nature of matter who forever alter our views of space and time. But who are these people? What is their world really like?```
 

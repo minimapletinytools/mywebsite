@@ -3,7 +3,7 @@ title: $1.81
 date: November 12, 2015
 projectdate: ongoing
 tags: mushrooms art
-thumbnail: dollar_eighty_one/poster.gif
+thumbnail: thumbnails/181.gif
 gallery: 
 ---
 
@@ -15,7 +15,7 @@ Various goods and services sold for $1.81. Ongoing.
 
 ![](/images/dollar_eighty_one/dinner2.jpg)
 
-I showed [EO1 Daikon Cake](https://www.youtube.com/watch?v=xM9XNbZz0UM) of my mom's new youtube cooking show :O.
+I showed [EO1 Daikon Cake](https://www.youtube.com/watch?v=xM9XNbZz0UM) of my [Mom's new youtube cooking show](/posts/portfolio/art/other/pitaloveshummus.html) :O.
 
 ### $1.81 Ceramics Sale (Dec. 2015)
 
