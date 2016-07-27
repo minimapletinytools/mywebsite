@@ -29,9 +29,10 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 - *Fall 2014 - present:*
 	- TA at UCLA, Design | Media Arts. I primarily TA for Eddo Stern's [game design class](http://pdlla.org/posts/teaching/UCLA_DMA157.html). 
 
-### Other Experience
+
+### Professional Experience
 - *August 2008 - present:*
-	- Independent Game Designer and artist. All my work can be seen on my website pdlla.org
+	- Independent Game Designer and artist. All my work can be seen on my [website](pdlla.org)
 
 - *Oct 2012 - January 2015:*
 	- Independent Contractor for Zahner. I helped design and implement a Unity3D web app to customize different Zahner products. App is live at [here](http://www.shopfloorapp.com/).
@@ -40,7 +41,7 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 	- 77-pieces: Software Engineer R&D. 77-pieces develops clothing simulation software for applications in all levels of the fashion industry. Designed, implemented, and maintained fabric collision and simulation code as well as general programming when needed. Used finite elements for fabric simulation and Bridson collision model with a fast reconstructing bounding volume hierarchy. Backend C++ frontend Unity.
 
 - *July 2010 - December 2010:*
-	- Developer for Eddo Stern's [Darkgame](http://eddostern.com/works/darkgame-3/) and UCLA Game Lab’s [Flatland](http://flatland.games.ucla.edu/) (directed by Eddo Stern). Darkgame is a multiplayer game about sensory deprivation programmed in Unity 3D and C#. Wrote the in game and menu UI [visualization](http://vimeo.com/52597481) which used a novel rotating disk with models following a spring based rigid body simulator. Flatland is an experimental multiplayer digital field sport game for Nokia Maemo phones written in Python. Programmed the game, local networking, gesture recognition (from accelerometer data) and camera vision tracking. 
+	- Developer for Eddo Stern's [Darkgame](http://eddostern.com/works/darkgame-3/) and UCLA Game Lab’s [Flatland](http://flatland.games.ucla.edu/) (directed by Eddo Stern). Darkgame is a multiplayer game about sensory deprivation programmed in Unity 3D and C# with a novel physics based menu [UI](http://vimeo.com/52597481).
 
 - *August 2009 - present:*
-	- Resident and volunteer for the [UCLA Game Lab](http://games.ucla.edu/). The UCLA Game Lab is an independent lab focused on researching artistic and expressive potential of games through innovative approaches in game design in both content and form. We harbour a diverse group of talented and motivated individuals all interested in exploring games in this way. I'm very happy to say I've been part of shaping the Game Lab into what it is today.
+	- Resident and volunteer for the [UCLA Game Lab](http://games.ucla.edu/). The UCLA Game Lab is an independent lab focused on researching artistic and expressive potential of games through innovative approaches in game design in both content and form. We harbour a diverse group of talented and motivated individuals all interested in exploring games in this way.

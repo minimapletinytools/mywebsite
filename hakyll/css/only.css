@@ -10,5 +10,6 @@ code, pre {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
     padding:0px;
-    margin:0px
+    margin:0px;
+    color: #444444;
 }
