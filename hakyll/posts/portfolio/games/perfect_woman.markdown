@@ -9,7 +9,7 @@ tags: games
 
 <!--<object data="http://www.perfectwomangame.com" width="100%" height="5000px"> <embed src="http://www.perfectwomangame.com" width="100%" height="5000px"> </embed></object>-->
 
-For more information please visit [our website](http://www.perfectwomangame.com).
+Perfect Woman is coming out on Xbox One September 14th 2016! For more information please visit [our website](http://www.perfectwomangame.com).
 
 <iframe src="//player.vimeo.com/video/75890888?portrait=0&amp;color=fe5607" width="500" height="281" frameborder="0" align="center" webkitallowfullscreen  mozallowfullscreen allowfullscreen></iframe> 
 

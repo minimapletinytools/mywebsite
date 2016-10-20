@@ -12,7 +12,7 @@ Some of the other games I've made or partly made:
 <iframe src="https://itch.io/embed/52950" width="552" height="167" frameborder="0"></iframe>
 
 * [Cosmicat Crunchies](http://games.ucla.edu/game/cosmicat-crunchies/)
-* [Beat Down](http://games.ucla.edu/game/beat-down/)
+* [Beat Down](/posts/hidden/beatdown.html)
 * [TIC TAC TOE (Quick Time Event)](http://games.ucla.edu/resource/quick-time-event/)
 * [Spot the Dot](http://superhappyfuntimes.net/game/spotthedot)
 * [Tube Monkey](http://games.ucla.edu/game/tube-monkey/)

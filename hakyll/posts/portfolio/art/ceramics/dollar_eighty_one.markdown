@@ -35,6 +35,8 @@ Best,
 -peter
 ```
 
+[![scale500](/images/dollar_eighty_one/torworkshop1.jpg)](/images/dollar_eighty_one/torworkshop1.jpg) [![scale500](/images/dollar_eighty_one/torworkshop2.jpg)](/images/dollar_eighty_one/torworkshop2.jpg)
+
 ## $1.81 Mushroom growing workshop (Jul. 2 2016)
 A workshop on growing mushrooms. Workshop slides are viewable [here](https://docs.google.com/presentation/d/1A0nrzZCvWCW-Q8ACsmBhgEOxG1waL7nIFQr9Sl2YDq4/edit?usp=sharing).
 
