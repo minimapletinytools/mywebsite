@@ -5,17 +5,16 @@ tags:
 ---
 
 
-***SET DATE - MOTD:***
+***10/20/2016 - MOTD:***
 ```Perfect Woman is finally released on Xbox ONE. This only took me 4 years and at least 4 totally traumatic events. Pretty good if you ask me. If you happen to have an XB1 with kinect, please consider giving the game a try :).```
 
-***SET DATE- Change Log:***
+
+***12/2/2016 - Change Log:***
 ```
--added full gallery shots to $2.01
--added blender contributor to CV
--updated bio on about page to be slightly more cynical.
--updated link to Aliah Magdalena Dark's website.
--oops, accidentally had an unfinished blog post linked. Moved it to HIDDEN.
+-added top secret page for selected works pdlla.org/posts/hidden/2016-11-30_selected_works.html
+-probably some other minor changes I neglect to mention
 ```
+
 
 ---------------------
 
@@ -42,6 +41,16 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 #### HISTORY
 
 ***Change Log:***
+
+
+***10/20/2016 - Change Log:***
+```
+-added full gallery shots to $2.01
+-added blender contributor to CV
+-updated bio on about page to be slightly more cynical.
+-updated link to Aliah Magdalena Dark's website.
+-oops, accidentally had an unfinished blog post linked. Moved it to HIDDEN.
+```
 
 ***8/23/2016 - Change Log:***
 ```

@@ -30,13 +30,7 @@ wk 11: 5x final copies due. Game Lab open playtest!
 
 ## Members
 
-- [Vita Newstetter](http://cargocollective.com/vitan)
+- [Vita Newstetter](http://cargocollective.com/vitan) : [Trend Soup](http://cargocollective.com/vitan/board-games)
 - Qiqi Zuo
-- [peter lu](http://pdlla.org)
-- Lander *
-
-## Images
-
-coming soon!
-
-<div id="gallery"></div>
+- [peter lu](http://pdlla.org) : [BTLT](http://pdlla.org/posts/portfolio/games/btlt_tcg.html)
+- Lander
