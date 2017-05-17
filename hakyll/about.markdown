@@ -4,15 +4,17 @@ date: September 22, 2014
 tags: 
 ---
 
+***5/17/2017 - MOTD:***
+```I'm just updating this MOTD to indicate that I still somewhat care about updating my website.```
+
 
 ***10/20/2016 - MOTD:***
 ```Perfect Woman is finally released on Xbox ONE. This only took me 4 years and at least 4 totally traumatic events. Pretty good if you ask me. If you happen to have an XB1 with kinect, please consider giving the game a try :).```
 
 
-***12/2/2016 - Change Log:***
+***5/17/2017 - Change Log:***
 ```
--added top secret page for selected works pdlla.org/posts/hidden/2016-11-30_selected_works.html
--probably some other minor changes I neglect to mention
+-minor updates to about page to indicate that I'm still alive.
 ```
 
 
@@ -28,7 +30,7 @@ Here are some marginalized people that have been very influential in my life:
 
 I am a game developer and mushroom artist. I am interested in finding new ways to disrupt and change the oppressive social order. You can see some words about and pictures of my work on this site. 
 
-I'm currently super unemployed. I've been contributing to [Blender](www.blender.org) and working on some new projects that very well may not see the light of day. I'd make a joke about doing most my programming super late at night but honestly I only actually get any work done between 9am to 2pm.
+~~I'm currently super unemployed. I've been contributing to [Blender](www.blender.org) and working on some new projects that very well may not see the light of day. I'd make a joke about doing most my programming super late at night but honestly I only actually get any work done between 9am to 2pm.~~ I'm currently fighting for equality in the video game industry up in the Bay Area.
 
 I finally made this website which is about 10 years overdue at this point. Better late than never. The nice part about making a website 10 years overdue is that I have 10 years worth of content to add to the site. I finally settled on a style built on web technology over 20 years old. Maybe you care to [read a little more about it](http://contemporary-home-computing.org/prof-dr-style/).
 
@@ -42,6 +44,12 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 
 ***Change Log:***
 
+
+***12/2/2016 - Change Log:***
+```
+-added top secret page for selected works pdlla.org/posts/hidden/2016-11-30_selected_works.html
+-probably some other minor changes I neglect to mention
+```
 
 ***10/20/2016 - Change Log:***
 ```

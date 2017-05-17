@@ -32,7 +32,10 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 
 ### Professional Experience
 
-- *August 2016 - preset:*
+- *February 2017 - present:*
+	- Fighting for equality in the games industry as a Senior Gameplay Programmer at [Super Evil Megacorp](http://www.superevilmegacorp.com/).
+
+- *August 2016 - January 2017:*
 	- [Blender](www.blender.org) contributor by night. My list of contributions can be seen [here](https://developer.blender.org/differential/query/biusJjrFLIIO/).
 	
 - *Oct 2012 - August 2016:* 
