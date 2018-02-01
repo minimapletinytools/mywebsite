@@ -17,9 +17,9 @@ tags:
 
 ***1/31/2018 - Change Log:***
 ```
--minor updates to about page to indicate that I'm still alive.
--empty promises
+-minor updates to about page to indicate that I'm still alive. Empty promises.
 -updated CV. Apparently I already had SEMC on my CV so I just added "C++" to it...
+-added more animal pictures. Changed thumbnail to pictures of animals page.
 -It just ocurred to me these changes logs might be mistaken for commit messages. If this were the case, these logs would look something more like "atoehusaon". Only dvorak users will understand D:.
 ```
 
