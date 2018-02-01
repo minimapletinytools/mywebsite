@@ -4,6 +4,9 @@ date: September 22, 2014
 tags: 
 ---
 
+***1/31/2018 - MOTD:***
+```I'm just updating this MOTD (again) to indicate that I still somewhat care about updating my website. Feeling older and happier. I'm not really making any art right now. I've been writing a little but I doubt I'll have anything blog-worthy anytime soon. Working on my first Haskell module which may see the light of day.```
+
 ***5/17/2017 - MOTD:***
 ```I'm just updating this MOTD to indicate that I still somewhat care about updating my website.```
 
@@ -12,9 +15,12 @@ tags:
 ```Perfect Woman is finally released on Xbox ONE. This only took me 4 years and at least 4 totally traumatic events. Pretty good if you ask me. If you happen to have an XB1 with kinect, please consider giving the game a try :).```
 
 
-***5/17/2017 - Change Log:***
+***1/31/2018 - Change Log:***
 ```
 -minor updates to about page to indicate that I'm still alive.
+-empty promises
+-updated CV. Apparently I already had SEMC on my CV so I just added "C++" to it...
+-It just ocurred to me these changes logs might be mistaken for commit messages. If this were the case, these logs would look something more like "atoehusaon". Only dvorak users will understand D:.
 ```
 
 
@@ -30,7 +36,7 @@ Here are some marginalized people that have been very influential in my life:
 
 I am a game developer and mushroom artist. I am interested in finding new ways to disrupt and change the oppressive social order. You can see some words about and pictures of my work on this site. 
 
-~~I'm currently super unemployed. I've been contributing to [Blender](www.blender.org) and working on some new projects that very well may not see the light of day. I'd make a joke about doing most my programming super late at night but honestly I only actually get any work done between 9am to 2pm.~~ I'm currently fighting for equality in the video game industry up in the Bay Area.
+~~I'm currently super unemployed. I've been contributing to [Blender](www.blender.org) and working on some new projects that very well may not see the light of day. I'd make a joke about doing most my programming super late at night but honestly I only actually get any work done between 9am to 2pm.~~ I'm currently fighting for equality in the video game industry in Silicon Valley D:.
 
 I finally made this website which is about 10 years overdue at this point. Better late than never. The nice part about making a website 10 years overdue is that I have 10 years worth of content to add to the site. I finally settled on a style built on web technology over 20 years old. Maybe you care to [read a little more about it](http://contemporary-home-computing.org/prof-dr-style/).
 
@@ -43,6 +49,12 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 #### HISTORY
 
 ***Change Log:***
+
+
+***5/17/2017 - Change Log:***
+```
+-minor updates to about page to indicate that I'm still alive.
+```
 
 
 ***12/2/2016 - Change Log:***

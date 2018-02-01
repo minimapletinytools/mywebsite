@@ -6,6 +6,8 @@ tags: games
 thumbnail: -
 ---
 
+This project is abandoned D:
+
 kittenfight is an open source platform for developing fighting games (FTG) built on top of the Unity3d game engine. 
 
 <progressing diversity in e-sports community>
