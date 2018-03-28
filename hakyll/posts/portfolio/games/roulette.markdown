@@ -9,7 +9,7 @@ Play Six-Barelled Russian Roulette against Brandon.
 
 ![](/images/roulette/roulette.png)
 <br />
-[windows](http://users.dma.ucla.edu/~chippermonky/roulette/roulette_fixed.zip), [mac](http://users.dma.ucla.edu/~chippermonky/roulette/roulette_mac.zip), [source](git://gitorious.org/roulette/roulette.git)  
+[windows](http://users.dma.ucla.edu/~chippermonky/roulette/roulette_fixed.zip), [mac](http://users.dma.ucla.edu/~chippermonky/roulette/roulette_mac.zip), [source](https://github.com/pdlla/roulette)  
 [video|lose](http://vimeo.com/16226166) [video|win](http://vimeo.com/16226199)
 
 Created by Peter Lu,  

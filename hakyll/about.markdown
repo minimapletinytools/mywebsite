@@ -7,20 +7,11 @@ tags:
 ***1/31/2018 - MOTD:***
 ```I'm just updating this MOTD (again) to indicate that I still somewhat care about updating my website. Feeling older and happier. I'm not really making any art right now. I've been writing a little but I doubt I'll have anything blog-worthy anytime soon. Working on my first Haskell module which may see the light of day.```
 
-***5/17/2017 - MOTD:***
-```I'm just updating this MOTD to indicate that I still somewhat care about updating my website.```
 
-
-***10/20/2016 - MOTD:***
-```Perfect Woman is finally released on Xbox ONE. This only took me 4 years and at least 4 totally traumatic events. Pretty good if you ask me. If you happen to have an XB1 with kinect, please consider giving the game a try :).```
-
-
-***1/31/2018 - Change Log:***
+***??/??/2018 - Change Log:***
 ```
--minor updates to about page to indicate that I'm still alive. Empty promises.
--updated CV. Apparently I already had SEMC on my CV so I just added "C++" to it...
--added more animal pictures. Changed thumbnail to pictures of animals page.
--It just ocurred to me these changes logs might be mistaken for commit messages. If this were the case, these logs would look something more like "atoehusaon". Only dvorak users will understand D:.
+-updated source links for cave and roulette
+-updated CV
 ```
 
 
@@ -49,6 +40,15 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 #### HISTORY
 
 ***Change Log:***
+
+***1/31/2018 - Change Log:***
+```
+-minor updates to about page to indicate that I'm still alive. Empty promises.
+-updated CV. Apparently I already had SEMC on my CV so I just added "C++" to it...
+-added more animal pictures. Changed thumbnail to pictures of animals page.
+-added Misc. art 2
+-It just ocurred to me these changes logs might be mistaken for commit messages. If this were the case, these logs would look something more like "atoehusaon". Only dvorak users will understand D:.
+```
 
 
 ***5/17/2017 - Change Log:***
@@ -90,6 +90,16 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 -updated $1.81 to include Mushroom workshop in July.
 -updated formating in $1.81 to be more ugly so content is more visually differentiable at first glance.
 ```
+
+
+***MOTDs:***
+
+
+***5/17/2017 - MOTD:***
+```I'm just updating this MOTD to indicate that I still somewhat care about updating my website.```
+
+***10/20/2016 - MOTD:***
+```Perfect Woman is finally released on Xbox ONE. This only took me 4 years and at least 4 totally traumatic events. Pretty good if you ask me. If you happen to have an XB1 with kinect, please consider giving the game a try :).```
 
 ***7/27/2016 - MOTD:***
 ```Starting to include change notes with my updates. I like this because then I wont forget to updated the MOTD and people will know when the last time my site was updated and be able to determine with a greater degree of certainty whether my website has fallen into no-update hell or not. Deciding on the best format to do this. Currently deciding on lumping both together and storing at the bottom of this about page. Markdown code block formatting is annoying and weird but I'll just stick to what I have for now..```

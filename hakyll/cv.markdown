@@ -32,7 +32,7 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 
 ### Professional Experience
 
-- *February 2017 - present:*
+- *February 2017 - March 2018:*
 	- Fighting for equality in the games industry as a Senior Gameplay Engineer at [Super Evil Megacorp](http://www.superevilmegacorp.com/). C++. 
 
 - *August 2016 - January 2017:*

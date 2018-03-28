@@ -1,3 +1,4 @@
+(run this in _site)
 rsync -r ./ cmspice@ftp.robotbear.org:pdlla.org/
 
 ::TODO::
