@@ -1,6 +1,6 @@
 ---
 title: Perfect Woman
-date: March 13, 2056
+date: March 13, 2016
 tags: paper, game design, perfect woman
 ---
 

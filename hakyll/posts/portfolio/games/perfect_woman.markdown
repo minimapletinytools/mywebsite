@@ -1,7 +1,7 @@
 ---
 title: Perfect Woman
 date: September 22, 2014
-projectdate: 2012-2015
+projectdate: 2012-2016
 thumbnail: thumbnails/perfectwoman.png
 tags: games
 ---

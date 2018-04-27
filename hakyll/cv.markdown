@@ -1,7 +1,7 @@
 ## CV: peter lu
 
 ### Summary
-I am an independent game designer and artist. my practice includes ceramics, game design, carpentry, code, fermentation, math, mycology and feminist social activism. I works towards the deconstruction of imperialist, white supremacist capitalist patriarchy. To this end, my work tackles the personal and the political. I believe to rightfuly influence the world, I must continuously understand how the world influences me. Below are selected works from my site that demonstrate this process:
+I am an independent game designer and artist. my practice includes ceramics, game design, carpentry, code, fermentation, math, mycology and feminist social activism. Though I hav little use for categories, my work false loosely under the umbrella of cybernetics. I work towards the deconstruction of imperialist, white supremacist capitalist patriarchy. To this end, my work tackles the personal and the political. I believe to rightfuly influence the world, I must continuously understand how the world influences me. Below are selected works from my site that demonstrate this process:
 
 - [Perfect Woman](http://pdlla.org/posts/portfolio/games/perfect_woman.html)
 - [Mushroom #1](http://pdlla.org/posts/portfolio/art/mushrooms/mushroom_throne.html)
@@ -21,6 +21,11 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 - Unity3D, C#, C++, Java, Python, Haskell, Javascript, OpenGL
 - finite elements and finite difference, numeric linear algebra, collision detection algorithms
 - electronics, sewing, ceramics, woodworking, mycology, fermentation
+
+### Links
+- [website](http://pdlla.org/)
+- [github](https://github.com/pdlla)
+- [online CV](http://pdlla.org/cv.html)
 
 ### Teaching Experience
 - *Spring 2014 - present:*
