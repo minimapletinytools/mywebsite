@@ -1,7 +1,7 @@
 ## CV: peter lu
 
 ### Summary
-I am an independent game designer and artist. my practice includes ceramics, game design, carpentry, code, fermentation, math, mycology and feminist social activism. Though I hav little use for categories, my work false loosely under the umbrella of cybernetics. I work towards the deconstruction of imperialist, white supremacist capitalist patriarchy. To this end, my work tackles the personal and the political. I believe to rightfuly influence the world, I must continuously understand how the world influences me. Below are selected works from my site that demonstrate this process:
+I am an independent game designer and artist. my practice includes ceramics, game design, carpentry, code, fermentation, math, mycology and feminist social activism. Though I hav little use for categories, my work false loosely under the umbrella of cybernetics. I work towards the deconstruction of imperialist, white supremacist capitalist patriarchy. To this end, my work tackles the personal and the political. I believe to rightfully influence the world, I must continuously understand how the world influences me. Below are selected works from my site that demonstrate this process:
 
 - [Perfect Woman](http://pdlla.org/posts/portfolio/games/perfect_woman.html)
 - [Mushroom #1](http://pdlla.org/posts/portfolio/art/mushrooms/mushroom_throne.html)
@@ -29,21 +29,21 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 
 ### Teaching Experience
 - *Spring 2014 - present:*
-	- Adjunct Professor at USC, Interactive Media and Games. I teach the [Immersive](http://pdlla.org/posts/teaching/USC_486_F14.html) and [Alternative Control](http://pdlla.org/posts/teaching/USC_486_F16.html) Workshop classes. 
+	- Adjunct Professor at USC, Interactive Media and Games. I teach the [Immersive](http://pdlla.org/posts/teaching/USC_486_F14.html) and [Alternative Control](http://pdlla.org/posts/teaching/USC_486_F16.html) Workshop classes.
 
 - *Fall 2014 - Spring 2016:*
-	- TA at UCLA, Design | Media Arts. I primarily TA for Eddo Stern's [game design class](http://pdlla.org/posts/teaching/UCLA_DMA157.html). 
+	- TA at UCLA, Design | Media Arts. I primarily TA for Eddo Stern's [game design class](http://pdlla.org/posts/teaching/UCLA_DMA157.html).
 
 
 ### Professional Experience
 
 - *February 2017 - March 2018:*
-	- Fighting for equality in the games industry as a Senior Gameplay Engineer at [Super Evil Megacorp](http://www.superevilmegacorp.com/). C++. 
+	- Fighting for equality in the games industry as a Senior Gameplay Engineer at [Super Evil Megacorp](http://www.superevilmegacorp.com/). C++.
 
 - *August 2016 - January 2017:*
 	- [Blender](www.blender.org) contributor by night. My list of contributions can be seen [here](https://developer.blender.org/differential/query/biusJjrFLIIO/).
-	
-- *Oct 2012 - August 2016:* 
+
+- *Oct 2012 - August 2016:*
 	- Lead developer and  co-creator for [Perfect Woman](http://www.perfectwomangame.com/). Perfect Woman is an award winning, innovative and socially aware motion controlled (Kinect) dance game for Xbox One. Created by myself and Lea Schönfelder, Perfect Woman has been showed in numerous public places to critical acclaim.
 
 - *Oct 2012 - January 2015:*
@@ -53,7 +53,7 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 	- 77-pieces: Software Engineer R&D. 77-pieces develops clothing simulation software for applications in all levels of the fashion industry. Designed, implemented, and maintained fabric collision and simulation code as well as general programming when needed. Used finite elements for fabric simulation and Bridson collision model with a fast reconstructing bounding volume hierarchy. Backend C++ frontend Unity. Content generated from my code can be seen [here](/posts/hidden/77pieces.html).
 
 - *August 2009 - February 2011:*
-	- Developer for [RobotBear](http://robotbear.pdlla.org/). RobotBear is a mobile and desktop cross platform games collective. In addition to games programming, I co-developed our technology in C++ to allow cross-platform release of all our products. 
+	- Developer for [RobotBear](http://robotbear.pdlla.org/). RobotBear is a mobile and desktop cross platform games collective. In addition to games programming, I co-developed our technology in C++ to allow cross-platform release of all our products.
 
 - *July 2010 - December 2010:*
 	- Developer for Eddo Stern's [Darkgame](http://eddostern.com/works/darkgame-3/) and UCLA Game Lab’s [Flatland](http://flatland.games.ucla.edu/) (directed by Eddo Stern). Darkgame is a multiplayer game about sensory deprivation programmed in Unity 3D and C# with a novel physics based menu [UI](http://vimeo.com/52597481).

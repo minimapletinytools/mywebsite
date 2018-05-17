@@ -1,17 +1,18 @@
 ---
 title: About
 date: September 22, 2014
-tags: 
+tags:
 ---
 
-***3/28/2018 - MOTD:***
-```Happily unemployed and contemplating my next adventure :). Made some great progress on what will likely be my first Haskell library on hackage. Still needs one more pass and thorough testing but otherwise I'm pretty happy with it. Doing lots of yoga too :o.```
+***5/17/2018 - MOTD:***
+```Happily unemployed and contemplating my next adventure :). Writing lots of Haskell and doing lots of yoga.```
 
 
-***3/28/2018 - Change Log:***
+***5/17/2018 - Change Log:***
 ```
 -updated source links for cave and roulette
 -other minor fixes
+-updated CBG essay
 -updated CV
 ```
 
@@ -26,9 +27,9 @@ Here are some marginalized people that have been very influential in my life:
 
 ---------------------
 
-I am a game developer and mushroom artist. I am interested in finding new ways to disrupt and change the oppressive social order. You can see some words about and pictures of my work on this site. 
+I am a game developer and mushroom artist. I am interested in finding new ways to disrupt and change the oppressive social order. You can see some words about and pictures of my work on this site.
 
-I'm currently fighting for equality in the video game industry in Silicon Valley. 
+I'm currently fighting for equality in the video game industry in Silicon Valley.
 
 I finally made this website which is about 10 years overdue at this point. Better late than never. The nice part about making a website 10 years overdue is that I have 10 years worth of content to add to the site. I finally settled on a style built on web technology over 20 years old. Maybe you care to [read a little more about it](http://contemporary-home-computing.org/prof-dr-style/).
 
@@ -75,7 +76,7 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 
 ***8/23/2016 - Change Log:***
 ```
--added markdown image resizing using http://stackoverflow.com/questions/14675913/how-to-change-image-size-markdown 
+-added markdown image resizing using http://stackoverflow.com/questions/14675913/how-to-change-image-size-markdown
 -renamed "Log" to "Change Log" change logs.
 -added tor workshop images to $1.81
 -corrected date in Perfect Woman URL and added coming out on Xbox ONE blurb :)
@@ -94,6 +95,9 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 
 
 ***MOTDs:***
+
+***3/28/2018 - MOTD:***
+```Happily unemployed and contemplating my next adventure :). Made some great progress on what will likely be my first Haskell library on hackage. Still needs one more pass and thorough testing but otherwise I'm pretty happy with it. Doing lots of yoga too :o.```
 
 ***1/31/2018 - MOTD:***
 ```I'm just updating this MOTD (again) to indicate that I still somewhat care about updating my website. Feeling older and happier. I'm not really making any art right now. I've been writing a little but I doubt I'll have anything blog-worthy anytime soon. Working on my first Haskell module which may see the light of day.```
