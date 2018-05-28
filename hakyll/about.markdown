@@ -4,24 +4,20 @@ date: September 22, 2014
 tags:
 ---
 
-***5/17/2018 - MOTD:***
-```Happily unemployed and contemplating my next adventure :). Writing lots of Haskell and doing lots of yoga.```
+***6/27/2018 - MOTD:***
+```Just yoga and blockchain noncense (see what I did there?)```
 
 
-***5/17/2018 - Change Log:***
+***??/??/2018 - Change Log:***
 ```
--updated source links for cave and roulette
--other minor fixes
--updated CBG essay
--updated CV
+-history section in about page reorganized
 ```
-
 
 ---------------------
 
 Here are some marginalized people that have been very influential in my life:
 
-- [hsinyu lin](http://xin-xin.info/)
+- [xin xin](http://xin-xin.info/)
 - [Mistriss Iris](http://www.dominatrixiris.com/)
 - [Aliah Magdalena Dark](https://prettydarke.wordpress.com/about/)
 
@@ -41,7 +37,30 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 
 #### HISTORY
 
-***Change Log:***
+***6/27/2018 - Change Log:***
+```
+-updated source links for cave and roulette
+-other minor fixes
+-updated CBG essay
+-updated CV so as not to elicit a particular passionate or fearful response
+```
+
+***5/17/2018 - MOTD:***
+```Happily unemployed and contemplating my next adventure :). Writing lots of Haskell and doing lots of yoga.```
+
+***5/17/2018 - Change Log:***
+```
+-updated source links for cave and roulette
+-other minor fixes
+-updated CBG essay
+-updated CV
+```
+
+***3/28/2018 - MOTD:***
+```Happily unemployed and contemplating my next adventure :). Made some great progress on what will likely be my first Haskell library on hackage. Still needs one more pass and thorough testing but otherwise I'm pretty happy with it. Doing lots of yoga too :o.```
+
+***1/31/2018 - MOTD:***
+```I'm just updating this MOTD (again) to indicate that I still somewhat care about updating my website. Feeling older and happier. I'm not really making any art right now. I've been writing a little but I doubt I'll have anything blog-worthy anytime soon. Working on my first Haskell module which may see the light of day.```
 
 ***1/31/2018 - Change Log:***
 ```
@@ -52,18 +71,22 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 -It just ocurred to me these changes logs might be mistaken for commit messages. If this were the case, these logs would look something more like "atoehusaon". Only dvorak users will understand D:.
 ```
 
+***5/17/2017 - MOTD:***
+```I'm just updating this MOTD to indicate that I still somewhat care about updating my website.```
 
 ***5/17/2017 - Change Log:***
 ```
 -minor updates to about page to indicate that I'm still alive.
 ```
 
-
 ***12/2/2016 - Change Log:***
 ```
 -added top secret page for selected works pdlla.org/posts/hidden/2016-11-30_selected_works.html
 -probably some other minor changes I neglect to mention
 ```
+
+***10/20/2016 - MOTD:***
+```Perfect Woman is finally released on Xbox ONE. This only took me 4 years and at least 4 totally traumatic events. Pretty good if you ask me. If you happen to have an XB1 with kinect, please consider giving the game a try :).```
 
 ***10/20/2016 - Change Log:***
 ```
@@ -85,6 +108,9 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 -beatdown in misc games now links to a hidden page
 ```
 
+***7/27/2016 - MOTD:***
+```Starting to include change notes with my updates. I like this because then I wont forget to updated the MOTD and people will know when the last time my site was updated and be able to determine with a greater degree of certainty whether my website has fallen into no-update hell or not. Deciding on the best format to do this. Currently deciding on lumping both together and storing at the bottom of this about page. Markdown code block formatting is annoying and weird but I'll just stick to what I have for now..```
+
 ***7/27/2016 - Change Log:***
 ```
 -changed code block font color to a dark gray.
@@ -92,24 +118,6 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 -updated $1.81 to include Mushroom workshop in July.
 -updated formating in $1.81 to be more ugly so content is more visually differentiable at first glance.
 ```
-
-
-***MOTDs:***
-
-***3/28/2018 - MOTD:***
-```Happily unemployed and contemplating my next adventure :). Made some great progress on what will likely be my first Haskell library on hackage. Still needs one more pass and thorough testing but otherwise I'm pretty happy with it. Doing lots of yoga too :o.```
-
-***1/31/2018 - MOTD:***
-```I'm just updating this MOTD (again) to indicate that I still somewhat care about updating my website. Feeling older and happier. I'm not really making any art right now. I've been writing a little but I doubt I'll have anything blog-worthy anytime soon. Working on my first Haskell module which may see the light of day.```
-
-***5/17/2017 - MOTD:***
-```I'm just updating this MOTD to indicate that I still somewhat care about updating my website.```
-
-***10/20/2016 - MOTD:***
-```Perfect Woman is finally released on Xbox ONE. This only took me 4 years and at least 4 totally traumatic events. Pretty good if you ask me. If you happen to have an XB1 with kinect, please consider giving the game a try :).```
-
-***7/27/2016 - MOTD:***
-```Starting to include change notes with my updates. I like this because then I wont forget to updated the MOTD and people will know when the last time my site was updated and be able to determine with a greater degree of certainty whether my website has fallen into no-update hell or not. Deciding on the best format to do this. Currently deciding on lumping both together and storing at the bottom of this about page. Markdown code block formatting is annoying and weird but I'll just stick to what I have for now..```
 
 ***6/30/2016 - MOTD:***
 ```I forgot I'm suppose update my MOTD. I should probably add an update log too.```

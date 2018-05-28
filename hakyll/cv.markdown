@@ -1,7 +1,7 @@
 ## CV: peter lu
 
 ### Summary
-I am an independent game designer and artist. my practice includes ceramics, game design, carpentry, code, fermentation, math, mycology and feminist social activism. Though I hav little use for categories, my work false loosely under the umbrella of cybernetics. I work towards the deconstruction of imperialist, white supremacist capitalist patriarchy. To this end, my work tackles the personal and the political. I believe to rightfully influence the world, I must continuously understand how the world influences me. Below are selected works from my site that demonstrate this process:
+I am an independent game designer and artist. my practice includes ceramics, game design, carpentry, code, fermentation, math, mycology and feminist social activism. Though I have little use for categories, my work false loosely under the umbrella of cybernetics. I work towards the deconstruction of the imperialist capitalist patriarchal system. To this end, my work tackles the personal and the political. I believe to rightfully influence the world, I must continuously understand how the world influences me. Below are selected works from my site that demonstrate this process:
 
 - [Perfect Woman](http://pdlla.org/posts/portfolio/games/perfect_woman.html)
 - [Mushroom #1](http://pdlla.org/posts/portfolio/art/mushrooms/mushroom_throne.html)
@@ -18,9 +18,9 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 
 ### Skills
 - game design, production and development
-- Unity3D, C#, C++, Java, Python, Haskell, Javascript, OpenGL
+- C++, Haskell, Unity3D, C#, Java, Python, Javascript, OpenGL
 - finite elements and finite difference, numeric linear algebra, collision detection algorithms
-- electronics, sewing, ceramics, woodworking, mycology, fermentation
+- electronics, sewing, ceramics, woodworking, mycology, fermentation, yoga (CYT 200)
 
 ### Links
 - [website](http://pdlla.org/)
@@ -36,6 +36,9 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 
 
 ### Professional Experience
+
+- *May 2018 - Present:*
+	- Blockchain core developer at [Thunder Token](https://www.thundertoken.com/). Go.
 
 - *February 2017 - March 2018:*
 	- Fighting for equality in the games industry as a Senior Gameplay Engineer at [Super Evil Megacorp](http://www.superevilmegacorp.com/). C++.
