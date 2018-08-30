@@ -1,16 +1,17 @@
 ---
 title: About
 date: September 22, 2014
-tags:
 ---
 
 ***6/27/2018 - MOTD:***
 ```Just yoga and blockchain noncense (see what I did there?)```
 
 
-***??/??/2018 - Change Log:***
+***08/28/2018 - Change Log:***
 ```
 -history section in about page reorganized
+-added bytecraft to misc art
+-minor changes to about page
 ```
 
 ---------------------
@@ -25,7 +26,7 @@ Here are some marginalized people that have been very influential in my life:
 
 I am a game developer and mushroom artist. I am interested in finding new ways to disrupt and change the oppressive social order. You can see some words about and pictures of my work on this site.
 
-I'm currently fighting for equality in the video game industry in Silicon Valley.
+I'm currently use my privilege as a male engineer to fight for equality in Silicon Valley.
 
 I finally made this website which is about 10 years overdue at this point. Better late than never. The nice part about making a website 10 years overdue is that I have 10 years worth of content to add to the site. I finally settled on a style built on web technology over 20 years old. Maybe you care to [read a little more about it](http://contemporary-home-computing.org/prof-dr-style/).
 
@@ -68,7 +69,7 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 -updated CV. Apparently I already had SEMC on my CV so I just added "C++" to it...
 -added more animal pictures. Changed thumbnail to pictures of animals page.
 -added Misc. art 2
--It just ocurred to me these changes logs might be mistaken for commit messages. If this were the case, these logs would look something more like "atoehusaon". Only dvorak users will understand D:.
+-It just occurred to me these changes logs might be mistaken for commit messages. If this were the case, these logs would look something more like "atoehusaon". Only dvorak users will understand D:.
 ```
 
 ***5/17/2017 - MOTD:***
