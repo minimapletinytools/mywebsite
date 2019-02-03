@@ -12,3 +12,6 @@ hakyll/site.o
 hakyll/site.hi
 
 hakyll/bootstrap
+
+
+*.DS_Store

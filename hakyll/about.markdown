@@ -7,16 +7,16 @@ date: September 22, 2014
 ```Just yoga and blockchain noncense (see what I did there?)```
 
 
-***08/28/2018 - Change Log:***
+***02/02/2019 - Change Log:***
 ```
--history section in about page reorganized
--added bytecraft to misc art
--minor changes to about page
+-added bitcoin stickers to misc art 2018
 ```
+
+
 
 ---------------------
 
-Here are some marginalized people that have been very influential in my life:
+Here are some marginalized folx that have been influential in my life:
 
 - [xin xin](http://xin-xin.info/)
 - [Mistriss Iris](http://www.dominatrixiris.com/)
@@ -37,6 +37,13 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 ---------------------
 
 #### HISTORY
+
+***08/28/2018 - Change Log:***
+```
+-history section in about page reorganized
+-added bytecraft to misc art
+-minor changes to about page
+```
 
 ***6/27/2018 - Change Log:***
 ```
