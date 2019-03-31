@@ -2,6 +2,10 @@
 rsync -r ./ cmspice@ftp.robotbear.org:pdlla.org/
 
 ::TODO::
+-pixelart
+  -add dragon game stuff to pixelart
+  -clean up cave game sprites in pixelart
+  -maybe add michaelonly stuff...
 DONE-clean up server bc of bad rsync
 -add fabric sim stuff
 -separate out beat down

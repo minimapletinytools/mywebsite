@@ -6,19 +6,19 @@ $.fn.randomize = function(childElem) {
       var $this = $(this);
       var elems = $this.children(childElem);
 
-      elems.sort(function() { return (Math.round(Math.random())-0.5); });  
+      elems.sort(function() { return (Math.round(Math.random())-0.5); });
 
-      $this.detach(childElem);  
+      $this.detach(childElem);
 
       for(var i=0; i < elems.length; i++)
-        $this.append(elems[i]);      
+        $this.append(elems[i]);
 
-  });    
+  });
 }
 })(jQuery);
 
 //used to pull gallery images using dreamhost generated directory html
-var fileextension = [".png", ".jpg",".JPG", ".gif"];
+var fileextension = [".png", ".jpg",".JPG", ".gif", ".bmp"];
 
 function AutoGallery(dir){
 	$.ajax({

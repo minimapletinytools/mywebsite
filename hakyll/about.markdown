@@ -7,9 +7,10 @@ date: September 22, 2014
 ```Just yoga and blockchain noncense (see what I did there?)```
 
 
-***02/02/2019 - Change Log:***
+***03/30/2019 - Change Log:***
 ```
 -added bitcoin stickers to misc art 2018
+-added pixelart page
 ```
 
 
@@ -25,8 +26,6 @@ Here are some marginalized folx that have been influential in my life:
 ---------------------
 
 I am a game developer and mushroom artist. I am interested in finding new ways to disrupt and change the oppressive social order. You can see some words about and pictures of my work on this site.
-
-I'm currently use my privilege as a male engineer to fight for equality in Silicon Valley.
 
 I finally made this website which is about 10 years overdue at this point. Better late than never. The nice part about making a website 10 years overdue is that I have 10 years worth of content to add to the site. I finally settled on a style built on web technology over 20 years old. Maybe you care to [read a little more about it](http://contemporary-home-computing.org/prof-dr-style/).
 
