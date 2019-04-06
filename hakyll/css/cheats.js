@@ -18,7 +18,7 @@ $.fn.randomize = function(childElem) {
 })(jQuery);
 
 //used to pull gallery images using dreamhost generated directory html
-var fileextension = [".png", ".jpg",".JPG", ".gif", ".bmp"];
+var fileextension = [".gif", ".png", ".jpg",".JPG", ".bmp"];
 
 function AutoGallery(dir){
 	$.ajax({

@@ -11,6 +11,7 @@ date: September 22, 2014
 ```
 -added bitcoin stickers to misc art 2018
 -added pixelart page
+-added hidden pirate sticker page 😱
 ```
 
 
