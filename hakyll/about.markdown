@@ -7,11 +7,10 @@ date: September 22, 2014
 ```Just yoga and blockchain noncense (see what I did there?)```
 
 
-***03/30/2019 - Change Log:***
+***11/16/2019 - Change Log:***
 ```
--added bitcoin stickers to misc art 2018
--added pixelart page
--added hidden pirate sticker page 😱
+-added ceramics centering guide to misc art 2
+-added zip file of all crypto stickers in misc art 2
 ```
 
 
@@ -37,6 +36,13 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 ---------------------
 
 #### HISTORY
+
+***03/30/2019 - Change Log:***
+```
+-added bitcoin stickers to misc art 2018
+-added pixelart page
+-added hidden pirate sticker page 😱
+```
 
 ***08/28/2018 - Change Log:***
 ```
