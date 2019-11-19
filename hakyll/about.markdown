@@ -11,6 +11,8 @@ date: September 22, 2014
 ```
 -added ceramics centering guide to misc art 2
 -added zip file of all crypto stickers in misc art 2
+-added bytecraft image to misc art 2
+-added misc ceramics 2
 ```
 
 

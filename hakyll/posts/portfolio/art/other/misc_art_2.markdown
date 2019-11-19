@@ -16,7 +16,7 @@ You can download the [original PSD](/images/misc_art_2018/ceramics_centering.psd
 ### Bitcoin STICKERS (Nov, 2018)
 Commissioned stickers by [Adeline Ducker](http://cargocollective.com/adelineducker)
 
-Download and use the [whole set + bonus stickers (not shown below) + uncolored version + extra bonus potato stickers](/images/misc_art_2018/crypto_stickers.zip). 
+Download and use the [whole set + bonus stickers (not shown below) + uncolored version + extra bonus potato stickers](/images/misc_art_2018/crypto_stickers.zip).
 
 ![](/images/misc_art_2018/s1.png)
 ![](/images/misc_art_2018/s2.png)
@@ -29,6 +29,8 @@ Download and use the [whole set + bonus stickers (not shown below) + uncolored v
 
 ### Bytecraft Ethereum DAPP (with Anton Bobkov) (June, 2018)
 bytecraft is an [open source](https://github.com/antonbobkov/city_building_game_v1) Ethereum smart contract with a JS/Haskell web front-end. You can't play it anymore because we took down the server. Sad.
+
+<img src="/images/misc_art_2018/bytecraft.png" alt="drawing" style="width:512px;"/>
 
 ### Helicopter Person (Jan, 2018)
 Commissioned sketches by [Adeline Ducker](http://cargocollective.com/adelineducker) for a hero concept I proposed for a mobile MOBA video game that I worked on as a self initiated project for my day job at some point in time.
