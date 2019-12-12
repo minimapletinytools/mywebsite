@@ -7,23 +7,17 @@ date: September 22, 2014
 ```Just yoga and blockchain noncense (see what I did there?)```
 
 
-***11/16/2019 - Change Log:***
+***12/10/2019 - Change Log:***
 ```
 -added ceramics centering guide to misc art 2
 -added zip file of all crypto stickers in misc art 2
 -added bytecraft image to misc art 2
 -added misc ceramics 2
+-added blockchain consensus to writing
+-removing marginalized folx who have been influential in my life from about page. They're all doing well and we all need to move on 
 ```
 
 
-
----------------------
-
-Here are some marginalized folx that have been influential in my life:
-
-- [xin xin](http://xin-xin.info/)
-- [Mistriss Iris](http://www.dominatrixiris.com/)
-- [Aliah Magdalena Dark](https://prettydarke.wordpress.com/about/)
 
 ---------------------
 
