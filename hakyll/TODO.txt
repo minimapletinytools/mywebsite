@@ -1,5 +1,5 @@
 (run this in _site)
-rsync -r ./ cmspice@ftp.robotbear.org:pdlla.org/
+rsync -r ./ cmspice@pdlla.org:pdlla.org/
 
 ::TODO::
 -pixelart
