@@ -10,8 +10,8 @@ hakyll/_cache/*
 hakyll/site
 hakyll/site.o
 hakyll/site.hi
-
 hakyll/bootstrap
+hakyll/.stack-work
 
 
 *.DS_Store

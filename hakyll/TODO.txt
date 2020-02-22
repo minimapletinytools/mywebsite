@@ -1,6 +1,9 @@
 (run this in _site)
 rsync -r ./ cmspice@pdlla.org:pdlla.org/
 
+(for testing)
+stack exec -- site watch
+
 ::TODO::
 -pixelart
   -add dragon game stuff to pixelart

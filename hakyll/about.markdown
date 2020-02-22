@@ -3,9 +3,30 @@ title: About
 date: September 22, 2014
 ---
 
-***6/27/2018 - MOTD:***
-```Just yoga and blockchain noncense (see what I did there?)```
+***2/21/2020 - MOTD:***
+```yooooooogggggaaaaaaaaaa```
 
+
+***2/21/2020 - Change Log:***
+```
+-fixed writing section
+-upgraded to newest version of hakyll with stack... Now that I actually know how to program haskell...
+-added oss page
+```
+
+---------------------
+
+I am a game developer and mushroom artist. I am interested in finding new ways to disrupt and change the oppressive social order. You can see some words about and pictures of my work on this site.
+
+I finally made this website which is about 10 years overdue at this point. Better late than never. The nice part about making a website 10 years overdue is that I have 10 years worth of content to add to the site. I finally settled on a style built on web technology over 20 years old. Maybe you care to [read a little more about it](http://contemporary-home-computing.org/prof-dr-style/).
+
+You can follow me on [twitter](https://twitter.com/_kitchen) and [github](https://github.com/pdlla).
+
+This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
+
+---------------------
+
+#### HISTORY
 
 ***12/10/2019 - Change Log:***
 ```
@@ -14,24 +35,8 @@ date: September 22, 2014
 -added bytecraft image to misc art 2
 -added misc ceramics 2
 -added blockchain consensus to writing
--removing marginalized folx who have been influential in my life from about page. They're all doing well and we all need to move on 
+-removing marginalized folx who have been influential in my life from about page. They're all doing well and we all need to move on
 ```
-
-
-
----------------------
-
-I am a game developer and mushroom artist. I am interested in finding new ways to disrupt and change the oppressive social order. You can see some words about and pictures of my work on this site.
-
-I finally made this website which is about 10 years overdue at this point. Better late than never. The nice part about making a website 10 years overdue is that I have 10 years worth of content to add to the site. I finally settled on a style built on web technology over 20 years old. Maybe you care to [read a little more about it](http://contemporary-home-computing.org/prof-dr-style/).
-
-You can follow me on [twitter](https://twitter.com/_kitchen).
-
-This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
-
----------------------
-
-#### HISTORY
 
 ***03/30/2019 - Change Log:***
 ```
@@ -65,6 +70,9 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 -updated CBG essay
 -updated CV
 ```
+
+***6/27/2018 - MOTD:***
+```Just yoga and blockchain noncense (see what I did there?)```
 
 ***3/28/2018 - MOTD:***
 ```Happily unemployed and contemplating my next adventure :). Made some great progress on what will likely be my first Haskell library on hackage. Still needs one more pass and thorough testing but otherwise I'm pretty happy with it. Doing lots of yoga too :o.```

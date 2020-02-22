@@ -1,6 +1,6 @@
 ---
-title: Blockchain Consnesus
-date: Decemeber 10, 2019
+title: Blockchain Consensus
+date: December 10, 2019
 tags: blog, blockchain
 ---
 

@@ -1,24 +1,28 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Control.Monad (forM_, zipWithM_, liftM)
-import           Data.Monoid (mappend, mconcat)
+import           Control.Monad     (forM_, liftM, zipWithM_)
+import           Data.Aeson
+import           Data.Aeson.Types  (parse)
+import           Data.Char         (toLower)
+import qualified Data.HashMap.Lazy as Map
+import           Data.List         (findIndex, intercalate, isPrefixOf, length,
+                                    sortBy, tails)
+import           Data.List.Split   (chunksOf, splitOn)
+import           Data.Maybe        (fromMaybe)
+import           Data.Monoid       (mappend, mconcat)
+import qualified Data.Text         as T
+import           Data.Time.Clock   (UTCTime)
+import           Data.Time.Format  (parseTime)
+import           Debug.Trace       (trace)
 import           Hakyll
-import           Text.Pandoc (writerReferenceLinks)
-import           Data.Char (toLower)
-import           System.Locale (defaultTimeLocale)
-import           Data.List (sortBy, intercalate, length, isPrefixOf, tails, findIndex)
-import           Data.List.Split (chunksOf, splitOn)
-import           Data.Time.Clock (UTCTime)
-import           Data.Time.Format (parseTime)
-import           Data.Maybe (fromMaybe)
-import           Debug.Trace (trace)
-import qualified Data.Map as Map
+import           System.Locale     (defaultTimeLocale)
+import           Text.Pandoc       (writerReferenceLinks)
 
 
-import Debug.Trace
+import           Debug.Trace
 
 -- Allow for reference style links in markdown
-pandocWriteOptions = defaultHakyllWriterOptions{ 
+pandocWriteOptions = defaultHakyllWriterOptions{
     writerReferenceLinks = True
 }
 
@@ -67,7 +71,7 @@ main = hakyll $ do
             makeItem ""
                 >>= loadAndApplyTemplate "templates/newsite/project-list.html" (archiveCtx allPosts)
                 >>= loadAndApplyTemplate "templates/newsite/default.html" (archiveCtx allPosts)
-                >>= relativizeUrls           
+                >>= relativizeUrls
 
     -- Build special pages
     forM_ ["404.markdown","about.markdown","cv.markdown","microblog.markdown"] $ \p ->
@@ -94,22 +98,22 @@ main = hakyll $ do
 --CAN DELETE
 postCtx :: Context String
 postCtx =
-    field "work" (\_ -> workList)           `mappend` 
-    field "recent" (\_ -> recentPostList)   `mappend` 
-    dateField "date" "%B %e, %Y"            `mappend` 
-    defaultContext  
+    field "work" (\_ -> workList)           `mappend`
+    field "recent" (\_ -> recentPostList)   `mappend`
+    dateField "date" "%B %e, %Y"            `mappend`
+    defaultContext
 
- 
+
 newPostCtx :: Context String
 newPostCtx =
-    listField "work" defaultContext (recentFirst =<< recentWork)  `mappend` 
-    listField "art" defaultContext (recentFirst =<< recentArt)  `mappend` 
-    listField "games" defaultContext (recentFirst =<< recentGames)  `mappend` 
-    listField "teaching" defaultContext (recentFirst =<< recentTeaching)  `mappend` 
-    listField "recent" defaultContext (fmap (take 10) . recentFirst =<< recentPosts)   `mappend` 
-    dateField "date" "%B %e, %Y"            `mappend` 
+    listField "work" defaultContext (recentFirst =<< recentWork)  `mappend`
+    listField "art" defaultContext (recentFirst =<< recentArt)  `mappend`
+    listField "games" defaultContext (recentFirst =<< recentGames)  `mappend`
+    listField "teaching" defaultContext (recentFirst =<< recentTeaching)  `mappend`
+    listField "recent" defaultContext (fmap (take 10) . recentFirst =<< recentPosts)   `mappend`
+    dateField "date" "%B %e, %Y"            `mappend`
     galleryContext `mappend`
-    defaultContext  
+    defaultContext
 
 --TODO
 
@@ -119,20 +123,22 @@ newPostCtx =
 galleryContext :: Context a
 galleryContext = field "gallery" $ \item -> do
     metadata <- getMetadata (itemIdentifier item)
-    let 
-        process s = if (trim s) == "" 
-            then "" 
+    let
+        process s = if (trim s) == ""
+            then ""
             else "<img src=\"" ++ (toUrl "images/" ++ s ++ "\"") ++ " />"
-        gallery = fromMaybe "" $ Map.lookup "gallery" metadata    
-        gallerywords = words gallery
+        gallery = fromMaybe "" $ Map.lookup "gallery" metadata
+        gallerywords = case parse (withText "gallery" (return . words . T.unpack)) gallery of
+          Error x   -> trace x []
+          Success x -> x
         splitted = fmap process gallerywords
     if (length gallerywords > 0) && (gallerywords !! 0 == "auto")
     --then return $ unlines (drop 1 splitted) --TODO auto gallery
     then return $ "<script type=\"text/javascript\">AutoGallery(\"" ++ (gallerywords !! 1) ++ "\")</script>"
     --else if splitted !! 0 == "default" --TODO folder auto only
-    else return $ unlines splitted 
+    else return $ unlines splitted
 
-        
+
 
 -- variant of map that passes each element's index as a second argument to f
 mapInd :: (a -> Int -> b) -> [a] -> [b]
@@ -141,20 +147,20 @@ mapInd f l = zipWith f l [0..]
 
 --this fancy thing will split posts into 3 groups, not that I use this feature anymore...
 --pass in what you want to list
---TODO DELETE This function and just use recent/posts/writing/work/art/games/teaching from below since we don't need to split into 3 collums anymore.git 
+--TODO DELETE This function and just use recent/posts/writing/work/art/games/teaching from below since we don't need to split into 3 collums anymore.git
 --old code is still there but I don't use it
 archiveCtx :: [Item String] -> Context String
-archiveCtx posts = 
-    let 
+archiveCtx posts =
+    let
         size = length posts
         splitPosts = chunksOf ((size+2) `quot` 3) posts
-        start = constField "title" "Archives" `mappend` 
+        start = constField "title" "Archives" `mappend`
                 newPostCtx `mappend`
                 listField "posts" newPostCtx (recentFirst posts)
         map1 = map return splitPosts
         map2fn a x = listField ("posts" ++ (show (x+1))) newPostCtx $ a
         map2 = mapInd map2fn map1
-    in 
+    in
         --foldr mappend start map2
         --the above code is equivalent to the below, except it can do N collumns (hardcoded to 3)
         --listField "posts1" newPostCtx (return $ splitPosts !! 0) `mappend`
@@ -164,7 +170,7 @@ archiveCtx posts =
 
 --------------------------------------------------------------------------------
 feedContext :: Context String
-feedContext = 
+feedContext =
     constField "description" "" `mappend` --TODO replace with something useful
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
@@ -176,7 +182,7 @@ feedConfiguration = FeedConfiguration
     , feedDescription = "TODO"
     , feedAuthorName  = "Peter Lu"
     , feedAuthorEmail = "poop"
-    , feedRoot        = "http://5fkitchen.com"
+    , feedRoot        = "http://pdlla.org"
     }
 
 
