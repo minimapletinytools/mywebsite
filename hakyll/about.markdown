@@ -12,6 +12,7 @@ date: September 22, 2014
 -fixed writing section
 -upgraded to newest version of hakyll with stack... Now that I actually know how to program haskell...
 -added oss page
+-updated CV
 ```
 
 ---------------------

@@ -37,8 +37,10 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 
 ### Professional Experience
 
-- *May 2018 - Present:*
-	- Blockchain core developer at [Thunder Token](https://www.thundertoken.com/). Go.
+- *May 2018 - December 2019:*
+	- Product and Research Specialist at [Thunder Token](https://www.thundertoken.com/). Go.
+	- Consensus protocol developer
+	- Primary author of [whitepaper and blockchain consensus series](http://pdlla.org/posts/writing/2019-12-10_blockchain_consensus.html)
 
 - *February 2017 - March 2018:*
 	- Fighting for equality in the games industry as a Senior Gameplay Engineer at [Super Evil Megacorp](http://www.superevilmegacorp.com/). C++.
@@ -61,5 +63,5 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 - *July 2010 - December 2010:*
 	- Developer for Eddo Stern's [Darkgame](http://eddostern.com/works/darkgame-3/) and UCLA Game Lab’s [Flatland](http://flatland.games.ucla.edu/) (directed by Eddo Stern). Darkgame is a multiplayer game about sensory deprivation programmed in Unity 3D and C# with a novel physics based menu [UI](http://vimeo.com/52597481).
 
-- *August 2009 - present:*
+- *August 2009 - December 2016:*
 	- Resident and volunteer for the [UCLA Game Lab](http://games.ucla.edu/). The UCLA Game Lab is an independent lab focused on researching artistic and expressive potential of games through innovative approaches in game design in both content and form. We harbour a diverse group of talented and motivated individuals all interested in exploring games in this way.

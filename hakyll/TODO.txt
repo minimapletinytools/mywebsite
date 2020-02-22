@@ -5,11 +5,14 @@ rsync -r ./ cmspice@pdlla.org:pdlla.org/
 stack exec -- site watch
 
 ::TODO::
+-add makefile to make doing everything easier
+-update CV
+-fix OSS icon
 -pixelart
   -add dragon game stuff to pixelart
   -clean up cave game sprites in pixelart
   -maybe add michaelonly stuff...
 DONE-clean up server bc of bad rsync
--add fabric sim stuff
--separate out beat down
--add CV
+DONE-add fabric sim stuff
+DONE-separate out beat down
+DONE-add CV
