@@ -27,20 +27,11 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 - [github](https://github.com/pdlla)
 - [online CV](http://pdlla.org/cv.html)
 
-### Teaching Experience
-- *Spring 2014 - present:*
-	- Adjunct Professor at USC, Interactive Media and Games. I teach the [Immersive](http://pdlla.org/posts/teaching/USC_486_F14.html) and [Alternative Control](http://pdlla.org/posts/teaching/USC_486_F16.html) Workshop classes.
-
-- *Fall 2014 - Spring 2016:*
-	- TA at UCLA, Design | Media Arts. I primarily TA for Eddo Stern's [game design class](http://pdlla.org/posts/teaching/UCLA_DMA157.html).
-
-
 ### Professional Experience
-
 - *May 2018 - December 2019:*
 	- Product and Research Specialist at [Thunder Token](https://www.thundertoken.com/). Go.
 	- Consensus protocol developer
-	- Primary author of [whitepaper and blockchain consensus series](http://pdlla.org/posts/writing/2019-12-10_blockchain_consensus.html)
+	- Primary author of our [whitepaper and blockchain consensus series](http://pdlla.org/posts/writing/2019-12-10_blockchain_consensus.html)
 
 - *February 2017 - March 2018:*
 	- Fighting for equality in the games industry as a Senior Gameplay Engineer at [Super Evil Megacorp](http://www.superevilmegacorp.com/). C++.
@@ -65,3 +56,10 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 
 - *August 2009 - December 2016:*
 	- Resident and volunteer for the [UCLA Game Lab](http://games.ucla.edu/). The UCLA Game Lab is an independent lab focused on researching artistic and expressive potential of games through innovative approaches in game design in both content and form. We harbour a diverse group of talented and motivated individuals all interested in exploring games in this way.
+
+### Teaching Experience
+- *Spring 2014 - present:*
+	- Adjunct Professor at USC, Interactive Media and Games. I teach the [Immersive](http://pdlla.org/posts/teaching/USC_486_F14.html) and [Alternative Control](http://pdlla.org/posts/teaching/USC_486_F16.html) Workshop classes.
+
+- *Fall 2014 - Spring 2016:*
+	- TA at UCLA, Design | Media Arts. I primarily TA for Eddo Stern's [game design class](http://pdlla.org/posts/teaching/UCLA_DMA157.html).
