@@ -6,14 +6,11 @@ date: September 22, 2014
 ***2/21/2020 - MOTD:***
 ```yooooooogggggaaaaaaaaaa```
 
+***3/24/2020 - Change Log:***
+```
+-updated world-centric game design essay
+```
 
-***2/21/2020 - Change Log:***
-```
--fixed writing section
--upgraded to newest version of hakyll with stack... Now that I actually know how to program haskell...
--added oss page
--updated CV
-```
 
 ---------------------
 
@@ -28,6 +25,14 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 ---------------------
 
 #### HISTORY
+
+***2/21/2020 - Change Log:***
+```
+-fixed writing section
+-upgraded to newest version of hakyll with stack... Now that I actually know how to program haskell...
+-added oss page
+-updated CV
+```
 
 ***12/10/2019 - Change Log:***
 ```
