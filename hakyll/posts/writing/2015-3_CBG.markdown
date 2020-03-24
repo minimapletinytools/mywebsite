@@ -3,9 +3,6 @@ title: World-Centric Massively Multiplayer Online Game Design
 date: March 15, 2015
 tags: paper, MMOG, game design
 ---
-
-# World-Centric Massively Multiplayer Online Game Design
-
 ## Introduction
 This essay introduces the *World-Centric* design perspective for massively multiplayer online games. It offers several concrete ideas for its implementation and looks at several existing examples to understand how these ideas shape the player experience.
 
