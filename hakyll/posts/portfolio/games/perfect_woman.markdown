@@ -11,13 +11,13 @@ tags: games
 
 Perfect Woman is coming out on Xbox One September 14th 2016! For more information please visit [our website](http://www.perfectwomangame.com).
 
-<iframe src="//player.vimeo.com/video/75890888?portrait=0&amp;color=fe5607" width="500" height="281" frameborder="0" align="center" webkitallowfullscreen  mozallowfullscreen allowfullscreen></iframe> 
+<iframe src="//player.vimeo.com/video/75890888?portrait=0&amp;color=fe5607" width="500" height="281" frameborder="0" align="center" webkitallowfullscreen  mozallowfullscreen allowfullscreen></iframe>
 
 Perfect Woman is a game inspired by the ubiquitous personality questionnaires featured in women’s magazines and the female roles they define. There are so many such roles emphasizing aspects of family, career, experience, sex and more. But these can not possibly characterize the depth and complexity of a woman’s life. Perfect Woman uses these stereotypes as building blocks for you to be your OWN perfect woman.
- 
+
 You build your own Perfect Woman story by choosing and performing a diverse cast of fun and interesting characters across seven different stages of your life. While certain life choices may be more or less difficult than others, it's up to you to decide what's best for yourself. The game is structured into progressive levels, each one representing a different stage in a woman’s life. Starting as a fetus in your mother's womb, players must perform in front of a Kinect to mimic various poses that appear on screen as a means of acting as that character.
 
-Perfect Woman is a game about celebrating diversity and choice rather than condemning conformity. We hope to extend this philosophy outside of the game as well as we see games as a medium to promote acceptance, personal growth, community and love. 
+Perfect Woman is a game about celebrating diversity and choice rather than condemning conformity. We hope to extend this philosophy outside of the game as well as we see games as a medium to promote acceptance, personal growth, community and love.
 
 <iframe src="https://player.vimeo.com/video/133094093" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -37,5 +37,4 @@ Lea Schoenfelder is an artist and animator from Germany. She has made several cr
 
 [Lea's thesis paper on Perfect Woman](/images/perfect_woman/PerfectWomanBooklet.pdf)
 
-
-
+Open source code for Perfect Woman is available [here](https://github.com/pdlla/perfectwomangame) and [here](https://github.com/pdlla/perfectwomanfiles).

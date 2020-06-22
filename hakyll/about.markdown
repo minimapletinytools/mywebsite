@@ -6,9 +6,12 @@ date: September 22, 2014
 ***2/21/2020 - MOTD:***
 ```yooooooogggggaaaaaaaaaa```
 
-***3/24/2020 - Change Log:***
+***6/21/2020 - Change Log:***
 ```
--updated world-centric game design essay
+-created page for shaping culture through play
+-created blog article for world centric blockchain games
+-removed expired/parked domains linked in USC 486 S16 :(
+-updated CV
 ```
 
 
@@ -25,6 +28,11 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 ---------------------
 
 #### HISTORY
+
+***3/24/2020 - Change Log:***
+```
+-updated world-centric game design essay
+```
 
 ***2/21/2020 - Change Log:***
 ```
