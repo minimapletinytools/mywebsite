@@ -1,7 +1,7 @@
 ---
 title: World-centric Blockchain Games as Playgrounds for Radical Markets
-date: March 13, 2016
-tags: paper, game design, perfect woman
+date: June 21, 2020
+tags: game design, blockchain
 ---
 
 \[The following post is taken from this [repository](https://github.com/pdlla/WCBG/blob/master/README.md) which tracks on-going development of the ideas presented here. This essay was also posted on the [RadicalxChange blog](https://blog.radicalxchange.org/blog/posts/world-centric-blockchain-games-as-playgrounds-for-radical-markets/).\]
