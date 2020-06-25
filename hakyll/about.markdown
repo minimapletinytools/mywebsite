@@ -6,12 +6,9 @@ date: September 22, 2014
 ***2/21/2020 - MOTD:***
 ```yooooooogggggaaaaaaaaaa```
 
-***6/21/2020 - Change Log:***
+***6/24/2020 - Change Log:***
 ```
--created page for shaping culture through play
--created blog article for world centric blockchain games
--removed expired/parked domains linked in USC 486 S16 :(
--updated CV
+-added blog post for inclusive language in code
 ```
 
 
@@ -28,6 +25,14 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 ---------------------
 
 #### HISTORY
+
+***6/21/2020 - Change Log:***
+```
+-created page for shaping culture through play
+-created blog article for world centric blockchain games
+-removed expired/parked domains linked in USC 486 S16 :(
+-updated CV
+```
 
 ***3/24/2020 - Change Log:***
 ```
