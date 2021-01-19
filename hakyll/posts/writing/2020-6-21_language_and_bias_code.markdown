@@ -29,8 +29,6 @@ I love that you can choose which biases you want to work on. Change is hard and 
 
 [UPDATE: It looks like [textio](https://textio.com/) has a similar if not [more sophisticated feature](https://textio.com/blog/watch-your-gender-tone/13035166463). I haven't tried it but looks promising based on the examples. It catalogs words that aren't gendered explicitly but none the less speak to a gendered audience. For example "inspired by" is offered as a more inclusive alternative to "driven by". I wonder if heir choice of wording [in the context of a job listing] is "You could attract more women to apply by changing your language" which seemingly reinforces the idea that women aren't "driven".]
 
-Towards this end, I've put up a bounty on gitcoin to [build an English dictionary of biased terms and their inclusive alternatives](https://gitcoin.co/issue/pdlla/inclusive-code-bounties/1/4478). If you'd like to see this in your favorite editor, please put up your own bounties or get coding!
-
 ***
 
 I knew in 2018 that asking everyone to use inclusive terminology in one minor feature at a struggling startup would amount to nothing. That wasn't the point. I wanted to challenge myself and others to confront the bias internalized through our use of language. These things take time and visible results often don't come until many years later. We're starting to see the fruits of those labors now and there's a lot more work to do. Don't be afraid and don't give up.
