@@ -6,10 +6,11 @@ date: September 22, 2014
 ***2/21/2020 - MOTD:***
 ```yooooooogggggaaaaaaaaaa```
 
-***1/19/2021 - Change Log:***
+***6/9/2021 - Change Log:***
 ```
 -add blog post for 2021 show reviews
 -update blog post for inclusive language in code
+-add new blog post for inclusive naming
 ```
 
 
