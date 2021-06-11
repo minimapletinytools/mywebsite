@@ -11,6 +11,7 @@ date: September 22, 2014
 -add blog post for 2021 show reviews
 -update blog post for inclusive language in code
 -add new blog post for inclusive naming
+-added more animals
 ```
 
 

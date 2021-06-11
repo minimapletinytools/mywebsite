@@ -1,4 +1,3 @@
-
 ---
 title: Show Reviews 2021
 date: January 18, 2021

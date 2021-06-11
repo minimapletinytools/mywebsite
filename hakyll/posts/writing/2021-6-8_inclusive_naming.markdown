@@ -1,3 +1,9 @@
+---
+title: Inclusive Naming Guidelines
+date: June 8, 2021
+tags: language, code
+---
+
 # Inclusive Naming Guidelines
 
 This article contains guidelines to make your feature or variable naming more inclusive. Feel free to share, copy, edit, etc.
