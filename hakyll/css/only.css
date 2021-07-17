@@ -5,6 +5,10 @@ body
 	background-color: rgb(255, 255, 238);
 }
 
+table, th, td {
+ border: 1px solid black;
+}
+
 code, pre {
     white-space: pre-wrap;       /* CSS 3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -15,31 +19,31 @@ code, pre {
     margin:0px;
     color: #444444;
 }
-img[alt="scale100"] { 
-  max-width:  100px; 
+img[alt="scale100"] {
+  max-width:  100px;
   display: block;
 }
-img[alt="scale200"] { 
-  max-width:  200px; 
+img[alt="scale200"] {
+  max-width:  200px;
   display: block;
 }
-img[alt="scale250"] { 
-  max-width:  250px; 
+img[alt="scale250"] {
+  max-width:  250px;
   display: block;
 }
-img[alt="scale300"] { 
-  max-width:  300px; 
+img[alt="scale300"] {
+  max-width:  300px;
   display: block;
 }
-img[alt="scale400"] { 
-  max-width:  400px; 
+img[alt="scale400"] {
+  max-width:  400px;
   display: block;
 }
-img[alt="scale500"] { 
-  max-width:  500px; 
+img[alt="scale500"] {
+  max-width:  500px;
   display: block;
 }
-img[alt="scale700"] { 
-  max-width:  700px; 
+img[alt="scale700"] {
+  max-width:  700px;
   display: block;
 }

@@ -6,6 +6,24 @@ tags: reviews
 
 Quick reviews with random comments on various things I watched in 2021 😗. Shows are rated out of 5 emojis. Enjoy!
 
+Spoiler hiding stuff not working due to hakyll pandoc fail or whatever sorry 😱
+
+
+### Amphibia (Season 2)
+🐸🙎🏼‍♀️🙎🏻‍♀️🙎🏽‍♀️🐸
+
+- I never thought about it so much but this whole time I was like there's no way Marcy is Asian. An Asian main character AND and Asian supporting character 🤯. Comedic that I could barely fathom this. Truly unprecedented.
+- It's not explicit but I think the distance between Sasha and the other two cuts across racial lines. Sasha's brazen and selfish disregard is something I distinctly remember as trait my white friends had (albeit I had no non-white friends at the time). To me, these characters are not just "character who happens to be XYZ" (perhaps an occasional callback (e.g. Anne in a Pha Biang)) but characters who are XYZ and their relations (in this case) are fundamentally shaped by the fact they are XYZ.
+- >! Super Sayanne :O! I can't wait for Sasha and Marcy to get their powers.
+- Frobo!
+- >! I was so worried Poly was gonna stop being cute after she grew legs, but she's literally the same except with tiny little legs
+- >! Look on Reddit/YT for scenes where Anne (and the other two) display their latent powers.
+- The last episode was GREAT! I wish they didn't rush it so quickly. That was a lot of plot and character development in one episode.
+- >! Love the opening for S3 at the end of S2 so cute. I guess Disney had to let kiddos like me know that Marcy was gonna be OK.
+- Obvious plot line comparison between Amphibia, ToH and SVTFOV. Yet each show is so unique in their own right too.
+- Why does Anne never use Tritonio's ancestral sword when it shows up in the OP?? :(
+- SVTFOV is still my fav of the 3 which is a bit of a bummer because it had the least progressive characters. Ponyhead is a rather problematic character too 😱. I'm just a sucker for the non-sense character shenanigans in that show.
+
 ### The Twelve Kingdoms
 🐀🐀🐀🐀🙆🏼‍♂️
 
@@ -18,6 +36,9 @@ Quick reviews with random comments on various things I watched in 2021 😗. Sho
 - I definitely felt a little sorry for Asano who gets unwillingly caught up in this nonsense, goes a little crazy, and dies after failing at a doubly pointless task that no one asked him to do (or maybe Suzu let him do it out of pity). Then I remembered that this happens to female supporting characters all the time and I think it's pretty funny for the useless male romantic supporting character to get the same treatment. Also feminist flex.
 
 ### Attack on Titan (Season 4)
+🤯🤯🤯🤯🙀
+
+- >! wow
 
 ### Shokugeki no Soma (Season 5)
 🍖👙🍖
