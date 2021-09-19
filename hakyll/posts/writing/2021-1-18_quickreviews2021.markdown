@@ -8,6 +8,16 @@ Quick reviews with random comments on various things I watched in 2021 😗. Sho
 
 Spoiler hiding stuff not working due to hakyll pandoc fail or whatever sorry 😱
 
+### Hunter x Hunter (2011)
+🃏🍆🧒🏻
+
+- Killua and Gon seeing Hisoka's actual hardon while Bisqy is thirsting was so hilarious it took me a whole minute to notice it was also really messed up 😱
+- I was most disappointed in the power levels of many characters feeling inconsistent over the course of the show
+- Killua's character development is really good. Can't say so much for the rest of the characters.
+- Ikalgo + Palm best characters :O
+
+### Owl house
+🏚🍞🍞🍞🦉
 
 ### Amphibia (Season 2)
 🐸🙎🏼‍♀️🙎🏻‍♀️🙎🏽‍♀️🐸
@@ -37,8 +47,6 @@ Spoiler hiding stuff not working due to hakyll pandoc fail or whatever sorry �
 
 ### Attack on Titan (Season 4)
 🤯🤯🤯🤯🙀
-
-- >! wow
 
 ### Shokugeki no Soma (Season 5)
 🍖👙🍖
