@@ -8,6 +8,16 @@ Quick reviews with random comments on various things I watched in 2021 😗. Sho
 
 Spoiler hiding stuff not working due to hakyll pandoc fail or whatever sorry 😱
 
+### Squid Game
+
+- "Alice in Borderland" but with better acting and maybe less interesting plot
+- Ali soooo humble :O I'm glad they included the scene where he sticks it up to his boss in E2
+- I was so cringe when the old guy was monologuing on his tug of war experience and now I think he's a literal edge lord.
+
+### She-Ra
+
+- Love the fist pound thingy in the She-Ra transformation sequence. Love these small details, really mixing masculine and feminine movements.
+
 ### Hunter x Hunter (2011)
 🃏🍆🧒🏻
 
