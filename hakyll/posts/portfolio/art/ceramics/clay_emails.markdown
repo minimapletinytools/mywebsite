@@ -13,7 +13,7 @@ In 2022, I downgraded from e-mails to hand written letters. As before, etched in
 
 For Jennifer, a would be lover, all too soon, who finally awoke me from my dream as it was turning to a nightmare
 
-![](/images/clayemails_jennifer.pdf)
+![](/images/clayemails_jennifer.png)
 
 
 ### 2015 
