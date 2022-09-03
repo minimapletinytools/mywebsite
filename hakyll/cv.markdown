@@ -29,7 +29,7 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 
 ### Professional Experience
 - *May 2020 - Present:*
-	- Senior Engineer at Roblox
+	- Principle Engineer at Roblox
 	
 - *May 2018 - December 2019:*
 	- Product and Research Specialist at [Thunder Token](https://www.thundertoken.com/). Go.

@@ -15,6 +15,7 @@ date: September 22, 2014
 -chicken house :O, not yet maybe next time
 -tiny tools? Also not yet 😱
 -more animal pics
+-updated CV
 ```
 
 

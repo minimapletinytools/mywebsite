@@ -6,7 +6,7 @@ stack exec -- site watch
 
 ::TODO::
 -add makefile to make doing everything easier
--update CV
+DONE-update CV
 -fix OSS icon
 -pixelart
   -add dragon game stuff to pixelart
