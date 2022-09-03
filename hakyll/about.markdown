@@ -6,12 +6,15 @@ date: September 22, 2014
 ***2/21/2020 - MOTD:***
 ```yooooooogggggaaaaaaaaaa```
 
-***6/9/2021 - Change Log:***
+***9/2/2022 - Change Log:***
 ```
--add blog post for 2021 show reviews
--update blog post for inclusive language in code
--add new blog post for inclusive naming
--added more animals
+-add new blog post for DE&I scenario role playing
+-add new blog post for DE&I community guidelines
+-add new blog post for DE&I meeting moderation guide
+-downgrade clay e-mails to clay hand written letters
+-chicken house :O, not yet maybe next time
+-tiny tools? Also not yet 😱
+-more animal pics
 ```
 
 
@@ -28,6 +31,14 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 ---------------------
 
 #### HISTORY
+
+***6/9/2021 - Change Log:***
+```
+-add blog post for 2021 show reviews
+-update blog post for inclusive language in code
+-add new blog post for inclusive naming
+-added more animals
+```
 
 ***6/21/2020 - Change Log:***
 ```
