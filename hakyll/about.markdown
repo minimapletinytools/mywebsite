@@ -8,16 +8,9 @@ date: September 22, 2014
 yooooooogggggaaaaaaaaaa
 ```
 
-***9/2/2022 - Change Log:***
+***11/5/2022 - Change Log:***
 ```
--add new blog post for DE&I scenario role playing
--add new blog post for DE&I community guidelines
--add new blog post for DE&I meeting moderation guide
--downgrade clay e-mails to clay hand written letters
--chicken house :O, not yet maybe next time
--tiny tools? Also not yet 😱
--more animal pics
--updated CV
+-add MOBA idea post
 ```
 
 
@@ -34,6 +27,21 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 ---------------------
 
 #### HISTORY
+
+
+***9/2/2022 - Change Log:***
+```
+-add new blog post for DE&I scenario role playing
+-add new blog post for DE&I community guidelines
+-add new blog post for DE&I meeting moderation guide
+-downgrade clay e-mails to clay hand written letters
+-chicken house :O, not yet maybe next time
+-tiny tools? Also not yet 😱
+-more animal pics
+-updated CV
+```
+
+
 
 ***6/9/2021 - Change Log:***
 ```
