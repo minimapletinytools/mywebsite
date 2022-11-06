@@ -11,20 +11,20 @@ Below are various MOBA hero ideas. Free for anyone to use.
 
 Upgrade abilities are enabled based on respective MOBA mechanics (e.g. DOTA Aghanim's Scepter/Shard)
 
-### Helicopter Person 
+### Helicopter Person
 
-Helicopter Person is a large strong bodied female mechanic. Her personality is dominating and masculine but in a playful way. Her hobbies include fixing things, breaking things, and making adults cry. She's also very reckless. Helicopter Person is also called GREASE because saying Helicopter Person everytime is too much work. 
+Helicopter Person is a large strong bodied female mechanic. Her personality is dominating and masculine but in a playful way. Her hobbies include fixing things, breaking things, and making adults cry. She's also very reckless. Helicopter Person is also called GREASE because saying Helicopter Person everytime is too much work.
 
 Unique Mechanic: OVERHEAT
 
-GREASE has a unique stacking buff heat. Heat stacks are lost at a rate proportional to the number of heat stacks in accordance to [Newton's Law of Cooling](https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling). 
+GREASE has a unique stacking buff heat. Heat stacks are lost at a rate proportional to the number of heat stacks in accordance to [Newton's Law of Cooling](https://en.wikipedia.org/wiki/Newton%27s_law_of_cooling).
 If GREASE builds up too many heat stacks she enters a recovery mode for several seconds where she can no longer use her abilities. After leveling her ult, GREASE will enter OVERHEAT mode before going into recovery mode.
 
 Q - Rev (Vroom Vroom)
 
 GREASE Rev's her engine dropping a cloud of smog and gains an engine stack. Engine stacks give a small burst of movement speed. Rev __has no cooldown__ but builds heat very rapidly. Smog clouds slow enemies. Each engine stack grants GREASE an empowered basic attack. Attacking an enemy consumes all heat stacks
 
-Upgrade: In OVERHEAT, GREASE concentrates the explosion in her next auto attack target, cutting both player's HP in half and pushing both players back. 
+Upgrade: In OVERHEAT, GREASE concentrates the explosion in her next auto attack target, cutting both player's HP in half and pushing both players back.
 
 W - Blow
 
@@ -34,11 +34,11 @@ Upgrade: In OVERHEAT, GREASE unlocks a new ability. When used, GREASE removes he
 
 E - Spark
 
-GREASE releases the electric potential energy built up in her engine damaging and briefly stunning everything in a radius. 
+GREASE releases the electric potential energy built up in her engine damaging and briefly stunning everything in a radius. All smog clouds that are in this radius are lit, destroying them and dealing damage to anything in the smog cloud. All  smog clouds overlapping with lit smog clouds are also lit.
 
 R - KABOOM (KABOOM)
 
-GREASE's ultimate unlocks a new passive. When overheating, GREASE enters OVERHEAT mode for 1.5 seconds. In OVERHEAT mode, GREASE is silenced, does not lose rev stacks and unlocks a new active ability. 
+GREASE's ultimate unlocks a new passive. When overheating, GREASE enters OVERHEAT mode for 1.5 seconds. In OVERHEAT mode, GREASE is silenced, does not lose rev stacks and unlocks a new active ability.
 
 GREASE gains a new targeted ability when in overheat mode. When activated, GREASE directs her engine explosion at the groud sending herself up into the air in the target direction. GREASE and a bunch of engine debris lands at the target location after 2 seconds slowing everything in a radius. If this ability is not activated before the overheat mode ends, GREASE will still use the ability targetting her current location. The explosion damages and stuns everything in a radius including GREASE!
 
@@ -55,7 +55,7 @@ Commissioned sketches by [Adeline Ducker](http://cargocollective.com/adelineduck
 
 ### C.O.W
 
-C.O.W is a half-woman half-cow wrestler and body builder towering at 7' When not fighting, C.O.W is often seen at the gym wearing an aged "FEMINIST AF" shirt. 
+C.O.W is a half-woman half-cow wrestler and body builder towering at 7' When not fighting, C.O.W is often seen at the gym wearing an aged "FEMINIST AF" shirt.
 
 Unique Mechanic: Fandom
 
@@ -73,10 +73,8 @@ E - Resilience
 
 C.O.W does Most Muscular pose and gains "resilience" for 0.2 seconds. If C.O.W is hit by an attack or ability with this buff, all damage and effects are nullified and the buff is replaced with "nevertheless she persisted" for 1 second. Attacking a unit with "nevertheless she persisted" deals the additional damage and effects that was absorbed by "resilience".
 
-R - Suplex 
+R - Suplex
 
-Suplex is a short range targeted ability that grabs a target unit and sends them directly behind C.O.W dealing damage and stunning them. 
+Suplex is a short range targeted ability that grabs a target unit and sends them directly behind C.O.W dealing damage and stunning them.
 
 Upgrade: If C.O.W is in SUPER mode and turns around twice, C.O.W gains a 1 second buff that turns Suplex into Pile Driver. Pile Driver is a short range targeted activated ability that sends both C.O.W and the target into the sky for 1 second and then landing in the same location dealing damage to the target and stunning all units in a radius. While in the sky, a second short range targeted ability is enabled that allows the landing location to be changed.
-
-
