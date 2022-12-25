@@ -57,24 +57,24 @@ Commissioned sketches by [Adeline Ducker](http://cargocollective.com/adelineduck
 
 C.O.W is a half-woman half-cow wrestler and body builder towering at 7' When not fighting, C.O.W is often seen at the gym wearing an aged "FEMINIST AF" shirt.
 
-Unique Mechanic: Fandom
+Unique Mechanic: Stardom
 
-Upon activating and connecting with each of her basic ability, C.O.W builds hype with her audience. If this is done with all 3 abilities in quick succession C.O.W enters SUPER mode for 5 seconds. In SUPER mode COW has increased movement speed, takes reduced damage, and deals additional damage.
+Upon activating and connecting with each of her basic ability, C.O.W builds hype with her audience. If this is done with all 3 abilities in quick succession C.O.W enters SUPER mode for 5 seconds. In SUPER mode COW has increased movement speed, takes reduced damage, and deals additional damage. After activating each of her abilities, fans can be heard cheering at a volume proportional to their hype.
 
 Q - Strength
 
-C.O.W. does teh archer pose and gains "strength" for 1 second. If C.O.W attacks an enemy with "strength", she sends a shock wave in the direction of attack that deals damage and slowing all enemies in a line.
+C.O.W. does the archer pose yelling "STRENGTH" and gains "strength" for 1 second gaining faster move speed. If C.O.W attacks an enemy with "strength", she does a drop kick sending the target hurling backwards and sending a shock wave in the direction of attack that deals damage.
 
 W - Courage
 
-C.O.W does a Rear Lat Spread pose and gains "courage" for 1 second. that replaces Courage with Body Slam. Body Slam is a targeted activated ability that hurls C.O.W at target location dealing damage and slowing all units in a radius.
+C.O.W does a Rear Lat Spread pose yelling "COURAGE" and gains "courage" for 1 second gaining improved defense. that replaces Courage with Body Slam. Body Slam is a targeted activated ability that hurls C.O.W at target location dealing damage and slowing all units in a radius.
 
 E - Resilience
 
-C.O.W does Most Muscular pose and gains "resilience" for 0.2 seconds. If C.O.W is hit by an attack or ability with this buff, all damage and effects are nullified and the buff is replaced with "nevertheless she persisted" for 1 second. Attacking a unit with "nevertheless she persisted" deals the additional damage and effects that was absorbed by "resilience".
+C.O.W does Most Muscular pose yelling "RESILIENCE" and gains "resilience" for 0.2 seconds. If C.O.W is hit by an attack or ability with this buff, all damage and effects are nullified and the buff is replaced with "nevertheless she persisted" for 1 second. Attacking a unit with "nevertheless she persisted" deals the additional damage and effects that was absorbed by "resilience".
 
 R - Suplex
 
 Suplex is a short range targeted ability that grabs a target unit and sends them directly behind C.O.W dealing damage and stunning them.
 
-Upgrade: If C.O.W is in SUPER mode and turns around twice, C.O.W gains a 1 second buff that turns Suplex into Pile Driver. Pile Driver is a short range targeted activated ability that sends both C.O.W and the target into the sky for 1 second and then landing in the same location dealing damage to the target and stunning all units in a radius. While in the sky, a second short range targeted ability is enabled that allows the landing location to be changed.
+Upgrade: If C.O.W is in SUPER mode and turns around twice, suplex becomes victory. When activated, C.O.W poses by sending both hands up into the air in victory yelling "VICTORY", and gains "victory" for 1.2 seconds becoming faster, invulnerable and silenced. C.O.W's next auto attack becomes pile driver. She grabs the target and jumps, sending both C.O.W and the target into the sky for 1 second and then landing in the same location dealing damage to the target and stunning all units in a radius. While in the sky, a second short range targeted ability is enabled that allows the landing location to be changed.
