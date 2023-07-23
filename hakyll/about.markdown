@@ -8,9 +8,10 @@ date: September 22, 2014
 yooooooogggggaaaaaaaaaa
 ```
 
-***11/5/2022 - Change Log:***
+***7/23/2023 - Change Log:***
 ```
 -add MOBA idea post
+-update some pages
 ```
 
 
