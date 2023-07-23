@@ -12,6 +12,8 @@ yooooooogggggaaaaaaaaaa
 ```
 -add MOBA idea post
 -update some pages
+-add miscwood1
+-add more animal pics
 ```
 
 
