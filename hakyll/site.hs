@@ -4,7 +4,7 @@ import           Control.Monad     (forM_, liftM, zipWithM_)
 import           Data.Aeson
 import           Data.Aeson.Types  (parse)
 import           Data.Char         (toLower)
-import qualified Data.HashMap.Lazy as Map
+import qualified Data.Aeson.KeyMap as AesonKeyMap
 import           Data.List         (findIndex, intercalate, isPrefixOf, length,
                                     sortBy, tails)
 import           Data.List.Split   (chunksOf, splitOn)
@@ -12,7 +12,6 @@ import           Data.Maybe        (fromMaybe)
 import           Data.Monoid       (mappend, mconcat)
 import qualified Data.Text         as T
 import           Data.Time.Clock   (UTCTime)
-import           Data.Time.Format  (parseTime)
 import           Debug.Trace       (trace)
 import           Hakyll
 import           System.Locale     (defaultTimeLocale)
@@ -36,6 +35,10 @@ main = hakyll $ do
         compile templateCompiler
 
     match "css/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "php/*" $ do
         route   idRoute
         compile copyFileCompiler
 
@@ -127,7 +130,7 @@ galleryContext = field "gallery" $ \item -> do
         process s = if (trim s) == ""
             then ""
             else "<img src=\"" ++ (toUrl "images/" ++ s ++ "\"") ++ " />"
-        gallery = fromMaybe "" $ Map.lookup "gallery" metadata
+        gallery = fromMaybe "" $ AesonKeyMap.lookup "gallery" metadata
         gallerywords = case parse (withText "gallery" (return . words . T.unpack)) gallery of
           Error x   -> trace x []
           Success x -> x

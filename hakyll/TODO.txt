@@ -2,6 +2,7 @@
 rsync -r ./ cmspice@pdlla.org:pdlla.org/
 
 (for testing)
+stack build
 stack exec -- site watch
 
 ::TODO::

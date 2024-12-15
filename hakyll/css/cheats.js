@@ -20,6 +20,11 @@ $.fn.randomize = function(childElem) {
 //used to pull gallery images using dreamhost generated directory html
 var fileextension = [".gif", ".png", ".jpg",".JPG", ".bmp"];
 
+function stripLeadingStuff(path) {
+	// Use a regular expression to match leading ../ or ../../ patterns
+	return path.replace(/^((\.\.\/)+)/, '');
+}
+
 function AutoGallery(dir){
 	$.ajax({
 	    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
@@ -29,7 +34,10 @@ function AutoGallery(dir){
 	        fileextension.forEach(function(e){
         		$(data).find("a:contains(" + e + ")").each(function () {
 		            var filename = this.href.replace(/^.*[\\\/]/, '')
-		            $('#gallery').append("<img src='" + dir + "/" + filename + "'>");
+					var image = encodeURIComponent("../" + stripLeadingStuff(dir) + "/" + filename)
+					console.log("../" + stripLeadingStuff(dir) + "/" + filename)
+		            //$('#gallery').append("<img src='" + dir + "/" + filename + "'>");
+					$('#gallery').append("<img src='https://pdlla.org/php/resizeimage.php?maxWidth=500&imagePath=" + image + "'>");
         		})
         	});
 	    }
