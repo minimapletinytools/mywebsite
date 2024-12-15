@@ -12,7 +12,7 @@ function resizeImage($imagePath, $maxWidth) {
 
     // Calculate the new dimensions based on the max width, keeping the aspect ratio
     $aspectRatio = $originalHeight / $originalWidth;
-    $newWidth = $maxWidth;
+    $newWidth = min($maxWidth, $originalWidth); 
     $newHeight = intval($newWidth * $aspectRatio);
 
     // Create an image resource from the original image
@@ -25,6 +25,9 @@ function resizeImage($imagePath, $maxWidth) {
             break;
         case IMAGETYPE_GIF:
             $sourceImage = imagecreatefromgif($imagePath);
+            break;
+        case IMAGETYPE_BMP:
+            $sourceImage = imagecreatefrombmp($imagePath);
             break;
         default:
             echo "Unsupported image type.";
@@ -54,6 +57,9 @@ function resizeImage($imagePath, $maxWidth) {
             break;
         case IMAGETYPE_GIF:
             imagegif($resizedImage);
+            break;
+        case IMAGETYPE_BMP:
+            imagebmp($resizedImage);
             break;
     }
 
