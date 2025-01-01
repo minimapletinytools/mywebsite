@@ -18,7 +18,7 @@ $.fn.randomize = function(childElem) {
 })(jQuery);
 
 //used to pull gallery images using dreamhost generated directory html
-var fileextension = [".gif", ".png", ".jpg",".JPG", ".bmp"];
+var fileextension = [".gif", ".png", ".jpg",".JPG", ".jpeg", ".bmp"];
 
 function stripLeadingStuff(path) {
 	// Use a regular expression to match leading ../ or ../../ patterns

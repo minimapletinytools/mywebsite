@@ -74,6 +74,9 @@ if (isset($_GET['imagePath']) && isset($_GET['maxWidth'])) {
     $imagePath = $_GET['imagePath'];
     $maxWidth = intval($_GET['maxWidth']); // Make sure maxWidth is an integer
 
+    // lol
+    $maxWidth += rand(-100, 100);
+
     // Call the function to resize the image
     resizeImage($imagePath, $maxWidth);
 } else {

@@ -8,9 +8,11 @@ date: September 22, 2014
 yooooooogggggaaaaaaaaaa
 ```
 
-***12/14/2024 - Change Log:***
+***1/1/2025 - Change Log:***
 ```
--add script to resize images in gallery
+-randomize image size in gallery
+-reorganize some stuff in galleries
+-add a lot of new galleries
 ```
 
 
@@ -27,6 +29,11 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 ---------------------
 
 #### HISTORY
+
+***12/14/2024 - Change Log:***
+```
+-add script to resize images in gallery
+```
 
 ***7/23/2023 - Change Log:***
 ```
