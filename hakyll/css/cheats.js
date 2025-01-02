@@ -34,6 +34,7 @@ function AutoGallery(dir){
 	        fileextension.forEach(function(e){
         		$(data).find("a:contains(" + e + ")").each(function () {
 		            var filename = this.href.replace(/^.*[\\\/]/, '')
+					filename = decodeURIComponent(filename); // Decode any already-encoded characters
 					var image = encodeURIComponent("../" + stripLeadingStuff(dir) + "/" + filename)
 					console.log("../" + stripLeadingStuff(dir) + "/" + filename)
 		            //$('#gallery').append("<img src='" + dir + "/" + filename + "'>");
