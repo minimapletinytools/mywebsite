@@ -1,16 +1,14 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.4.
+-- This file has been generated from package.yaml by hpack version 0.39.6.
 --
 -- see: https://github.com/sol/hpack
---
--- hash: af50a8fd4b0d3cec03048dd8578c9d75ac54a431e79cc199a5c9e464038fc6f1
 
 name:           mywebsite
 version:        0.1.0.0
-description:    bleh
+description:    static site generator for pdlla.org
 author:         Peter Lu
-maintainer:     chippermonky@gmail.com
+maintainer:     Peter Lu
 copyright:      2018 Peter Lu
 license:        BSD3
 build-type:     Simple
@@ -21,50 +19,13 @@ executable site
       Paths_mywebsite
   hs-source-dirs:
       ./
-  default-extensions:
-      ApplicativeDo
-      BangPatterns
-      DataKinds
-      ConstraintKinds
-      DeriveFoldable
-      DeriveFunctor
-      DeriveTraversable
-      DeriveGeneric
-      DeriveLift
-      DeriveTraversable
-      DerivingStrategies
-      EmptyCase
-      ExistentialQuantification
-      FlexibleContexts
-      FlexibleInstances
-      FunctionalDependencies
-      GADTs
-      GeneralizedNewtypeDeriving
-      InstanceSigs
-      KindSignatures
-      LambdaCase
-      MultiParamTypeClasses
-      MultiWayIf
-      NamedFieldPuns
-      OverloadedStrings
-      PatternSynonyms
-      RankNTypes
-      ScopedTypeVariables
-      StandaloneDeriving
-      TupleSections
-      TypeApplications
-      TypeFamilies
-      TypeFamilyDependencies
-      TypeOperators
-  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -Wall -Wcompat -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      aeson
-    , base >=4.7 && <5
-    , hakyll
-    , old-locale
-    , pandoc
-    , split
+      base >=4.7 && <5
+    , bytestring
+    , directory
+    , filepath
+    , hakyll >=4.17
+    , network-uri
     , text
-    , time
-    , unordered-containers
   default-language: Haskell2010

@@ -1,37 +1,12 @@
-
-//jquery function to randomize order of elements
-(function($) {
-$.fn.randomize = function(childElem) {
-  return this.each(function() {
-      var $this = $(this);
-      var elems = $this.children(childElem);
-
-      elems.sort(function() { return (Math.round(Math.random())-0.5); });
-
-      $this.detach(childElem);
-
-      for(var i=0; i < elems.length; i++)
-        $this.append(elems[i]);
-
+// shuffle the order of the children of `parent` matching `selector`
+function randomizeChildren(parent, selector) {
+  if (!parent) return;
+  var elems = Array.prototype.filter.call(parent.children, function (e) {
+    return e.matches(selector);
   });
-}
-})(jQuery);
-
-//used to pull gallery images using dreamhost generated directory html
-var fileextension = [".gif", ".png", ".jpg",".JPG", ".bmp"];
-
-function AutoGallery(dir){
-	$.ajax({
-	    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-	    url: dir,
-	    success: function (data) {
-	        //List all .png file names in the page
-	        fileextension.forEach(function(e){
-        		$(data).find("a:contains(" + e + ")").each(function () {
-		            var filename = this.href.replace(/^.*[\\\/]/, '')
-		            $('#gallery').append("<img src='" + dir + "/" + filename + "'>");
-        		})
-        	});
-	    }
-	});
+  for (var i = elems.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = elems[i]; elems[i] = elems[j]; elems[j] = t;
+  }
+  elems.forEach(function (e) { parent.appendChild(e); });
 }
