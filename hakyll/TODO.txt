@@ -1,10 +1,14 @@
 (deploying)
-push to master on GitHub, the workflow in .github/workflows/deploy.yml builds
+push to master on GitHub, the workflow in .github/workflows/site.yml builds
 and publishes to GitHub Pages
 
 (for testing, needs `brew install imagemagick` for image resizing)
 stack build
 stack exec -- site watch
+
+(tests, after building)
+stack exec -- site check --internal-links
+python3 tests/check_site.py
 
 ::TODO::
 DONE-update CV

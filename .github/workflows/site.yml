@@ -1,8 +1,9 @@
-name: Deploy site to GitHub Pages
+name: Build, test and deploy site
 
 on:
   push:
     branches: [master]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -11,8 +12,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: site-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
@@ -46,13 +47,22 @@ jobs:
       - name: Build site
         run: stack exec -- site build
 
-      - uses: actions/configure-pages@v5
+      - name: Check internal links
+        run: stack exec -- site check --internal-links
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Check generated site
+        run: python3 -I tests/check_site.py
+
+      - if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        uses: actions/configure-pages@v5
+
+      - if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: hakyll/_site
 
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
     needs: build
     runs-on: ubuntu-latest
     environment:

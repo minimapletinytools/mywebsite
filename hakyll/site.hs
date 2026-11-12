@@ -175,7 +175,7 @@ autoGallery item = do
                 body  = T.pack (itemBody item)
                 (before, after) = T.breakOn "<div id=\"gallery\">" body
                 body' = if T.null after
-                    then body <> html
+                    then body <> "<div id=\"gallery\">" <> html <> "</div>\n"
                     else before <> "<div id=\"gallery\">" <> html
                         <> T.drop (T.length "<div id=\"gallery\">") after
             return $ itemSetBody (T.unpack body') item

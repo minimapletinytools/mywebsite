@@ -12,6 +12,6 @@ A game of generative music, slapstick violence, and large buttons.
 
 Made with Pure Data, Raspberry Pi, Python.
 
-Produced in collaboration with [http://xander-underwhelm.com/projects/BeatDown](Alex Rickett) and [http://hadto.net](David Elliot).
+Produced in collaboration with [Alex Rickett](http://xander-underwhelm.com/projects/BeatDown) and [David Elliot](http://hadto.net).
 
-Made at the [http://games.ucla.edu/game/beat-down/](UCLA Game Lab).
+Made at the [UCLA Game Lab](http://games.ucla.edu/game/beat-down/).
