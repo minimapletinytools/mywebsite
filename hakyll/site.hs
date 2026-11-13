@@ -1,241 +1,239 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Control.Monad     (forM_, liftM, zipWithM_)
-import           Data.Aeson
-import           Data.Aeson.Types  (parse)
-import           Data.Char         (toLower)
-import qualified Data.HashMap.Lazy as Map
-import           Data.List         (findIndex, intercalate, isPrefixOf, length,
-                                    sortBy, tails)
-import           Data.List.Split   (chunksOf, splitOn)
-import           Data.Maybe        (fromMaybe)
-import           Data.Monoid       (mappend, mconcat)
-import qualified Data.Text         as T
-import           Data.Time.Clock   (UTCTime)
-import           Data.Time.Format  (parseTime)
-import           Debug.Trace       (trace)
+import           Data.Char             (toLower)
+import           Data.List             (sort)
+import qualified Data.ByteString.Lazy  as LBS
+import qualified Data.Text             as T
 import           Hakyll
-import           System.Locale     (defaultTimeLocale)
-import           Text.Pandoc       (writerReferenceLinks)
+import           Network.URI           (escapeURIString, isUnescapedInURI)
+import           System.Directory      (findExecutable)
+import           System.FilePath       (joinPath, splitDirectories,
+                                        takeExtension)
 
-
-import           Debug.Trace
-
--- Allow for reference style links in markdown
-pandocWriteOptions = defaultHakyllWriterOptions{
-    writerReferenceLinks = True
-}
 
 --------------------------------------------------------------------------------
 main :: IO ()
-main = hakyll $ do
+main = do
+    -- ImageMagick is used to shrink oversized photos and strip their metadata
+    -- (EXIF GPS etc). If it isn't installed, images are copied as-is.
+    magick <- findImageMagick
+    case magick of
+        Nothing -> putStrLn "WARNING: ImageMagick not found, images will not be resized"
+        Just _  -> return ()
 
-    --copy template stuff
-    match "templates/newsite/*" $ do
-        route   idRoute
-        compile templateCompiler
+    hakyllWith config $ do
 
-    match "css/*" $ do
-        route   idRoute
-        compile copyFileCompiler
+        match "templates/newsite/*" $ compile templateCompiler
 
-    --copy images
-    match "images/**" $ do
-        route   idRoute
-        compile copyFileCompiler
+        match "css/*" $ do
+            route   idRoute
+            compile copyFileCompiler
 
-    --generate posts
-    forM_ ["posts/**"] $ \p ->
-        match p $ do
+        match "favicon.ico" $ do
+            route   idRoute
+            compile copyFileCompiler
+
+        -- photos get resized + stripped, everything else is copied untouched
+        match ("images/**" .&&. resizable) $ do
+            route   idRoute
+            compile $ imageCompiler magick
+
+        -- max 500px wide copies used by auto galleries, under gallery-500/
+        match ("images/**" .&&. resizable) $ version "gallery" $ do
+            route   $ customRoute (galleryPath . toFilePath)
+            compile $ galleryImageCompiler magick
+
+        match ("images/**" .&&. complement resizable) $ do
+            route   idRoute
+            compile copyFileCompiler
+
+        -- posts
+        match "posts/**" $ do
             route $ setExtension "html"
             compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/newsite/item-project.html" newPostCtx
+                >>= autoGallery
+                >>= loadAndApplyTemplate "templates/newsite/item-project.html" postCtx
                 >>= saveSnapshot "content"
-                >>= loadAndApplyTemplate "templates/newsite/default.html" newPostCtx
+                >>= loadAndApplyTemplate "templates/newsite/default.html" postCtx
                 >>= relativizeUrls
 
-    --generate static pages
-    create ["archive.html"] $ do
-        route idRoute
-        compile $ do
-            allPosts <- loadAll "posts/writing/**"
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/newsite/archive.html" (archiveCtx allPosts)
-                >>= loadAndApplyTemplate "templates/newsite/default.html" (archiveCtx allPosts)
-                >>= relativizeUrls
+        create ["archive.html"] $ do
+            route idRoute
+            compile $ do
+                posts <- loadAll "posts/writing/**"
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/newsite/archive.html" (listCtx posts)
+                    >>= loadAndApplyTemplate "templates/newsite/default.html" (listCtx posts)
+                    >>= relativizeUrls
 
-    create ["index.html"] $ do
-        route idRoute
-        compile $ do
-            allPosts <- loadAll "posts/portfolio/**"
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/newsite/project-list.html" (archiveCtx allPosts)
-                >>= loadAndApplyTemplate "templates/newsite/default.html" (archiveCtx allPosts)
-                >>= relativizeUrls
+        create ["index.html"] $ do
+            route idRoute
+            compile $ do
+                posts <- loadAll "posts/portfolio/**"
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/newsite/project-list.html" (listCtx posts)
+                    >>= loadAndApplyTemplate "templates/newsite/default.html" (listCtx posts)
+                    >>= relativizeUrls
 
-    -- Build special pages
-    forM_ ["404.markdown","about.markdown","cv.markdown","microblog.markdown"] $ \p ->
-        match p $ do
+        -- special pages
+        match (fromList ["about.markdown", "cv.markdown", "microblog.markdown"]) $ do
             route   $ setExtension "html"
             compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/newsite/item-post.html" newPostCtx
-                >>= loadAndApplyTemplate "templates/newsite/default.html" newPostCtx
+                >>= loadAndApplyTemplate "templates/newsite/item-post.html" postCtx
+                >>= loadAndApplyTemplate "templates/newsite/default.html" postCtx
                 >>= relativizeUrls
 
+        -- GitHub Pages serves 404.html for *any* missing path, so its urls
+        -- must stay absolute (relative urls would break on nested paths).
+        match "404.markdown" $ do
+            route   $ setExtension "html"
+            compile $ pandocCompiler
+                >>= loadAndApplyTemplate "templates/newsite/item-post.html" postCtx
+                >>= loadAndApplyTemplate "templates/newsite/default.html" postCtx
 
-    -- Render RSS feed
-    create ["rss.xml"] $ do
-        route idRoute
-        compile $ do
-            posts <- fmap (take 10) . recentFirst =<<
-                loadAllSnapshots "posts/**" "content"
-            renderRss feedConfiguration feedContext posts
-
-
-
---------------------------------------------------------------------------------
-
---CAN DELETE
-postCtx :: Context String
-postCtx =
-    field "work" (\_ -> workList)           `mappend`
-    field "recent" (\_ -> recentPostList)   `mappend`
-    dateField "date" "%B %e, %Y"            `mappend`
-    defaultContext
+        create ["rss.xml"] $ do
+            route idRoute
+            compile $ do
+                posts <- fmap (take 10) . recentFirst =<<
+                    loadAllSnapshots "posts/**" "content"
+                renderRss feedConfiguration feedContext posts
 
 
-newPostCtx :: Context String
-newPostCtx =
-    listField "work" defaultContext (recentFirst =<< recentWork)  `mappend`
-    listField "art" defaultContext (recentFirst =<< recentArt)  `mappend`
-    listField "games" defaultContext (recentFirst =<< recentGames)  `mappend`
-    listField "teaching" defaultContext (recentFirst =<< recentTeaching)  `mappend`
-    listField "recent" defaultContext (fmap (take 10) . recentFirst =<< recentPosts)   `mappend`
-    dateField "date" "%B %e, %Y"            `mappend`
-    galleryContext `mappend`
-    defaultContext
-
---TODO
-
-
-
---TODO add code for auto gallery. need to pass in folder name
-galleryContext :: Context a
-galleryContext = field "gallery" $ \item -> do
-    metadata <- getMetadata (itemIdentifier item)
-    let
-        process s = if (trim s) == ""
-            then ""
-            else "<img src=\"" ++ (toUrl "images/" ++ s ++ "\"") ++ " />"
-        gallery = fromMaybe "" $ Map.lookup "gallery" metadata
-        gallerywords = case parse (withText "gallery" (return . words . T.unpack)) gallery of
-          Error x   -> trace x []
-          Success x -> x
-        splitted = fmap process gallerywords
-    if (length gallerywords > 0) && (gallerywords !! 0 == "auto")
-    --then return $ unlines (drop 1 splitted) --TODO auto gallery
-    then return $ "<script type=\"text/javascript\">AutoGallery(\"" ++ (gallerywords !! 1) ++ "\")</script>"
-    --else if splitted !! 0 == "default" --TODO folder auto only
-    else return $ unlines splitted
-
-
-
--- variant of map that passes each element's index as a second argument to f
-mapInd :: (a -> Int -> b) -> [a] -> [b]
-mapInd f l = zipWith f l [0..]
-
-
---this fancy thing will split posts into 3 groups, not that I use this feature anymore...
---pass in what you want to list
---TODO DELETE This function and just use recent/posts/writing/work/art/games/teaching from below since we don't need to split into 3 collums anymore.git
---old code is still there but I don't use it
-archiveCtx :: [Item String] -> Context String
-archiveCtx posts =
-    let
-        size = length posts
-        splitPosts = chunksOf ((size+2) `quot` 3) posts
-        start = constField "title" "Archives" `mappend`
-                newPostCtx `mappend`
-                listField "posts" newPostCtx (recentFirst posts)
-        map1 = map return splitPosts
-        map2fn a x = listField ("posts" ++ (show (x+1))) newPostCtx $ a
-        map2 = mapInd map2fn map1
-    in
-        --foldr mappend start map2
-        --the above code is equivalent to the below, except it can do N collumns (hardcoded to 3)
-        --listField "posts1" newPostCtx (return $ splitPosts !! 0) `mappend`
-        --listField "posts2" newPostCtx (return $ splitPosts !! 1) `mappend`
-        --listField "posts3" newPostCtx (return $ splitPosts !! 2) `mappend`
-        start
-
---------------------------------------------------------------------------------
-feedContext :: Context String
-feedContext =
-    constField "description" "" `mappend` --TODO replace with something useful
-    dateField "date" "%B %e, %Y" `mappend`
-    defaultContext
-
---------------------------------------------------------------------------------
-feedConfiguration :: FeedConfiguration
-feedConfiguration = FeedConfiguration
-    { feedTitle       = "_kitchen"
-    , feedDescription = "TODO"
-    , feedAuthorName  = "Peter Lu"
-    , feedAuthorEmail = "poop"
-    , feedRoot        = "http://pdlla.org"
+config :: Configuration
+config = defaultConfiguration
+    { destinationDirectory = "_site"
     }
 
 
 --------------------------------------------------------------------------------
-recentPosts :: Compiler [Item String]
-recentPosts = do
-    identifiers <- getMatches "posts/*"
-    return [Item identifier "" | identifier <- identifiers]
+-- Contexts
 
-recentWriting :: Compiler [Item String]
-recentWriting = do
-    identifiers <- getMatches "posts/writing/**"
-    return [Item identifier "" | identifier <- identifiers]
+postCtx :: Context String
+postCtx =
+    listField "art"      defaultContext (recentFirst =<< stubs "posts/portfolio/art/**")      <>
+    listField "games"    defaultContext (recentFirst =<< stubs "posts/portfolio/games/**")    <>
+    listField "teaching" defaultContext (recentFirst =<< stubs "posts/teaching/**")           <>
+    dateField "date" "%B %e, %Y"                                                             <>
+    galleryContext                                                                           <>
+    defaultContext
 
-recentWork :: Compiler [Item String]
-recentWork = do
-    identifiers <- getMatches "posts/portfolio/**"
-    return [Item identifier "" | identifier <- identifiers]
+-- context for pages that list a set of posts (index, archive)
+listCtx :: [Item String] -> Context String
+listCtx posts =
+    constField "title" "Archives"                    <>
+    postCtx                                          <>
+    listField "posts" postCtx (recentFirst posts)
 
+-- empty items for each post matching the pattern; enough for title/url/date
+stubs :: Pattern -> Compiler [Item String]
+stubs pat = do
+    ids <- getMatches pat
+    return [Item i "" | i <- ids]
 
+feedContext :: Context String
+feedContext =
+    constField "description" "" <>
+    dateField "date" "%B %e, %Y" <>
+    defaultContext
 
-
-recentArt :: Compiler [Item String]
-recentArt = do
-    identifiers <- getMatches $ "posts/portfolio/art/**"
-    return [Item identifier "" | identifier <- identifiers]
-
-recentGames :: Compiler [Item String]
-recentGames = do
-    identifiers <- getMatches "posts/portfolio/games/**"
-    return [Item identifier "" | identifier <- identifiers]
-
-recentTeaching :: Compiler [Item String]
-recentTeaching = do
-    identifiers <- getMatches "posts/teaching/**"
-    return [Item identifier "" | identifier <- identifiers]
-
-
-
-
---THESE THINGS ARE BROKEN FOR SOME REASON...
-recentPostList :: Compiler String
-recentPostList = do
-    posts   <- fmap (take 10) . recentFirst =<< recentPosts
-    itemTpl <- loadBody "templates/indexpostitem.html"
-    list    <- applyTemplateList itemTpl defaultContext posts
-    return list
+feedConfiguration :: FeedConfiguration
+feedConfiguration = FeedConfiguration
+    { feedTitle       = "_kitchen"
+    , feedDescription = "_kitchen"
+    , feedAuthorName  = "Peter Lu"
+    , feedAuthorEmail = ""
+    , feedRoot        = "https://pdlla.org"
+    }
 
 
---CAN DELETE
-workList :: Compiler String
-workList = do
-    posts   <- recentFirst =<< recentWork
-    itemTpl <- loadBody "templates/indexpostitem.html"
-    list    <- applyTemplateList itemTpl defaultContext posts
-    return list
+--------------------------------------------------------------------------------
+-- Galleries
+--
+-- Posts can set `gallery:` in their metadata to either
+--   * a whitespace separated list of paths relative to images/
+--   * `auto <dir>` to include every image in <dir> (computed at build time)
+--
+-- Auto galleries are inserted into the post's `<div id="gallery">` if there is
+-- one, otherwise they are appended to the end of the post.
+
+galleryContext :: Context String
+galleryContext = field "gallery" $ \item -> do
+    g <- getMetadataField (itemIdentifier item) "gallery"
+    case words <$> g of
+        Just ("auto" : _) -> noResult "auto gallery is rendered into the body"
+        Just ws@(_ : _)   -> return $ unlines [imgTag ("images/" ++ w) | w <- ws]
+        _                 -> noResult "no gallery"
+
+autoGallery :: Item String -> Compiler (Item String)
+autoGallery item = do
+    g <- getMetadataField (itemIdentifier item) "gallery"
+    case words <$> g of
+        Just ("auto" : dir : _) -> do
+            ids <- getMatches (fromGlob (normalizeDir dir ++ "/*") .&&. hasNoVersion)
+            let imgs  = sort [toFilePath i | i <- ids, isImage (toFilePath i)]
+                html  = T.pack $ "\n" ++ unlines (map (imgTag . galleryVersion) imgs)
+                body  = T.pack (itemBody item)
+                (before, after) = T.breakOn "<div id=\"gallery\">" body
+                body' = if T.null after
+                    then body <> "<div id=\"gallery\">" <> html <> "</div>\n"
+                    else before <> "<div id=\"gallery\">" <> html
+                        <> T.drop (T.length "<div id=\"gallery\">") after
+            return $ itemSetBody (T.unpack body') item
+        _ -> return item
+
+-- "../../../../images/foo/" -> "images/foo"
+normalizeDir :: String -> String
+normalizeDir = joinPath . dropWhile (`elem` ["..", ".", "/"]) . splitDirectories
+             . reverse . dropWhile (== '/') . reverse
+
+imgTag :: FilePath -> String
+imgTag path = "<img src=\"" ++ escapeHtml (escapeURIString isUnescapedInURI ('/' : path))
+           ++ "\" loading=\"lazy\" />"
+
+-- auto galleries show the max-500px-wide copy if one is generated
+galleryVersion :: FilePath -> FilePath
+galleryVersion f
+    | matches resizable (fromFilePath f) = galleryPath f
+    | otherwise                          = f
+
+-- images/foo/bar.jpg -> gallery-500/foo/bar.jpg
+galleryPath :: FilePath -> FilePath
+galleryPath = ("gallery-500/" ++) . drop (length ("images/" :: String))
+
+isImage :: FilePath -> Bool
+isImage f = map toLower (takeExtension f) `elem`
+    [".gif", ".png", ".jpg", ".jpeg", ".bmp", ".webp"]
+
+
+--------------------------------------------------------------------------------
+-- Image processing
+
+-- files that get run through ImageMagick
+resizable :: Pattern
+resizable = fromRegex "\\.([jJ][pP][eE]?[gG]|[pP][nN][gG])$"
+
+findImageMagick :: IO (Maybe FilePath)
+findImageMagick = do
+    m <- findExecutable "magick"   -- ImageMagick 7
+    case m of
+        Just _  -> return m
+        Nothing -> findExecutable "convert"  -- ImageMagick 6
+
+-- Shrink anything bigger than 1600px on its longest side, apply EXIF rotation,
+-- and strip all metadata except the color profile.
+imageCompiler :: Maybe FilePath -> Compiler (Item LBS.ByteString)
+imageCompiler = resizeCompiler "1600x1600>"
+
+-- Same, but at most 500px wide (what auto galleries display)
+galleryImageCompiler :: Maybe FilePath -> Compiler (Item LBS.ByteString)
+galleryImageCompiler = resizeCompiler "500x>"
+
+resizeCompiler :: String -> Maybe FilePath -> Compiler (Item LBS.ByteString)
+resizeCompiler _    Nothing   = getResourceLBS
+resizeCompiler size (Just im) = do
+    ext <- getUnderlying >>= \i -> return (map toLower (takeExtension (toFilePath i)))
+    let fmt = if ext == ".png" then "png" else "jpg"
+        args = [ "-", "-auto-orient", "-resize", size, "+profile", "!icc,*" ]
+            ++ (if fmt == "jpg" then ["-quality", "85"] else [])
+            ++ [ fmt ++ ":-" ]
+    getResourceLBS >>= withItemBody (unixFilterLBS im args)

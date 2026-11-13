@@ -48,8 +48,8 @@ Until then, the works in this exhibition will dance and cry together in joy and 
 #### [Gallery Catalog](/images/201/catalog.pdf)
 
 ![](/images/201/inline/show.jpg)
-![](/images/201/inline/echo2.jpg)
-![](/images/201/inline/echo3.jpg)
+![](/images/201/inline/echo2.JPG)
+![](/images/201/inline/echo3.JPG)
 
 -------------------------
 

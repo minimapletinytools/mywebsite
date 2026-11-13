@@ -19,7 +19,7 @@ A list of open source projects I work on or have worked on in some way. You can 
 
 
 # Contributor
-- [Blender](www.blender.org) My list of contributions can be seen [here](https://developer.blender.org/differential/query/biusJjrFLIIO/). Yeah ok, it's just some UVs. If you ever texture map Suzanne you can thank me 🐒.
+- [Blender](https://www.blender.org) My list of contributions can be seen [here](https://developer.blender.org/differential/query/biusJjrFLIIO/). Yeah ok, it's just some UVs. If you ever texture map Suzanne you can thank me 🐒.
 
 # Games
 (most of these have their own page on my website, this is just a partial list too)

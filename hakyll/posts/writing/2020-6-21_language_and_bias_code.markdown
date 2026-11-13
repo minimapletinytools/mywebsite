@@ -18,7 +18,7 @@ I saw the potential of this when a panelist pointed out that our use of the word
 
 Language is powerful. It reflects our cultural values and is shaped by our history. It encodes countless assumptions and enables us to communicate incredibly complex relational messages with just a few symbols. You can find a shocking demonstration of its influence in ["A Person Paper on Purity in Language"](https://www.cs.virginia.edu/~evans/cs655/readings/purity.html) by Douglas Hofstadter (TW: it's clearly satire, but the racist neologism get pretty intense).
 
-[![](http://static1.1.sqspcdn.com/static/f/1542080/27705295/1506822236863/comicdoctor.png)](http://www.lunarbaboon.com/comics/doctor-1.html)
+[![](https://static1.1.sqspcdn.com/static/f/1542080/27705295/1506822236863/comicdoctor.png)](http://www.lunarbaboon.com/comics/doctor-1.html)
 
 Finally, let's not forget the power inclusive language has on its audience. It will nudge at the rusty gears in readers who are use to seeing the more familiar terms. It can be safe and subtle. Sliding in a singular they, for example, will unlikely meet the ire of even the most intolerant listener. Last but not least, it's a means for allies to identify each other in unsafe environments.
 

@@ -33,7 +33,7 @@ Lea and Peter first met and started collaborating on Perfect Woman at the UCLA G
 
 Lea Schoenfelder is an artist and animator from Germany. She has made several critically acclaimed games addressing social issues in her iconic style. Her games include the IGF award winning [Ulitisa Dmitrova](https://www.youtube.com/watch?v=6kikDI7E6EY) exploring youth poverity in St. Petersburg and the gorgeously illustrated and poignant [Ute](http://www.rockpapershotgun.com/2014/01/17/s-exe-ute-by-lea-schonfelder-nsfw/).
 
-[Some more writing on Perfect Woman](posts/writing/2016-13-3_perfect_woman.html)
+[Some more writing on Perfect Woman](/posts/writing/2016-3-13_perfect_woman.html)
 
 [Lea's thesis paper on Perfect Woman](/images/perfect_woman/PerfectWomanBooklet.pdf)
 

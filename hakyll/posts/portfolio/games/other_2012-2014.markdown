@@ -21,7 +21,7 @@ Some of the other games I've made or partly made:
 
 Games I made with Anton Bobkov as pluanbo/anboplu. Please visit our [website](http://anboplu.robotbear.org/).
 
-* [Dragon Game](/posts/portfolio/games/burnandturn.html)
+* [Dragon Game](/posts/portfolio/games/dragon_game.html)
 * [Cat Game](http://anboplu.robotbear.org)
 * [Cube Game](/posts/portfolio/games/kubisch.html)
 * [Snaketrix](http://anboplu.robotbear.org)

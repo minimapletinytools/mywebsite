@@ -1,0 +1,73 @@
+name: Build, test and deploy site
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: hakyll
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      - uses: haskell-actions/setup@v2
+        with:
+          enable-stack: true
+          stack-no-global: true
+
+      - name: Cache stack
+        uses: actions/cache@v6
+        with:
+          path: |
+            ~/.stack
+            hakyll/.stack-work
+          key: stack-${{ runner.os }}-${{ hashFiles('hakyll/stack.yaml', 'hakyll/stack.yaml.lock', 'hakyll/package.yaml') }}
+          restore-keys: stack-${{ runner.os }}-
+
+      - name: Build site generator
+        run: stack build --install-ghc
+
+      - name: Build site
+        run: stack exec -- site build
+
+      - name: Check internal links
+        run: stack exec -- site check --internal-links
+
+      - name: Check generated site
+        run: python3 -I tests/check_site.py
+
+      - if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        uses: actions/configure-pages@v6
+
+      - if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: hakyll/_site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

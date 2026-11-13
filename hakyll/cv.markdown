@@ -40,7 +40,7 @@ I am an independent game designer and artist. my practice includes ceramics, gam
 	- Fighting for equality in the games industry as a Senior Gameplay Engineer at [Super Evil Megacorp](http://www.superevilmegacorp.com/). C++.
 
 - *August 2016 - January 2017:*
-	- [Blender](www.blender.org) contributor by night. My list of contributions can be seen [here](https://developer.blender.org/differential/query/biusJjrFLIIO/).
+	- [Blender](https://www.blender.org) contributor by night. My list of contributions can be seen [here](https://developer.blender.org/differential/query/biusJjrFLIIO/).
 
 - *Oct 2012 - August 2016:*
 	- Lead developer and  co-creator for [Perfect Woman](http://www.perfectwomangame.com/). Perfect Woman is an award winning, innovative and socially aware motion controlled (Kinect) dance game for Xbox One. Created by myself and Lea Schönfelder, Perfect Woman has been showed in numerous public places to critical acclaim.

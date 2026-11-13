@@ -1,11 +1,16 @@
-(run this in _site)
-rsync -r ./ cmspice@pdlla.org:pdlla.org/
+(deploying)
+push to master on GitHub, the workflow in .github/workflows/site.yml builds
+and publishes to GitHub Pages
 
-(for testing)
+(for testing, needs `brew install imagemagick` for image resizing)
+stack build
 stack exec -- site watch
 
+(tests, after building)
+stack exec -- site check --internal-links
+python3 tests/check_site.py
+
 ::TODO::
--add makefile to make doing everything easier
 DONE-update CV
 -fix OSS icon
 -pixelart
