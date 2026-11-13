@@ -82,6 +82,22 @@ def resolve(page, url):
     return os.path.normpath(os.path.join(os.path.dirname(page), url))
 
 
+def exists_exact_case(path):
+    """os.path.exists, but case-sensitive even on macOS (GitHub Pages is)."""
+    path = os.path.normpath(path)
+    if not os.path.exists(path):
+        return False
+    rel = os.path.relpath(path, SITE)
+    cur = SITE
+    for part in rel.split(os.sep):
+        if part in ("", "."):
+            continue
+        if part not in os.listdir(cur):
+            return False
+        cur = os.path.join(cur, part)
+    return True
+
+
 def image_size(path):
     """(width, height) of a PNG or JPEG, without third party libraries."""
     with open(path, "rb") as f:
@@ -142,8 +158,9 @@ def check_pages():
                     fail(f"{rel}: insecure <{tag} src={url}>")
                 # every local file a page references must exist
                 target = resolve(page, url)
-                if target and not os.path.exists(target):
-                    fail(f"{rel}: <{tag} {attr}={url}> points to a missing file")
+                if target and not exists_exact_case(target):
+                    fail(f"{rel}: <{tag} {attr}={url}> points to a missing file"
+                         " (filenames are case-sensitive)")
             if tag == "script" and "jquery" in attrs.get("src", "").lower():
                 fail(f"{rel}: still loads jQuery")
         with open(page, encoding="utf-8") as f:

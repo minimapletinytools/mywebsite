@@ -22,7 +22,7 @@ jobs:
       run:
         working-directory: hakyll
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install ImageMagick
         run: sudo apt-get update && sudo apt-get install -y imagemagick
@@ -33,7 +33,7 @@ jobs:
           stack-no-global: true
 
       - name: Cache stack
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/.stack
@@ -54,10 +54,10 @@ jobs:
         run: python3 -I tests/check_site.py
 
       - if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: hakyll/_site
 
@@ -70,4 +70,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
