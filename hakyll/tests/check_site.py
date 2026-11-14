@@ -192,8 +192,8 @@ def check_galleries():
                 fail(f"{rel}: gallery shows {len(names)} images, folder has {len(expected)}")
             for u in got:
                 ext = os.path.splitext(u)[1].lower()
-                if ext in RESIZED_EXTS and "/gallery-500/" not in u:
-                    fail(f"{rel}: gallery image {u} is not the 500px copy")
+                if ext in RESIZED_EXTS and "/gallery/" not in u:
+                    fail(f"{rel}: gallery image {u} is not the resized gallery copy")
 
 
 def check_images():
@@ -214,7 +214,7 @@ def check_images():
                 fail(f"{rel}: could not read image size")
                 continue
             w, h = size
-            limit = (500, None) if rel.startswith("gallery-500/") else (1600, 1600)
+            limit = (600, None) if rel.startswith("gallery/") else (1600, 1600)
             if w > limit[0] or (limit[1] and h > limit[1]):
                 fail(f"{rel}: {w}x{h} is larger than {limit}")
 
