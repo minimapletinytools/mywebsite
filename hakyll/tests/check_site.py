@@ -219,6 +219,21 @@ def check_images():
                 fail(f"{rel}: {w}x{h} is larger than {limit}")
 
 
+def check_source_images():
+    """Source images must really be a format browsers (and CI's ImageMagick)
+    can read. iPhones like to save HEIC photos with a .png/.jpg name."""
+    for d, _, files in os.walk(os.path.join(ROOT, "images")):
+        for f in files:
+            if os.path.splitext(f)[1].lower() not in IMAGE_EXTS:
+                continue
+            path = os.path.join(d, f)
+            with open(path, "rb") as fh:
+                head = fh.read(16)
+            if head[4:8] == b"ftyp":
+                fail(f"{os.path.relpath(path, ROOT)}: is actually HEIC/HEIF/AVIF,"
+                     " convert it to a real jpg/png")
+
+
 def check_404():
     p = parse(os.path.join(SITE, "404.html"))
     for tag, attrs in p.tags:
@@ -242,7 +257,7 @@ def main():
         print("no _site directory, run `stack exec -- site build` first")
         return 1
     for check in [check_expected_pages, check_pages, check_galleries,
-                  check_images, check_404, check_rss]:
+                  check_images, check_source_images, check_404, check_rss]:
         before = len(errors)
         check()
         print(f"{check.__name__}: {'ok' if len(errors) == before else 'FAILED'}")
