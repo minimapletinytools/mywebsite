@@ -11,9 +11,10 @@ stack exec -- site check --internal-links
 python3 tests/check_site.py
 
 ::TODO::
+-add horsey page (images/misc_horses), also unused: round_food, meowmeow, misc_mallets
 DONE-update CV
--fix OSS icon
--pixelart
+DONE?-fix OSS icon
+DONE-pixelart
   -add dragon game stuff to pixelart
   -clean up cave game sprites in pixelart
   -maybe add michaelonly stuff...

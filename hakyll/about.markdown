@@ -8,12 +8,11 @@ date: September 22, 2014
 yooooooogggggaaaaaaaaaa
 ```
 
-***7/23/2023 - Change Log:***
+***1/1/2025 - Change Log:***
 ```
--add MOBA idea post
--update some pages
--add miscwood1
--add more animal pics
+-randomize image size in gallery
+-reorganize some stuff in galleries
+-add a lot of new galleries
 ```
 
 
@@ -31,6 +30,18 @@ This site was built with HTML and [hakyll](http://jaspervdj.be/hakyll/).
 
 #### HISTORY
 
+***12/14/2024 - Change Log:***
+```
+-add script to resize images in gallery
+```
+
+***7/23/2023 - Change Log:***
+```
+-add MOBA idea post
+-update some pages
+-add miscwood1
+-add more animal pics
+```
 
 ***9/2/2022 - Change Log:***
 ```

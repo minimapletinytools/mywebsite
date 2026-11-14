@@ -192,8 +192,8 @@ def check_galleries():
                 fail(f"{rel}: gallery shows {len(names)} images, folder has {len(expected)}")
             for u in got:
                 ext = os.path.splitext(u)[1].lower()
-                if ext in RESIZED_EXTS and "/gallery-500/" not in u:
-                    fail(f"{rel}: gallery image {u} is not the 500px copy")
+                if ext in RESIZED_EXTS and "/gallery/" not in u:
+                    fail(f"{rel}: gallery image {u} is not the resized gallery copy")
 
 
 def check_images():
@@ -214,9 +214,24 @@ def check_images():
                 fail(f"{rel}: could not read image size")
                 continue
             w, h = size
-            limit = (500, None) if rel.startswith("gallery-500/") else (1600, 1600)
+            limit = (600, None) if rel.startswith("gallery/") else (1600, 1600)
             if w > limit[0] or (limit[1] and h > limit[1]):
                 fail(f"{rel}: {w}x{h} is larger than {limit}")
+
+
+def check_source_images():
+    """Source images must really be a format browsers (and CI's ImageMagick)
+    can read. iPhones like to save HEIC photos with a .png/.jpg name."""
+    for d, _, files in os.walk(os.path.join(ROOT, "images")):
+        for f in files:
+            if os.path.splitext(f)[1].lower() not in IMAGE_EXTS:
+                continue
+            path = os.path.join(d, f)
+            with open(path, "rb") as fh:
+                head = fh.read(16)
+            if head[4:8] == b"ftyp":
+                fail(f"{os.path.relpath(path, ROOT)}: is actually HEIC/HEIF/AVIF,"
+                     " convert it to a real jpg/png")
 
 
 def check_404():
@@ -242,7 +257,7 @@ def main():
         print("no _site directory, run `stack exec -- site build` first")
         return 1
     for check in [check_expected_pages, check_pages, check_galleries,
-                  check_images, check_404, check_rss]:
+                  check_images, check_source_images, check_404, check_rss]:
         before = len(errors)
         check()
         print(f"{check.__name__}: {'ok' if len(errors) == before else 'FAILED'}")

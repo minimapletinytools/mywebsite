@@ -10,3 +10,11 @@ function randomizeChildren(parent, selector) {
   }
   elems.forEach(function (e) { parent.appendChild(e); });
 }
+
+// show each gallery image at a random max width between 400 and 600px
+// (images are never enlarged past their real size)
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("#gallery img").forEach(function (img) {
+    img.style.maxWidth = (400 + Math.floor(Math.random() * 201)) + "px";
+  });
+});

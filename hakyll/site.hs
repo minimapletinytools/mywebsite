@@ -38,7 +38,7 @@ main = do
             route   idRoute
             compile $ imageCompiler magick
 
-        -- max 500px wide copies used by auto galleries, under gallery-500/
+        -- max 600px wide copies used by auto galleries, under gallery/
         match ("images/**" .&&. resizable) $ version "gallery" $ do
             route   $ customRoute (galleryPath . toFilePath)
             compile $ galleryImageCompiler magick
@@ -190,15 +190,15 @@ imgTag :: FilePath -> String
 imgTag path = "<img src=\"" ++ escapeHtml (escapeURIString isUnescapedInURI ('/' : path))
            ++ "\" loading=\"lazy\" />"
 
--- auto galleries show the max-500px-wide copy if one is generated
+-- auto galleries show the max-600px-wide copy if one is generated
 galleryVersion :: FilePath -> FilePath
 galleryVersion f
     | matches resizable (fromFilePath f) = galleryPath f
     | otherwise                          = f
 
--- images/foo/bar.jpg -> gallery-500/foo/bar.jpg
+-- images/foo/bar.jpg -> gallery/foo/bar.jpg
 galleryPath :: FilePath -> FilePath
-galleryPath = ("gallery-500/" ++) . drop (length ("images/" :: String))
+galleryPath = ("gallery/" ++) . drop (length ("images/" :: String))
 
 isImage :: FilePath -> Bool
 isImage f = map toLower (takeExtension f) `elem`
@@ -224,9 +224,10 @@ findImageMagick = do
 imageCompiler :: Maybe FilePath -> Compiler (Item LBS.ByteString)
 imageCompiler = resizeCompiler "1600x1600>"
 
--- Same, but at most 500px wide (what auto galleries display)
+-- Same, but at most 600px wide. Auto galleries show these at a random
+-- 400-600px max width (see cheats.js).
 galleryImageCompiler :: Maybe FilePath -> Compiler (Item LBS.ByteString)
-galleryImageCompiler = resizeCompiler "500x>"
+galleryImageCompiler = resizeCompiler "600x>"
 
 resizeCompiler :: String -> Maybe FilePath -> Compiler (Item LBS.ByteString)
 resizeCompiler _    Nothing   = getResourceLBS
